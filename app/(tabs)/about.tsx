@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function AboutScreen() { 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>About BAhelper</Text>
+            <Text style={styles.text}>BAhelper version 0.1</Text>
         </View>
     );
 }
