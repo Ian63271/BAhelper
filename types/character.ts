@@ -1,0 +1,36 @@
+export interface Character {
+  id: number;
+  name: string;
+  age: number;
+  birthday: string;
+  height: string;
+  hobbies: string;
+  school: string;
+  urban: string;
+  outdoor: string;
+  indoor: string;
+  weapon: string;
+  head: string;
+  body: string;
+  accessory: string;
+  l2d: number;
+  bondItem?: string;
+  UEweapon: string;
+  designer: string;
+  illustrator: string;
+  lobbyIllustrator?: string;
+  voice: string;
+  damageType: string;
+  armorType: string;
+  combatClass: string;
+  role: string;
+  position: string;
+  imagePath: string;
+  halo: string;
+  favoriteGifts: string[];
+  likedGifts: string[];
+  playable: number;
+  releaseJP: string;
+  releaseGL: string;
+  hasAlts: number[];
+}

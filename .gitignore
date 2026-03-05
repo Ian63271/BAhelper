@@ -41,7 +41,10 @@ app-example
 # generated native folders
 /ios
 /android
+
+#workroad
 ideas to implement.md
 ideas to implement.txt
-assets/ai sloppa help/first help.png
-assets/images/Yoshimi_Portrait.png
+
+#app assets
+assets/
