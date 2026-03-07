@@ -4,29 +4,37 @@ import { StyleSheet, View } from "react-native";
 
 import Button from "@/components/Button";
 import ImageViewer from "@/components/ImageViewer";
-import charactersData from "@/data/characters.json";
-import { Character } from "@/types/character";
+import studentsData from "@/data/students.json";
+import { studentPortraits } from '@/types/imageMap';
+import { Students } from "@/types/students";
 
 export default function Index() {
-  // Get a random character or specific one - you can modify this logic
-  const [character, setCharacter] = useState<Character | null>(null);
+  // Get a random student or specific one - you can modify this logic
+  const [student, setStudent] = useState<Students | null>(null);
 
   useEffect(() => {
-    // For now, showing the first character. You can randomize or select based on date
-    if (charactersData.length > 0) {
-      setCharacter(charactersData[1] as Character);
-    }
+    // // For now, showing the first student. You can randomize or select based on date
+    // if (studentsData.length > 0) {
+    //   setStudent(studentsData[0] as Students);
+    // }
 
-    // // Select a character based on today's date (same day = same character)
-    // if (charactersData.length > 0) {
+    // // Select a student based on today's date (same day = same student)
+    // if (studentsData.length > 0) {
     //   const today = new Date();
     //   const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000);
-    //   const characterIndex = dayOfYear % charactersData.length;
-    //   setCharacter(charactersData[characterIndex] as Character);
+    //   const studentIndex = dayOfYear % studentsData.length;
+    //   setStudent(studentsData[studentIndex] as Students);
     // }
+
+    // Select a random student each time the component mounts (for testing)
+    if (studentsData.length > 0) {
+      const randomIndex = Math.floor(Math.random() * studentsData.length);
+      setStudent(studentsData[randomIndex] as Students);
+    }
+
   }, []);
 
-  if (!character) {
+  if (!student) {
     return (
       <View style={styles.container}>
         <Text>Loading...</Text>
@@ -35,26 +43,27 @@ export default function Index() {
   }
 
   // Dynamically require the image based on the path
-  const characterImage = require('@/assets/images/Yoshimi_Portrait.png');
+
+  const studentImage = studentPortraits[student.id];
 
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}> 
-        <ImageViewer imgSource={characterImage} />
+        <ImageViewer imgSource={studentImage} />
       </View>
-      <Text>Name: {character.name}</Text>
-      <Text>Age: {character.age}</Text>
-      <Text>Birthday: {character.birthday}</Text>
-      <Text>Height: {character.height}</Text>
-      <Text>Hobbies: {character.hobbies}</Text>
-      <Text>Designer: {character.designer}</Text>
-      <Text>Illustrator: {character.illustrator}</Text>
-      <Text>Voice: {character.voice}</Text>
-      <Text>Damage Type: {character.damageType}</Text>
-      <Text>Armor Type: {character.armorType}</Text>
-      <Text>Combat Class: {character.combatClass}</Text>
-      <Text>School: {character.school}</Text>
-      <Text>Role: {character.role}</Text>
+      <Text>Name: {student.name}</Text>
+      <Text>Age: {student.age}</Text>
+      <Text>Birthday: {student.birthday}</Text>
+      <Text>Height: {student.height}</Text>
+      <Text>Hobbies: {student.hobbies}</Text>
+      <Text>Designer: {student.designer}</Text>
+      <Text>Illustrator: {student.illustrator}</Text>
+      <Text>Voice: {student.voice}</Text>
+      <Text>Damage Type: {student.damageType}</Text>
+      <Text>Armor Type: {student.armorType}</Text>
+      <Text>Combat Class: {student.combatClass}</Text>
+      <Text>School: {student.school}</Text>
+      <Text>Role: {student.role}</Text>
       <View style={styles.footerContainer}>
         <Button label="Choose a photo" theme="primary" />
         <Button label="Use this photo" />

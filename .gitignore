@@ -48,3 +48,10 @@ ideas to implement.txt
 
 #app assets
 assets/
+app/(tabs)/testing student.json
+data/students.json.old
+data/ai sloppa help/first help.png
+data/iconscrapper.js
+data/imagemap.js
+data/imagescrapper.js
+data/scrapper.js
