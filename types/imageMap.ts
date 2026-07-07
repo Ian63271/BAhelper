@@ -514,3 +514,18 @@ export const studentIcons: Record<number, any> = {
   26014: require('@/assets/images/icons/26014_Icon.png'),
   26015: require('@/assets/images/icons/26015_Icon.png'),
 };
+
+export const schoolIcons: Record<string, any> = {
+  Abydos: require('@/assets/images/schools/Abydos.png'),
+  Arius: require('@/assets/images/schools/Arius.png'),
+  ETC: require('@/assets/images/schools/ETC.png'),
+  Gehenna: require('@/assets/images/schools/Gehenna.png'),
+  Hyakkiyako: require('@/assets/images/schools/Hyakkiyako.png'),
+  Millennium: require('@/assets/images/schools/Millennium.png'),
+  RedWinter: require('@/assets/images/schools/RedWinter.png'),
+  Shanhaijing: require('@/assets/images/schools/Shanhaijing.png'),
+  SRT: require('@/assets/images/schools/SRT.png'),
+  Tokiwadai: require('@/assets/images/schools/Tokiwadai.png'),
+  Trinity: require('@/assets/images/schools/Trinity.png'),
+  Valkyrie: require('@/assets/images/schools/Valkyrie.png'),
+};
