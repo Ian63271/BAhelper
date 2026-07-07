@@ -8,10 +8,12 @@ import StatBadge from '@/components/StatBadge';
 import { EQUIPMENT_MAX_TIER } from '@/constants/equipmentStats';
 import { colors, spacing } from '@/constants/theme';
 import { Students } from '@/types/students';
+import { studentById } from '@/utils/studentUtils';
 import {
     addBuff,
     addEquipmentBuffs,
     BOND_MAX_LEVEL,
+    BOND_STAR_CAP,
     calcBondStats,
     calcPotentialStat,
     calcStat,
@@ -26,6 +28,10 @@ import {
 
 type Props = {
     student: Students;
+    // UE grade is owned by the profile screen so the Combat card's terrain
+    // row can react to it (UE 3★+ boosts the weapon's adaptation terrain).
+    ueStars: number;
+    onUeStarsChange: (grade: number) => void;
 };
 
 const MAX_STARS = 5;
@@ -45,16 +51,17 @@ const bondStatAbbr: Record<string, string> = {
 // collapsible advanced area adds gear tiers, bond rank and talent (potential)
 // levels; everything funnels through the SchaleDB buff pipeline (combineStat)
 // so percent gear multiplies after the weapon/bond/talent flats.
-export default function StatsSection({ student }: Props) {
+export default function StatsSection({ student, ueStars, onUeStarsChange }: Props) {
     const [level, setLevel] = useState(STUDENT_MAX_LEVEL);
     const [stars, setStars] = useState(() =>
         Math.min(MAX_STARS, Math.max(1, student.baseStars ?? 1)),
     );
-    const [ueStars, setUeStars] = useState(0);
     const [weaponLevel, setWeaponLevel] = useState(1);
     const [showAdvanced, setShowAdvanced] = useState(false);
     const [equipTiers, setEquipTiers] = useState<number[]>([0, 0, 0]);
-    const [bondLevel, setBondLevel] = useState(1);
+    // Bond ranks keyed by student id: the student's own plus one per alt
+    // (alts share their bond bonuses across the family).
+    const [bondLevels, setBondLevels] = useState<Record<number, number>>({});
     const [potential, setPotential] = useState({ hp: 0, atk: 0, heal: 0 });
     const [useBondGear, setUseBondGear] = useState(false);
 
@@ -73,15 +80,27 @@ export default function StatsSection({ student }: Props) {
 
     const selectCharStars = (grade: number) => {
         setStars(grade);
-        setUeStars(0);
+        onUeStarsChange(0);
     };
     const selectUeStars = (grade: number) => {
         setStars(MAX_STARS);
-        setUeStars(grade);
+        onUeStarsChange(grade);
         setWeaponLevel(weaponMaxLevel(grade));
     };
     const setEquipTier = (slot: number, tier: number) =>
         setEquipTiers(tiers => tiers.map((t, i) => (i === slot ? tier : t)));
+    const bondLevel = (id: number) => bondLevels[id] ?? 1;
+    const setBondLevel = (id: number, value: number) =>
+        setBondLevels(levels => ({ ...levels, [id]: value }));
+
+    // Alt versions whose bond also buffs this student (SchaleDB FavorAlts);
+    // each alt applies its own favor stat table at its own bond rank.
+    const bondAlts = (student.hasAlts ?? [])
+        .map(id => studentById.get(id))
+        .filter(
+            (alt): alt is Students =>
+                !!alt?.playable && !!alt.favorStatType && !!alt.favorStatValue,
+        );
 
     // Accumulate every flat/percent buff the way SchaleDB's CharacterStats
     // does, then combine per displayed stat.
@@ -95,9 +114,16 @@ export default function StatsSection({ student }: Props) {
         addEquipmentBuffs(buffs, category, equipTiers[i] ?? 0),
     );
     if (student.favorStatType && student.favorStatValue) {
-        const bond = calcBondStats(student.favorStatValue, bondLevel);
+        // Own bond is capped by star grade (SchaleDB maxbond); alt bonds aren't.
+        const cappedLevel = Math.min(BOND_STAR_CAP[effectiveStars - 1], bondLevel(student.id));
+        const bond = calcBondStats(student.favorStatValue, cappedLevel);
         addBuff(buffs, student.favorStatType[0], bond[0]);
         addBuff(buffs, student.favorStatType[1], bond[1]);
+    }
+    for (const alt of bondAlts) {
+        const bond = calcBondStats(alt.favorStatValue!, bondLevel(alt.id));
+        addBuff(buffs, alt.favorStatType![0], bond[0]);
+        addBuff(buffs, alt.favorStatType![1], bond[1]);
     }
     addBuff(buffs, 'MaxHP_Base', calcPotentialStat(stats.maxHP1, stats.maxHP100, level, potential.hp));
     addBuff(buffs, 'AttackPower_Base', calcPotentialStat(stats.attack1, stats.attack100, level, potential.atk));
@@ -206,12 +232,24 @@ export default function StatsSection({ student }: Props) {
                     {student.favorStatType && student.favorStatValue && (
                         <LevelControl
                             label={bondLabel}
-                            value={bondLevel}
+                            value={bondLevel(student.id)}
                             max={BOND_MAX_LEVEL}
-                            onChange={setBondLevel}
+                            onChange={value => setBondLevel(student.id, value)}
                             testID="bond-level"
                         />
                     )}
+                    {bondAlts.map(alt => (
+                        <LevelControl
+                            key={alt.id}
+                            label={`${alt.name} (${alt.favorStatType!
+                                .map(statType => bondStatAbbr[statType] ?? statType)
+                                .join('/')})`}
+                            value={bondLevel(alt.id)}
+                            max={BOND_MAX_LEVEL}
+                            onChange={value => setBondLevel(alt.id, value)}
+                            testID={`bond-alt-${alt.id}`}
+                        />
+                    ))}
                     <LevelControl
                         label="Talent HP"
                         value={potential.hp}

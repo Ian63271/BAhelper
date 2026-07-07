@@ -2,6 +2,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
+import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import ScreenContainer from '@/components/ScreenContainer';
@@ -23,10 +24,11 @@ import { useUserData } from '@/context/UserDataContext';
 import { schoolIcons, studentIcons, studentPortraits } from '@/types/imageMap';
 import { getAltFamily, studentById } from '@/utils/studentUtils';
 
-const ADAPTATION_META: { label: string; icon: keyof typeof Ionicons.glyphMap }[] = [
-    { label: 'Urban', icon: 'business-outline' },
-    { label: 'Outdoor', icon: 'partly-sunny-outline' },
-    { label: 'Indoor', icon: 'home-outline' },
+// type matches the weapon's adaptationType key ('Street' is displayed as Urban).
+const ADAPTATION_META: { label: string; type: string; icon: keyof typeof Ionicons.glyphMap }[] = [
+    { label: 'Urban', type: 'Street', icon: 'business-outline' },
+    { label: 'Outdoor', type: 'Outdoor', icon: 'partly-sunny-outline' },
+    { label: 'Indoor', type: 'Indoor', icon: 'home-outline' },
 ];
 
 // limited[] holds a per-region status; only 1-3 are meaningful to show.
@@ -39,6 +41,9 @@ const LIMITED_LABELS: Record<number, string> = {
 export default function StudentDetailScreen() {
     const { id } = useLocalSearchParams<{ id: string }>();
     const { owned, favorites, toggleOwned, toggleFavorite } = useUserData();
+    // Owned here (not in StatsSection) so the Combat card's terrain row can
+    // show the UE 3★+ adaptation boost.
+    const [ueStars, setUeStars] = useState(0);
 
     const student = studentById.get(Number(id));
 
@@ -135,19 +140,40 @@ export default function StudentDetailScreen() {
                         </View>
                         {student.mood && student.mood.length === 3 && (
                             <View style={styles.moodRow}>
-                                {ADAPTATION_META.map((meta, i) => (
-                                    <View key={meta.label} style={styles.moodItem}>
-                                        <Ionicons name={meta.icon} size={18} color={colors.textSecondary} />
-                                        <Text style={styles.moodLabel}>{meta.label}</Text>
-                                        <Text style={styles.moodGrade}>{adaptationGrades[student.mood![i]] ?? '?'}</Text>
-                                    </View>
-                                ))}
+                                {ADAPTATION_META.map((meta, i) => {
+                                    // UE 3★+ (which implies a 5★ character) raises the
+                                    // weapon's adaptation terrain by adaptationValue.
+                                    const base = student.mood![i];
+                                    const boosted =
+                                        ueStars >= 3 && student.weapon?.adaptationType === meta.type
+                                            ? base + (student.weapon.adaptationValue ?? 0)
+                                            : base;
+                                    return (
+                                        <View key={meta.label} style={styles.moodItem}>
+                                            <Ionicons name={meta.icon} size={18} color={colors.textSecondary} />
+                                            <Text style={styles.moodLabel}>{meta.label}</Text>
+                                            {boosted !== base ? (
+                                                <Text style={styles.moodGrade} testID={`mood-${meta.type}`}>
+                                                    {adaptationGrades[base] ?? '?'}
+                                                    <Text style={styles.moodGradeBoost}>
+                                                        {' → '}
+                                                        {adaptationGrades[boosted] ?? '?'}
+                                                    </Text>
+                                                </Text>
+                                            ) : (
+                                                <Text style={styles.moodGrade} testID={`mood-${meta.type}`}>
+                                                    {adaptationGrades[base] ?? '?'}
+                                                </Text>
+                                            )}
+                                        </View>
+                                    );
+                                })}
                             </View>
                         )}
                     </SectionCard>
                 )}
 
-                <StatsSection student={student} />
+                <StatsSection student={student} ueStars={ueStars} onUeStarsChange={setUeStars} />
                 <SkillsSection student={student} />
 
                 {student.profile && (
@@ -304,6 +330,9 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: '800',
         color: colors.primary,
+    },
+    moodGradeBoost: {
+        color: colors.success,
     },
     profileText: {
         fontSize: 14,

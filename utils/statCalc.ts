@@ -11,6 +11,11 @@ export const WEAPON_MAX_STARS = 4;
 export const BOND_MAX_LEVEL = 100; // stat gains stop at 50, but rank goes to 100
 export const POTENTIAL_MAX = 25;   // per track (MaxHP / AttackPower / HealPower)
 
+// SchaleDB's maxbond: the applied bond level for the student's OWN bond is
+// capped by star grade (1★→10 … 5★→50); alt-family bond contributions are
+// applied uncapped in its stat preview.
+export const BOND_STAR_CAP = [10, 10, 20, 20, 50];
+
 export function weaponMaxLevel(weaponStars: number): number {
   return 20 + weaponStars * 10;
 }
