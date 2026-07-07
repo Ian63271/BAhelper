@@ -67,11 +67,54 @@
         true
       ],
       "name": "Aru's Very Precious Wallet",
-      "desc": "A high-quality wallet Aru loves. Although it's made of fine material, it's faded and scratched due to long use. Haruka, Kayoko, and Mutsuki saved up and gave it to Aru as a gift after Problem Solver 68 was first established, so it's irreplaceable to her."
+      "desc": "A high-quality wallet Aru loves. Although it's made of fine material, it's faded and scratched due to long use. Haruka, Kayoko, and Mutsuki saved up and gave it to Aru as a gift after Problem Solver 68 was first established, so it's irreplaceable to her.",
+      "statType": [
+        "AccuracyPoint_Base"
+      ],
+      "statValue": [
+        [
+          150,
+          150
+        ]
+      ]
     },
     "hasAlts": [
       10031,
       10089
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        9,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        6,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2236,
@@ -322,11 +365,54 @@
         true
       ],
       "name": "Cute Cooling Fan",
-      "desc": "Eimi's secret weapon against her greatest enemy: the heat.\nIt may be adorable, but this fan packs a strong blast. It doesn't reach very far, however, so gather close if you want to cool down."
+      "desc": "Eimi's secret weapon against her greatest enemy: the heat.\nIt may be adorable, but this fan packs a strong blast. It doesn't reach very far, however, so gather close if you want to cool down.",
+      "statType": [
+        "MaxHP_Base"
+      ],
+      "statValue": [
+        [
+          10000,
+          10000
+        ]
+      ]
     },
     "hasAlts": [
       20032,
       10136
+    ],
+    "favorStatType": [
+      "DefensePower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        128
+      ],
+      [
+        3,
+        153
+      ],
+      [
+        1,
+        27
+      ],
+      [
+        1,
+        40
+      ],
+      [
+        2,
+        67
+      ]
     ],
     "stats": {
       "maxHP1": 3066,
@@ -551,10 +637,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10057,
       20030
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        47
+      ],
+      [
+        9,
+        57
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        6,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2188,
@@ -753,9 +872,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20005
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        57
+      ],
+      [
+        5,
+        68
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2250,
@@ -968,11 +1120,54 @@
         true
       ],
       "name": "Hina's Prefect Team Armband",
-      "desc": "Hina's armband from the Prefect Team. To others, it might appear as merely a symbol of affiliation, but for Hina, it's a significant reminder of her responsibilities as the Head Prefect. The weight of that armband is anything but light."
+      "desc": "Hina's armband from the Prefect Team. To others, it might appear as merely a symbol of affiliation, but for Hina, it's a significant reminder of her responsibilities as the Head Prefect. The weight of that armband is anything but light.",
+      "statType": [
+        "EnhanceExplosionRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       10022,
       10086
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        49
+      ],
+      [
+        6,
+        59
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        4,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2258,
@@ -1192,11 +1387,54 @@
         true
       ],
       "name": "Universal Entry Ticket",
-      "desc": "Hoshino claims this pillow lets you enter dreamland wherever you are. It's as soft and fluffy as promised, but unfortunately it's also unique, and not sold in stores."
+      "desc": "Hoshino claims this pillow lets you enter dreamland wherever you are. It's as soft and fluffy as promised, but unfortunately it's also unique, and not sold in stores.",
+      "statType": [
+        "CriticalDamageResistRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       10045,
       10098
+    ],
+    "favorStatType": [
+      "DefensePower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        122
+      ],
+      [
+        3,
+        147
+      ],
+      [
+        1,
+        26
+      ],
+      [
+        1,
+        38
+      ],
+      [
+        2,
+        64
+      ]
     ],
     "stats": {
       "maxHP1": 2924,
@@ -1428,9 +1666,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10023
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        50
+      ],
+      [
+        8,
+        60
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        5,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2313,
@@ -1624,9 +1895,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20042
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        60
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2288,
@@ -1834,11 +2138,54 @@
         true
       ],
       "name": "Neru's Bomber Jacket",
-      "desc": "A bomber jacket that Neru doesn't want to separate from for a single moment. If you ask her about it, she has a very simple answer for you..."
+      "desc": "A bomber jacket that Neru doesn't want to separate from for a single moment. If you ask her about it, she has a very simple answer for you...",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          600,
+          600
+        ]
+      ]
     },
     "hasAlts": [
       10026,
       10111
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        78
+      ],
+      [
+        5,
+        93
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        24
+      ],
+      [
+        3,
+        41
+      ]
     ],
     "stats": {
       "maxHP1": 2252,
@@ -2065,11 +2412,54 @@
         true
       ],
       "name": "Lucky Hot Dog",
-      "desc": "This 3D-printed hot dog is so realistic, you think you can almost smell the mustard.\nIzumi swears this plastic hot dog is lucky and brings her to good food every time she carries it with her. We're not sure if the bite marks are part of the design or if Izumi took a bite..."
+      "desc": "This 3D-printed hot dog is so realistic, you think you can almost smell the mustard.\nIzumi swears this plastic hot dog is lucky and brings her to good food every time she carries it with her. We're not sure if the bite marks are part of the design or if Izumi took a bite...",
+      "statType": [
+        "AttackSpeed_Base"
+      ],
+      "statValue": [
+        [
+          3000,
+          3000
+        ]
+      ]
     },
     "hasAlts": [
       16006,
       20043
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        50
+      ],
+      [
+        5,
+        60
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        3,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2295,
@@ -2308,11 +2698,54 @@
         true
       ],
       "name": "Shiroko's Drone",
-      "desc": "A drone that Shiroko always has on standby. She claims it is for filming herself exercising, but there are many upgrades attached that seem to serve other purposes."
+      "desc": "A drone that Shiroko always has on standby. She claims it is for filming herself exercising, but there are many upgrades attached that seem to serve other purposes.",
+      "statType": [
+        "CriticalDamageRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       10024,
       20027
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        55
+      ],
+      [
+        7,
+        67
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        5,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2225,
@@ -2525,10 +2958,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10025,
       10143
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        48
+      ],
+      [
+        8,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        5,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2227,
@@ -2729,10 +3195,53 @@
         true
       ],
       "name": "Mobile Sandbag",
-      "desc": "A sandbag shaped like a gaiter that can be worn around an arm or leg. It's filled with not just sand but also iron powder, making it much heavier than it looks."
+      "desc": "A sandbag shaped like a gaiter that can be worn around an arm or leg. It's filled with not just sand but also iron powder, making it much heavier than it looks.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ]
+      ]
     },
     "hasAlts": [
       20044
+    ],
+    "favorStatType": [
+      "DefensePower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        78
+      ],
+      [
+        2,
+        94
+      ],
+      [
+        0,
+        16
+      ],
+      [
+        1,
+        25
+      ],
+      [
+        1,
+        41
+      ]
     ],
     "stats": {
       "maxHP1": 2268,
@@ -2964,10 +3473,53 @@
         true
       ],
       "name": "Tsurugi's Special Chest",
-      "desc": "A box full of goods hiding deep inside Tsurugi's room. Various, random things are piled up in it: collectibles, books, movie tickets, and more. You can get a glimpse of Tsurugi's meticulousness just by looking at how neatly everything's organized, without a single speck of dust."
+      "desc": "A box full of goods hiding deep inside Tsurugi's room. Various, random things are piled up in it: collectibles, books, movie tickets, and more. You can get a glimpse of Tsurugi's meticulousness just by looking at how neatly everything's organized, without a single speck of dust.",
+      "statType": [
+        "AttackSpeed_Base"
+      ],
+      "statValue": [
+        [
+          1500,
+          1500
+        ]
+      ]
     },
     "hasAlts": [
       16005
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        89
+      ],
+      [
+        10,
+        107
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        6,
+        47
+      ]
     ],
     "stats": {
       "maxHP1": 2568,
@@ -3199,9 +3751,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10046
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        88
+      ],
+      [
+        5,
+        105
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        2,
+        28
+      ],
+      [
+        3,
+        46
+      ]
     ],
     "stats": {
       "maxHP1": 2531,
@@ -3402,11 +3987,54 @@
         false
       ],
       "name": "Aris' Praise Sticker",
-      "desc": "It's not a magical charm, and it won't increase your luck...but it IS imbued with Aris' heartfelt support."
+      "desc": "It's not a magical charm, and it won't increase your luck...but it IS imbued with Aris' heartfelt support.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ]
+      ]
     },
     "hasAlts": [
       10066,
       10134
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        9,
+        51
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        7,
+        19
+      ]
     ],
     "stats": {
       "maxHP1": 1912,
@@ -3638,10 +4266,53 @@
         false
       ],
       "name": "Handheld Game Console",
-      "desc": "The first portable game console that Midori bought with her sister. It holds precious memories of fighting, making up, ice cream bets, and more. "
+      "desc": "The first portable game console that Midori bought with her sister. It holds precious memories of fighting, making up, ice cream bets, and more. ",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ]
+      ]
     },
     "hasAlts": [
       10095
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        45
+      ],
+      [
+        8,
+        55
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        5,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2222,
@@ -3897,9 +4568,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20009
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        64
+      ],
+      [
+        5,
+        77
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        3,
+        34
+      ]
     ],
     "stats": {
       "maxHP1": 2211,
@@ -4112,11 +4816,59 @@
         false
       ],
       "name": "Faded CD",
-      "desc": "An old CD with Yuzu's name written on its front. The final version of the Tales Saga Chronicle prototype is saved here. At one point, Yuzu could barely stand to look at it."
+      "desc": "An old CD with Yuzu's name written on its front. The final version of the Tales Saga Chronicle prototype is saved here. At one point, Yuzu could barely stand to look at it.",
+      "statType": [
+        "CriticalDamageRate_Base",
+        "AccuracyPoint_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ],
+        [
+          200,
+          200
+        ]
+      ]
     },
     "hasAlts": [
       26009,
       20055
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        55
+      ],
+      [
+        9,
+        66
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        6,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2197,
@@ -4341,9 +5093,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10021
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        55
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        3,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2228,
@@ -4549,9 +5334,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16013
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        6,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        13,
+        53
+      ],
+      [
+        16,
+        63
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        6,
+        17
+      ],
+      [
+        10,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2436,
@@ -4752,9 +5570,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10019
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        50
+      ],
+      [
+        5,
+        59
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        3,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 1967,
@@ -4962,11 +5813,54 @@
         true
       ],
       "name": "Prefect Team's Official Tube",
-      "desc": "The Gehenna Prefect Team has deemed this tube its official club tube.\nThis special tube is made of top-of-the-line materials to ensure Hina's safety, who can't swim. You'll never see her in the water without it."
+      "desc": "The Gehenna Prefect Team has deemed this tube its official club tube.\nThis special tube is made of top-of-the-line materials to ensure Hina's safety, who can't swim. You'll never see her in the water without it.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1500,
+          1500
+        ]
+      ]
     },
     "hasAlts": [
       10004,
       10086
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        48
+      ],
+      [
+        8,
+        57
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        5,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2194,
@@ -5210,10 +6104,53 @@
         true
       ],
       "name": "Soft Blanket",
-      "desc": "A blanket with Gehenna Academy's logo stitched into it. It's used for various purposes. Perhaps there's still a little bit of Iori's warmth left..."
+      "desc": "A blanket with Gehenna Academy's logo stitched into it. It's used for various purposes. Perhaps there's still a little bit of Iori's warmth left...",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1500,
+          1500
+        ]
+      ]
     },
     "hasAlts": [
       10006
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        8,
+        55
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        6,
+        23
+      ]
     ],
     "stats": {
       "maxHP1": 2010,
@@ -5462,10 +6399,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10010,
       20027
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        53
+      ],
+      [
+        7,
+        63
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        5,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2115,
@@ -5673,11 +6643,54 @@
         true
       ],
       "name": "Shun's Childhood Memories",
-      "desc": "A pair of mother-of-pearl hairpins that Shun cherishes. Now that she's older, she rarely uses them because she doesn't wear pigtails very often. But they're a part of Shun's precious memories that never change."
+      "desc": "A pair of mother-of-pearl hairpins that Shun cherishes. Now that she's older, she rarely uses them because she doesn't wear pigtails very often. But they're a part of Shun's precious memories that never change.",
+      "statType": [
+        "CriticalDamageRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       10011,
       10143
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        48
+      ],
+      [
+        10,
+        58
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        6,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2244,
@@ -5909,10 +6922,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10008,
       10111
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        78
+      ],
+      [
+        6,
+        93
+      ],
+      [
+        1,
+        20
+      ],
+      [
+        2,
+        29
+      ],
+      [
+        3,
+        49
+      ]
     ],
     "stats": {
       "maxHP1": 2714,
@@ -6127,11 +7173,54 @@
         false
       ],
       "name": "黒い網タイツ",
-      "desc": "市販の網タイツ。\n\n思い出は意外な品に宿るものだ。"
+      "desc": "市販の網タイツ。\n\n思い出は意外な品に宿るものだ。",
+      "statType": [
+        "CriticalDamageRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       20001,
       26014
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        50
+      ],
+      [
+        8,
+        60
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        6,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2252,
@@ -6394,11 +7483,54 @@
         true
       ],
       "name": "Rabbit Tail Grenade",
-      "desc": "A grenade in the shape of a rabbit tail that Asuna wears while wearing her bunny girl outfit. It looks harmless because it's fluffy, but it's just as destructive as any other grenade."
+      "desc": "A grenade in the shape of a rabbit tail that Asuna wears while wearing her bunny girl outfit. It looks harmless because it's fluffy, but it's just as destructive as any other grenade.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          200,
+          200
+        ]
+      ]
     },
     "hasAlts": [
       16001,
       10112
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        58
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        3,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2131,
@@ -6630,9 +7762,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10120
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        42,
+        0
+      ],
+      [
+        63,
+        0
+      ],
+      [
+        85,
+        3
+      ],
+      [
+        106,
+        4
+      ],
+      [
+        27,
+        1
+      ],
+      [
+        41,
+        1
+      ],
+      [
+        68,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 2532,
@@ -6826,9 +7991,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       26000
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        6
+      ]
     ],
     "stats": {
       "maxHP1": 2050,
@@ -7022,10 +8220,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10000,
       10089
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        48
+      ],
+      [
+        8,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        5,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2225,
@@ -7238,10 +8469,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13006,
       20059
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        7,
+        59
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        5,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2138,
@@ -7454,10 +8718,53 @@
         true
       ],
       "name": "Concealing Fox Mask",
-      "desc": "Wakamo's beloved fox mask. It was originally intended to hide the identity of its wearer, but now it hides much more than that. This is the perfect fashion piece for concealing a young girl's heart."
+      "desc": "Wakamo's beloved fox mask. It was originally intended to hide the identity of its wearer, but now it hides much more than that. This is the perfect fashion piece for concealing a young girl's heart.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       10043
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        9,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        6,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2226,
@@ -7684,10 +8991,53 @@
         true
       ],
       "name": "Dreamy Cherry Blossom Apron",
-      "desc": "Mimori's cherry-blossom-colored apron. It's a good friend to have while cooking, cleaning, and doing one's household chores."
+      "desc": "Mimori's cherry-blossom-colored apron. It's a good friend to have while cooking, cleaning, and doing one's household chores.",
+      "statType": [
+        "HealPower_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ]
+      ]
     },
     "hasAlts": [
       20029
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        9,
+        62
+      ],
+      [
+        11,
+        74
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        4,
+        19
+      ],
+      [
+        7,
+        32
+      ]
     ],
     "stats": {
       "maxHP1": 2133,
@@ -7924,9 +9274,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10073
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        19,
+        0
+      ],
+      [
+        28,
+        0
+      ],
+      [
+        37,
+        6
+      ],
+      [
+        47,
+        7
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        18,
+        2
+      ],
+      [
+        30,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2146,
@@ -8127,10 +9510,53 @@
         true
       ],
       "name": "Inventory Management Ledger",
-      "desc": "An inventory management ledger for the Trinity Cathedral made and maintained by Hinata.\nInside is a meticulous list of where the cathedral's supplies are stored and how many are available. Since Hinata generally finds whatever items people need herself, only a handful of people know of the ledger's existence."
+      "desc": "An inventory management ledger for the Trinity Cathedral made and maintained by Hinata.\nInside is a meticulous list of where the cathedral's supplies are stored and how many are available. Since Hinata generally finds whatever items people need herself, only a handful of people know of the ledger's existence.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1300,
+          1300
+        ]
+      ]
     },
     "hasAlts": [
       20028
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        55
+      ],
+      [
+        4,
+        66
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        3,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2222,
@@ -8355,9 +9781,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10103
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        45,
+        0
+      ],
+      [
+        68,
+        0
+      ],
+      [
+        91,
+        3
+      ],
+      [
+        113,
+        4
+      ],
+      [
+        29,
+        1
+      ],
+      [
+        44,
+        1
+      ],
+      [
+        73,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 2715,
@@ -8565,10 +10024,53 @@
         true
       ],
       "name": "Threadbare Name Tag",
-      "desc": "Miyako's old nametag from when she was a trainee. It may be old and worn out, but it's a precious symbol of her dreams."
+      "desc": "Miyako's old nametag from when she was a trainee. It may be old and worn out, but it's a precious symbol of her dreams.",
+      "statType": [
+        "MaxHP_Base"
+      ],
+      "statValue": [
+        [
+          10000,
+          10000
+        ]
+      ]
     },
     "hasAlts": [
       10071
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        127
+      ],
+      [
+        3,
+        153
+      ],
+      [
+        1,
+        27
+      ],
+      [
+        1,
+        40
+      ],
+      [
+        2,
+        67
+      ]
     ],
     "stats": {
       "maxHP1": 2733,
@@ -8807,10 +10309,53 @@
         true
       ],
       "name": "Sad Bunny Thermos",
-      "desc": "A compact thermos that Miyu always carries with her. Carefully stored in a pouch featuring a sad-faced bunny."
+      "desc": "A compact thermos that Miyu always carries with her. Carefully stored in a pouch featuring a sad-faced bunny.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1500,
+          1500
+        ]
+      ]
     },
     "hasAlts": [
       26010
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        56
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        4,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2127,
@@ -9035,9 +10580,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10132
+    ],
+    "favorStatType": [
+      "HealPower",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        7,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 2722,
@@ -9257,10 +10835,53 @@
         true
       ],
       "name": "Wooden Statue",
-      "desc": "A crude statue that Saori carved with a knife as a child. It's so old that even Saori herself had almost forgotten that Misaki had it."
+      "desc": "A crude statue that Saori carved with a knife as a child. It's so old that even Saori herself had almost forgotten that Misaki had it.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       20049
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        43
+      ],
+      [
+        14,
+        51
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        9,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2231,
@@ -9533,9 +11154,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       26013
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        9,
+        115
+      ],
+      [
+        11,
+        138
+      ],
+      [
+        3,
+        24
+      ],
+      [
+        4,
+        36
+      ],
+      [
+        7,
+        60
+      ]
     ],
     "stats": {
       "maxHP1": 2751,
@@ -9736,10 +11390,53 @@
         false
       ],
       "name": "Beautiful Floral Parasol",
-      "desc": "Wakamo's flashy parasol. It holds Wakamo's pure heart and her eternal affection for Sensei."
+      "desc": "Wakamo's flashy parasol. It holds Wakamo's pure heart and her eternal affection for Sensei.",
+      "statType": [
+        "CriticalDamageRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       10033
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        9,
+        57
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        6,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2214,
@@ -9978,9 +11675,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13004
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        48
+      ],
+      [
+        7,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        4,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2240,
@@ -10181,10 +11911,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10005,
       10098
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "DefensePower"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ]
     ],
     "stats": {
       "maxHP1": 2280,
@@ -10433,9 +12196,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10014
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        82
+      ],
+      [
+        5,
+        99
+      ],
+      [
+        1,
+        17
+      ],
+      [
+        2,
+        26
+      ],
+      [
+        3,
+        43
+      ]
     ],
     "stats": {
       "maxHP1": 2371,
@@ -10648,10 +12444,53 @@
         true
       ],
       "name": "Treasure-Filled Pouch",
-      "desc": "A fancy bag that Chise takes to the beach. Kaho attached a name tag to make sure it doesn't get lost. Chise has filled the bag with countless keepsakes from the beach. Not all of them could fit, but the memories will still last forever."
+      "desc": "A fancy bag that Chise takes to the beach. Kaho attached a name tag to make sure it doesn't get lost. Chise has filled the bag with countless keepsakes from the beach. Not all of them could fit, but the memories will still last forever.",
+      "statType": [
+        "OppressionPower_Base"
+      ],
+      "statValue": [
+        [
+          55,
+          55
+        ]
+      ]
     },
     "hasAlts": [
       13001
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        55
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        4,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2223,
@@ -10928,11 +12767,54 @@
         false
       ],
       "name": "Saori's Mask",
-      "desc": "The mask that Saori always wears. You can feel its age, as well as affection from its owner, who's worn it through countless fights."
+      "desc": "The mask that Saori always wears. You can feel its age, as well as affection from its owner, who's worn it through countless fights.",
+      "statType": [
+        "CriticalDamageRate_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ]
+      ]
     },
     "hasAlts": [
       10101,
       10116
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        55
+      ],
+      [
+        5,
+        66
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        3,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2208,
@@ -11181,9 +13063,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10091
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        48
+      ],
+      [
+        6,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        4,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2231,
@@ -11377,8 +13292,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        14,
+        57
+      ],
+      [
+        17,
+        68
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        11,
+        30
+      ]
+    ],
     "stats": {
       "maxHP1": 2262,
       "maxHP100": 22620,
@@ -11571,9 +13519,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       23004
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        85
+      ],
+      [
+        9,
+        103
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        27
+      ],
+      [
+        6,
+        45
+      ]
     ],
     "stats": {
       "maxHP1": 2471,
@@ -11767,9 +13748,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10109
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        65
+      ],
+      [
+        3,
+        78
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        20
+      ],
+      [
+        2,
+        34
+      ]
     ],
     "stats": {
       "maxHP1": 2230,
@@ -11963,10 +13977,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13010,
       10108
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        9,
+        95
+      ],
+      [
+        11,
+        114
+      ],
+      [
+        3,
+        20
+      ],
+      [
+        4,
+        30
+      ],
+      [
+        7,
+        50
+      ]
     ],
     "stats": {
       "maxHP1": 2756,
@@ -12179,10 +14226,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       23008,
       10105
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        14,
+        65
+      ],
+      [
+        17,
+        78
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        7,
+        20
+      ],
+      [
+        11,
+        34
+      ]
     ],
     "stats": {
       "maxHP1": 2265,
@@ -12388,9 +14468,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20031
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        53
+      ],
+      [
+        7,
+        63
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        4,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2116,
@@ -12603,9 +14716,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       26003
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        20,
+        0
+      ],
+      [
+        31,
+        0
+      ],
+      [
+        41,
+        5
+      ],
+      [
+        51,
+        6
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        20,
+        2
+      ],
+      [
+        33,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2037,
@@ -12830,10 +14976,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10002,
       20030
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        47
+      ],
+      [
+        8,
+        56
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        5,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2147,
@@ -13034,9 +15213,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16016
+    ],
+    "favorStatType": [
+      "DefensePower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        114
+      ],
+      [
+        2,
+        137
+      ],
+      [
+        1,
+        24
+      ],
+      [
+        1,
+        36
+      ],
+      [
+        1,
+        60
+      ]
     ],
     "stats": {
       "maxHP1": 2726,
@@ -13261,9 +15473,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10122
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        85
+      ],
+      [
+        7,
+        102
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        27
+      ],
+      [
+        4,
+        44
+      ]
     ],
     "stats": {
       "maxHP1": 2461,
@@ -13481,8 +15726,41 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        75
+      ],
+      [
+        4,
+        90
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        24
+      ],
+      [
+        3,
+        39
+      ]
+    ],
     "stats": {
       "maxHP1": 2149,
       "maxHP100": 29790,
@@ -13718,9 +15996,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10106
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        56
+      ],
+      [
+        7,
+        67
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        4,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2247,
@@ -13928,11 +16239,54 @@
         true
       ],
       "name": "High-Performance Headset",
-      "desc": "The perfect headset for maids and agents. It's noise-cancelling and has special technology for processing audio. It's even hackproof!\nFor Toki, it's an item that represents her relationship with someone very precious to her."
+      "desc": "The perfect headset for maids and agents. It's noise-cancelling and has special technology for processing audio. It's even hackproof!\nFor Toki, it's an item that represents her relationship with someone very precious to her.",
+      "statType": [
+        "AccuracyPoint_Base"
+      ],
+      "statValue": [
+        [
+          200,
+          200
+        ]
+      ]
     },
     "hasAlts": [
       10067,
       16019
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        56
+      ],
+      [
+        6,
+        67
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        4,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2236,
@@ -14195,10 +16549,53 @@
         false
       ],
       "name": "Challenge Coin",
-      "desc": "A coin that Koyuki drilled a hole in. It was originally made so that she could play arcade machines for free, but it's now useless because of modern card readers."
+      "desc": "A coin that Koyuki drilled a hole in. It was originally made so that she could play arcade machines for free, but it's now useless because of modern card readers.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       20056
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        47
+      ],
+      [
+        9,
+        56
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        6,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2141,
@@ -14449,10 +16846,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13005,
       10088
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        62
+      ],
+      [
+        3,
+        74
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        19
+      ],
+      [
+        2,
+        32
+      ]
     ],
     "stats": {
       "maxHP1": 2133,
@@ -14665,9 +17095,57 @@
         true
       ],
       "name": "Students' Certificate of Appreciation",
-      "desc": "A certificate of appreciation from Hyakkiyako students, presented to Kaho and carefully preserved in a frame."
+      "desc": "A certificate of appreciation from Hyakkiyako students, presented to Kaho and carefully preserved in a frame.",
+      "statType": [
+        "AttackPower_Base",
+        "CriticalPoint_Base"
+      ],
+      "statValue": [
+        [
+          800,
+          800
+        ],
+        [
+          300,
+          300
+        ]
+      ]
     },
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        56
+      ],
+      [
+        6,
+        67
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        4,
+        29
+      ]
+    ],
     "stats": {
       "maxHP1": 2235,
       "maxHP100": 22350,
@@ -14910,11 +17388,54 @@
         true
       ],
       "name": "Maid Headband",
-      "desc": "It seems that a mop, a maid uniform, and a maid headband are the three marks of a Hero Maid. Of these, Aris considers the headband the most essential."
+      "desc": "It seems that a mop, a maid uniform, and a maid headband are the three marks of a Hero Maid. Of these, Aris considers the headband the most essential.",
+      "statType": [
+        "CriticalPoint_Base"
+      ],
+      "statValue": [
+        [
+          260,
+          260
+        ]
+      ]
     },
     "hasAlts": [
       10015,
       10134
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        43
+      ],
+      [
+        10,
+        51
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        6,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2224,
@@ -15187,10 +17708,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10062,
       16019
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        55
+      ],
+      [
+        7,
+        67
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        4,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2225,
@@ -15396,9 +17950,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20051
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        46,
+        0
+      ],
+      [
+        68,
+        0
+      ],
+      [
+        91,
+        12
+      ],
+      [
+        114,
+        14
+      ],
+      [
+        29,
+        2
+      ],
+      [
+        44,
+        4
+      ],
+      [
+        74,
+        6
+      ]
     ],
     "stats": {
       "maxHP1": 2722,
@@ -15628,8 +18215,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        13,
+        82
+      ],
+      [
+        17,
+        98
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        6,
+        24
+      ],
+      [
+        10,
+        41
+      ]
+    ],
     "stats": {
       "maxHP1": 2355,
       "maxHP100": 32650,
@@ -15836,8 +18456,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        62
+      ],
+      [
+        3,
+        74
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        2,
+        31
+      ]
+    ],
     "stats": {
       "maxHP1": 1904,
       "maxHP100": 22060,
@@ -16080,9 +18733,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10038
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        48,
+        0
+      ],
+      [
+        72,
+        0
+      ],
+      [
+        96,
+        4
+      ],
+      [
+        120,
+        5
+      ],
+      [
+        29,
+        1
+      ],
+      [
+        44,
+        1
+      ],
+      [
+        73,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 2872,
@@ -16283,9 +18969,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20014
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        41
+      ],
+      [
+        7,
+        49
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        4,
+        20
+      ]
     ],
     "stats": {
       "maxHP1": 1896,
@@ -16498,9 +19217,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10035
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        44
+      ],
+      [
+        6,
+        53
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        4,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2026,
@@ -16694,9 +19446,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       23007
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        56
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        5,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2243,
@@ -16938,8 +19723,41 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        60
+      ],
+      [
+        11,
+        72
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        6,
+        30
+      ]
+    ],
     "stats": {
       "maxHP1": 2068,
       "maxHP100": 23950,
@@ -17158,9 +19976,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16002
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        8,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        5,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2242,
@@ -17354,9 +20205,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       26015
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        56
+      ],
+      [
+        7,
+        67
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        4,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2223,
@@ -17562,8 +20446,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        62
+      ],
+      [
+        5,
+        75
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        31
+      ]
+    ],
     "stats": {
       "maxHP1": 2153,
       "maxHP100": 24950,
@@ -17763,8 +20680,41 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        54
+      ],
+      [
+        6,
+        64
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        27
+      ]
+    ],
     "stats": {
       "maxHP1": 2149,
       "maxHP100": 21490,
@@ -17993,8 +20943,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        59
+      ],
+      [
+        5,
+        71
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        29
+      ]
+    ],
     "stats": {
       "maxHP1": 2044,
       "maxHP100": 23680,
@@ -18194,9 +21177,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10121
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        5,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2236,
@@ -18416,10 +21432,53 @@
         false
       ],
       "name": "White Ribbon of Youth",
-      "desc": "The ribbon used by the protagonist of Renge's favorite coming-of-age novel. It carries Renge's wish for a similar life."
+      "desc": "The ribbon used by the protagonist of Renge's favorite coming-of-age novel. It carries Renge's wish for a similar life.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          300,
+          300
+        ]
+      ]
     },
     "hasAlts": [
       13014
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        48
+      ],
+      [
+        8,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        5,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2223,
@@ -18639,9 +21698,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20047
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        46
+      ],
+      [
+        6,
+        55
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        4,
+        23
+      ]
     ],
     "stats": {
       "maxHP1": 2132,
@@ -18866,9 +21958,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       26001
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        62
+      ],
+      [
+        3,
+        74
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        2,
+        31
+      ]
     ],
     "stats": {
       "maxHP1": 2128,
@@ -19069,9 +22194,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       23003
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        55
+      ],
+      [
+        4,
+        66
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 2214,
@@ -19265,10 +22423,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10004,
       10022
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        9,
+        51
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        5,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 1963,
@@ -19502,9 +22693,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20008
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        59
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        17
+      ],
+      [
+        2,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2025,
@@ -19753,10 +22977,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13005,
       10064
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        65
+      ],
+      [
+        5,
+        77
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        2,
+        19
+      ],
+      [
+        3,
+        32
+      ]
     ],
     "stats": {
       "maxHP1": 2230,
@@ -19957,10 +23214,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10000,
       10031
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        43
+      ],
+      [
+        7,
+        51
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        4,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 1980,
@@ -20166,9 +23456,52 @@
         false
       ],
       "name": "Old Festival Doll",
-      "desc": "A doll that Umika bought at her first festival. It came as a pair."
+      "desc": "A doll that Umika bought at her first festival. It came as a pair.",
+      "statType": [
+        "EnhanceMysticRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        49
+      ],
+      [
+        7,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        4,
+        24
+      ]
+    ],
     "stats": {
       "maxHP1": 2244,
       "maxHP100": 19460,
@@ -20423,10 +23756,58 @@
         false
       ],
       "name": "シュガーラッシュカスタムLP盤",
-      "desc": "初めて完奏した時の演奏を録音したLP盤。初々しながらも彼女らしさが感じられる。曲だけではない意外なものまで収録されているようで……？"
+      "desc": "初めて完奏した時の演奏を録音したLP盤。初々しながらも彼女らしさが感じられる。曲だけではない意外なものまで収録されているようで……？",
+      "statType": [
+        "AttackPower_Base",
+        "CriticalPoint_Base"
+      ],
+      "statValue": [
+        [
+          400,
+          400
+        ],
+        [
+          300,
+          300
+        ]
+      ]
     },
     "hasAlts": [
       10049
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        62
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        4,
+        31
+      ]
     ],
     "stats": {
       "maxHP1": 2157,
@@ -20670,9 +24051,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       26005
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        56
+      ],
+      [
+        7,
+        67
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        4,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2225,
@@ -20873,9 +24287,52 @@
         false
       ],
       "name": "思い出が詰まったノート",
-      "desc": "キララのリングノート。ページにはぎっしりと勉強の跡が残っている。ただ、それ以外の筆跡もあるようで……？"
+      "desc": "キララのリングノート。ページにはぎっしりと勉強の跡が残っている。ただ、それ以外の筆跡もあるようで……？",
+      "statType": [
+        "AttackSpeed_Base"
+      ],
+      "statValue": [
+        [
+          1500,
+          1500
+        ]
+      ]
     },
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        53
+      ],
+      [
+        6,
+        64
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        26
+      ]
+    ],
     "stats": {
       "maxHP1": 2124,
       "maxHP100": 21240,
@@ -21118,9 +24575,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13011
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        56
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        3,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2226,
@@ -21321,9 +24811,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10016
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        49
+      ],
+      [
+        5,
+        58
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2242,
@@ -21517,9 +25040,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20023
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        59
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        2,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2041,
@@ -21720,9 +25276,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20018
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        60
+      ],
+      [
+        6,
+        72
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        4,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2067,
@@ -21928,10 +25517,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10005,
       10045
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        83
+      ],
+      [
+        5,
+        100
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        25
+      ],
+      [
+        3,
+        41
+      ]
     ],
     "stats": {
       "maxHP1": 2992,
@@ -22168,10 +25790,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10005,
       10045
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        83
+      ],
+      [
+        5,
+        100
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        2,
+        25
+      ],
+      [
+        3,
+        41
+      ]
     ],
     "stats": {
       "maxHP1": 997,
@@ -22396,8 +26051,41 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        56
+      ],
+      [
+        6,
+        67
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        4,
+        28
+      ]
+    ],
     "stats": {
       "maxHP1": 2220,
       "maxHP100": 22200,
@@ -22597,10 +26285,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10048,
       10116
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        54
+      ],
+      [
+        6,
+        64
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 2142,
@@ -22808,9 +26529,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20017
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        48
+      ],
+      [
+        10,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        6,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2232,
@@ -23011,9 +26765,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10037
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        79
+      ],
+      [
+        7,
+        95
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        23
+      ],
+      [
+        4,
+        39
+      ]
     ],
     "stats": {
       "maxHP1": 1885,
@@ -23226,8 +27013,41 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        48
+      ],
+      [
+        10,
+        57
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        6,
+        24
+      ]
+    ],
     "stats": {
       "maxHP1": 2147,
       "maxHP100": 21470,
@@ -23441,10 +27261,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       23008,
       10054
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        14,
+        65
+      ],
+      [
+        17,
+        79
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        10,
+        32
+      ]
     ],
     "stats": {
       "maxHP1": 2260,
@@ -23645,9 +27498,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10061
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        56
+      ],
+      [
+        7,
+        67
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        4,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2247,
@@ -23860,8 +27746,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        55
+      ],
+      [
+        7,
+        66
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        16
+      ],
+      [
+        4,
+        27
+      ]
+    ],
     "stats": {
       "maxHP1": 2205,
       "maxHP100": 22050,
@@ -24066,10 +27985,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13010,
       10053
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        39,
+        0
+      ],
+      [
+        59,
+        0
+      ],
+      [
+        79,
+        4
+      ],
+      [
+        98,
+        5
+      ],
+      [
+        24,
+        1
+      ],
+      [
+        36,
+        1
+      ],
+      [
+        60,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 2838,
@@ -24277,9 +28229,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10052
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        62
+      ],
+      [
+        4,
+        75
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        18
+      ],
+      [
+        2,
+        31
+      ]
     ],
     "stats": {
       "maxHP1": 2147,
@@ -24480,9 +28465,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10123
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        9,
+        55
+      ],
+      [
+        11,
+        66
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        7,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 1904,
@@ -24683,10 +28701,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10008,
       10026
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        64
+      ],
+      [
+        8,
+        77
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        5,
+        32
+      ]
     ],
     "stats": {
       "maxHP1": 1840,
@@ -24872,10 +28923,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16001,
       10028
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        51
+      ],
+      [
+        10,
+        61
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        6,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2031,
@@ -25069,9 +29153,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20012
+    ],
+    "favorStatType": [
+      "HealPower",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        6,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        13,
+        9
+      ],
+      [
+        16,
+        11
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        10,
+        4
+      ]
     ],
     "stats": {
       "maxHP1": 2436,
@@ -25289,9 +29406,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       26002
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        115
+      ],
+      [
+        9,
+        138
+      ],
+      [
+        2,
+        23
+      ],
+      [
+        4,
+        34
+      ],
+      [
+        5,
+        57
+      ]
     ],
     "stats": {
       "maxHP1": 2752,
@@ -25499,8 +29649,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        6,
+        0
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        13,
+        42
+      ],
+      [
+        15,
+        51
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        10,
+        21
+      ]
+    ],
     "stats": {
       "maxHP1": 2215,
       "maxHP100": 16950,
@@ -25705,10 +29888,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10048,
       10101
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        55
+      ],
+      [
+        7,
+        66
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 2205,
@@ -25926,8 +30142,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        21,
+        0
+      ],
+      [
+        32,
+        0
+      ],
+      [
+        43,
+        6
+      ],
+      [
+        53,
+        7
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        20,
+        2
+      ],
+      [
+        33,
+        3
+      ]
+    ],
     "stats": {
       "maxHP1": 1846,
       "maxHP100": 21390,
@@ -26151,8 +30400,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        54
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        16
+      ],
+      [
+        4,
+        27
+      ]
+    ],
     "stats": {
       "maxHP1": 1864,
       "maxHP100": 21590,
@@ -26364,9 +30646,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10142
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        48
+      ],
+      [
+        8,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        5,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2211,
@@ -26560,9 +30875,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10029
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        6,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        13,
+        85
+      ],
+      [
+        16,
+        102
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        6,
+        25
+      ],
+      [
+        10,
+        42
+      ]
     ],
     "stats": {
       "maxHP1": 2452,
@@ -26804,9 +31152,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10081
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        48
+      ],
+      [
+        6,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        4,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2236,
@@ -27012,9 +31393,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10059
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        67
+      ],
+      [
+        8,
+        81
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        20
+      ],
+      [
+        5,
+        34
+      ]
     ],
     "stats": {
       "maxHP1": 1943,
@@ -27200,9 +31614,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10110
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        55
+      ],
+      [
+        9,
+        66
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        5,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 1901,
@@ -27408,10 +31855,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13003,
       16011
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        46
+      ],
+      [
+        9,
+        56
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        5,
+        23
+      ]
     ],
     "stats": {
       "maxHP1": 2137,
@@ -27617,8 +32097,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        8,
+        56
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        5,
+        23
+      ]
+    ],
     "stats": {
       "maxHP1": 2139,
       "maxHP100": 18540,
@@ -27823,8 +32336,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "MaxHP",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        48,
+        0
+      ],
+      [
+        71,
+        0
+      ],
+      [
+        95,
+        9
+      ],
+      [
+        119,
+        11
+      ],
+      [
+        29,
+        2
+      ],
+      [
+        44,
+        3
+      ],
+      [
+        73,
+        4
+      ]
+    ],
     "stats": {
       "maxHP1": 2850,
       "maxHP100": 47630,
@@ -28041,8 +32587,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        41
+      ],
+      [
+        10,
+        49
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        6,
+        20
+      ]
+    ],
     "stats": {
       "maxHP1": 1901,
       "maxHP100": 16480,
@@ -28242,8 +32821,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        53
+      ],
+      [
+        6,
+        64
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        4,
+        17
+      ]
+    ],
     "stats": {
       "maxHP1": 1836,
       "maxHP100": 21270,
@@ -28443,9 +33055,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16003
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        48
+      ],
+      [
+        7,
+        57
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        4,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 1905,
@@ -28658,8 +33303,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        52
+      ],
+      [
+        7,
+        62
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        4,
+        17
+      ]
+    ],
     "stats": {
       "maxHP1": 2060,
       "maxHP100": 20600,
@@ -28859,8 +33537,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        66
+      ],
+      [
+        5,
+        79
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        3,
+        33
+      ]
+    ],
     "stats": {
       "maxHP1": 2272,
       "maxHP100": 26320,
@@ -29077,9 +33788,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10040
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        50,
+        0
+      ],
+      [
+        75,
+        0
+      ],
+      [
+        100,
+        8
+      ],
+      [
+        125,
+        10
+      ],
+      [
+        31,
+        2
+      ],
+      [
+        46,
+        2
+      ],
+      [
+        77,
+        4
+      ]
     ],
     "stats": {
       "maxHP1": 2990,
@@ -29280,9 +34024,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20041
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        64
+      ],
+      [
+        5,
+        77
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        2,
+        19
+      ],
+      [
+        3,
+        32
+      ]
     ],
     "stats": {
       "maxHP1": 2208,
@@ -29476,10 +34253,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10015,
       10066
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        49
+      ],
+      [
+        10,
+        59
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        6,
+        16
+      ]
     ],
     "stats": {
       "maxHP1": 1960,
@@ -29677,8 +34487,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        36
+      ],
+      [
+        10,
+        44
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        6,
+        18
+      ]
+    ],
     "stats": {
       "maxHP1": 1980,
       "maxHP100": 15150,
@@ -29890,10 +34733,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10001,
       20032
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        8,
+        46
+      ],
+      [
+        9,
+        56
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        6,
+        23
+      ]
     ],
     "stats": {
       "maxHP1": 2135,
@@ -30087,8 +34963,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "MaxHP",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        50,
+        0
+      ],
+      [
+        75,
+        0
+      ],
+      [
+        100,
+        8
+      ],
+      [
+        125,
+        10
+      ],
+      [
+        31,
+        2
+      ],
+      [
+        46,
+        2
+      ],
+      [
+        77,
+        4
+      ]
+    ],
     "stats": {
       "maxHP1": 2983,
       "maxHP100": 49870,
@@ -30324,8 +35233,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        9,
+        61
+      ],
+      [
+        11,
+        74
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        7,
+        20
+      ]
+    ],
     "stats": {
       "maxHP1": 2115,
       "maxHP100": 24510,
@@ -30544,8 +35486,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        52
+      ],
+      [
+        4,
+        62
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        26
+      ]
+    ],
     "stats": {
       "maxHP1": 1482,
       "maxHP100": 20540,
@@ -30750,8 +35725,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "MaxHP",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        48,
+        0
+      ],
+      [
+        71,
+        0
+      ],
+      [
+        95,
+        9
+      ],
+      [
+        119,
+        11
+      ],
+      [
+        29,
+        1
+      ],
+      [
+        44,
+        3
+      ],
+      [
+        73,
+        5
+      ]
+    ],
     "stats": {
       "maxHP1": 2846,
       "maxHP100": 47570,
@@ -30980,10 +35988,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16000,
       20025
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        91
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        23
+      ],
+      [
+        4,
+        38
+      ]
     ],
     "stats": {
       "maxHP1": 2192,
@@ -31196,9 +36237,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10119
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        49
+      ],
+      [
+        6,
+        59
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        4,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2269,
@@ -31404,10 +36478,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10011,
       10025
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        9,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        6,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2231,
@@ -31601,10 +36708,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10011,
       10025
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        9,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        6,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2231,
@@ -31805,9 +36945,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20039
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        67
+      ],
+      [
+        8,
+        80
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        20
+      ],
+      [
+        5,
+        33
+      ]
     ],
     "stats": {
       "maxHP1": 1920,
@@ -32013,10 +37186,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       20019,
       20057
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        64
+      ],
+      [
+        2,
+        77
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        20
+      ],
+      [
+        1,
+        34
+      ]
     ],
     "stats": {
       "maxHP1": 2208,
@@ -32224,10 +37430,53 @@
         true
       ],
       "name": "The Sound of the Incoming Wind",
-      "desc": "Chise's favorite kind of wind chime. Its clear, crisp sound is said to signal the arrival of a cool breeze."
+      "desc": "Chise's favorite kind of wind chime. Its clear, crisp sound is said to signal the arrival of a cool breeze.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       10047
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        57
+      ],
+      [
+        6,
+        68
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2256,
@@ -32440,9 +37689,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20034
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        57
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        5,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2252,
@@ -32643,11 +37925,54 @@
         false
       ],
       "name": "Frayed Justice Task Force Book",
-      "desc": "A notebook worn out from long and extensive use. It has club members' preferences and strengths written in detail. Perhaps her constant attention and observation are her primary ways of expressing affection."
+      "desc": "A notebook worn out from long and extensive use. It has club members' preferences and strengths written in detail. Perhaps her constant attention and observation are her primary ways of expressing affection.",
+      "statType": [
+        "CriticalPoint_Base"
+      ],
+      "statValue": [
+        [
+          260,
+          260
+        ]
+      ]
     },
     "hasAlts": [
       16011,
       10124
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        49
+      ],
+      [
+        9,
+        59
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        6,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2256,
@@ -32867,10 +38192,58 @@
         true
       ],
       "name": "Secret Bucket List",
-      "desc": "A secret list of Nonomi's dreams. It's filled with things she hopes to do with members of the Foreclosure Task Force someday."
+      "desc": "A secret list of Nonomi's dreams. It's filled with things she hopes to do with members of the Foreclosure Task Force someday.",
+      "statType": [
+        "AttackPower_Base",
+        "AccuracyPoint_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ],
+        [
+          200,
+          200
+        ]
+      ]
     },
     "hasAlts": [
       10044
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        49
+      ],
+      [
+        7,
+        59
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        4,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2264,
@@ -33095,10 +38468,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       10064,
       10088
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        65
+      ],
+      [
+        3,
+        79
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        21
+      ],
+      [
+        2,
+        34
+      ]
     ],
     "stats": {
       "maxHP1": 2272,
@@ -33299,10 +38705,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       10032,
       20059
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        49
+      ],
+      [
+        5,
+        59
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2259,
@@ -33503,10 +38942,53 @@
         true
       ],
       "name": "Food Tour Notepad",
-      "desc": "A notepad used by Junko. It's a special journal in which she records the scores of every great restaurant she has been to, organized by area."
+      "desc": "A notepad used by Junko. It's a special journal in which she records the scores of every great restaurant she has been to, organized by area.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          800,
+          800
+        ]
+      ]
     },
     "hasAlts": [
       16012
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        57
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        4,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2264,
@@ -33738,11 +39220,59 @@
         true
       ],
       "name": "Serika's Sports Bag",
-      "desc": "Serika's black sports bag. This versatile accessory is great for school, working out, and more... It can carry just about anything."
+      "desc": "Serika's black sports bag. This versatile accessory is great for school, working out, and more... It can carry just about anything.",
+      "statType": [
+        "AttackSpeed_Base",
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ],
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       20011,
       20036
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        55
+      ],
+      [
+        7,
+        66
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        5,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2192,
@@ -33955,9 +39485,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       20035
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        51,
+        0
+      ],
+      [
+        76,
+        0
+      ],
+      [
+        102,
+        5
+      ],
+      [
+        127,
+        5
+      ],
+      [
+        33,
+        1
+      ],
+      [
+        49,
+        1
+      ],
+      [
+        82,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 3048,
@@ -34165,11 +39728,54 @@
         true
       ],
       "name": "Yuuka's Scientific Calculator",
-      "desc": "A scientific calculator Yuuka is never seen without. Despite her excellent mental arithmetic skills, Yuuka always double checks her calculations to ensure perfection."
+      "desc": "A scientific calculator Yuuka is never seen without. Despite her excellent mental arithmetic skills, Yuuka always double checks her calculations to ensure perfection.",
+      "statType": [
+        "DefensePower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       10053,
       10108
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        50,
+        0
+      ],
+      [
+        75,
+        0
+      ],
+      [
+        100,
+        3
+      ],
+      [
+        125,
+        3
+      ],
+      [
+        32,
+        1
+      ],
+      [
+        48,
+        1
+      ],
+      [
+        81,
+        1
+      ]
     ],
     "stats": {
       "maxHP1": 2997,
@@ -34408,10 +40014,53 @@
         false
       ],
       "name": "Old Game Console",
-      "desc": "The first handheld game console that Momoi bought with her sister. It seems that Momoi's \"Gamer's Operation\" was successful..."
+      "desc": "The first handheld game console that Momoi bought with her sister. It seems that Momoi's \"Gamer's Operation\" was successful...",
+      "statType": [
+        "AttackSpeed_Base"
+      ],
+      "statValue": [
+        [
+          1500,
+          1500
+        ]
+      ]
     },
     "hasAlts": [
       10094
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        60
+      ],
+      [
+        5,
+        72
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2310,
@@ -34667,9 +40316,42 @@
       "adaptationType": "Street",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       26012
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        59
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        19
+      ],
+      [
+        2,
+        31
+      ]
     ],
     "stats": {
       "maxHP1": 2035,
@@ -34889,9 +40571,52 @@
         false
       ],
       "name": "Limited Reprint Collection",
-      "desc": "A limited reprint of a manga collection. Even when everyone disagrees, if it's important to one person, then it's an important item."
+      "desc": "A limited reprint of a manga collection. Even when everyone disagrees, if it's important to one person, then it's an important item.",
+      "statType": [
+        "CriticalPoint_Base"
+      ],
+      "statValue": [
+        [
+          250,
+          250
+        ]
+      ]
     },
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        9,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        18,
+        42
+      ],
+      [
+        23,
+        51
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        14,
+        21
+      ]
+    ],
     "stats": {
       "maxHP1": 2219,
       "maxHP100": 16980,
@@ -35127,9 +40852,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10082
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        48
+      ],
+      [
+        8,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        5,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2223,
@@ -35342,10 +41100,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20025,
       10141
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        127
+      ],
+      [
+        3,
+        152
+      ],
+      [
+        1,
+        27
+      ],
+      [
+        1,
+        40
+      ],
+      [
+        2,
+        66
+      ]
     ],
     "stats": {
       "maxHP1": 3033,
@@ -35546,11 +41337,59 @@
         false
       ],
       "name": "アスナスタイルのリボン",
-      "desc": "掃除するときも、「お掃除」するときも、常にアスナがつけている青いリボン。"
+      "desc": "掃除するときも、「お掃除」するときも、常にアスナがつけている青いリボン。",
+      "statType": [
+        "AttackSpeed_Base",
+        "CriticalPoint_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ],
+        [
+          300,
+          300
+        ]
+      ]
     },
     "hasAlts": [
       10028,
       10112
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        58
+      ],
+      [
+        7,
+        69
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        4,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2309,
@@ -35782,10 +41621,53 @@
         true
       ],
       "name": "Teardrop Glasses",
-      "desc": "A pair of special glasses that Kotori always wears.\nIt's easy to look at them and say they're \"weird-looking,\" but they're actually an expression of Kotori's compassion for those who sit through her long lectures."
+      "desc": "A pair of special glasses that Kotori always wears.\nIt's easy to look at them and say they're \"weird-looking,\" but they're actually an expression of Kotori's compassion for those who sit through her long lectures.",
+      "statType": [
+        "HealPower_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ]
+      ]
     },
     "hasAlts": [
       10076
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        49
+      ],
+      [
+        5,
+        59
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2262,
@@ -36005,10 +41887,53 @@
         true
       ],
       "name": "Patrol Headphones",
-      "desc": "The headphones Suzumi carries on patrol. Calling them \"Patrol Headphones\" is a bit self-indulgent as they are a relatively common product."
+      "desc": "The headphones Suzumi carries on patrol. Calling them \"Patrol Headphones\" is a bit self-indulgent as they are a relatively common product.",
+      "statType": [
+        "OppressionPower_Base"
+      ],
+      "statValue": [
+        [
+          20,
+          20
+        ]
+      ]
     },
     "hasAlts": [
       10129
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        57
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 2281,
@@ -36228,9 +42153,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20045
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        60
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2305,
@@ -36431,9 +42389,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10013
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        88
+      ],
+      [
+        9,
+        105
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        28
+      ],
+      [
+        6,
+        46
+      ]
     ],
     "stats": {
       "maxHP1": 2536,
@@ -36641,11 +42632,59 @@
         true
       ],
       "name": "Midsummer Ice Cooler",
-      "desc": "Izumi stuffed this cooler full of fruit, drinks, and secret spices—a perfect treat for midsummer relaxation. "
+      "desc": "Izumi stuffed this cooler full of fruit, drinks, and secret spices—a perfect treat for midsummer relaxation. ",
+      "statType": [
+        "AttackSpeed_Base",
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1500,
+          1500
+        ],
+        [
+          300,
+          300
+        ]
+      ]
     },
     "hasAlts": [
       10009,
       20043
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        56
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        4,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2160,
@@ -36865,9 +42904,42 @@
       "adaptationType": "Street",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       20038
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        7,
+        56
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        4,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2139,
@@ -37061,9 +43133,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       20037
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        48
+      ],
+      [
+        6,
+        58
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        4,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2229,
@@ -37276,10 +43381,53 @@
         false
       ],
       "name": "Old Ninja Video Tape",
-      "desc": "An old, worn-out, and ordinary video tape. Nevertheless, something on it led Michiru to join the path of the ninja... "
+      "desc": "An old, worn-out, and ordinary video tape. Nevertheless, something on it led Michiru to join the path of the ninja... ",
+      "statType": [
+        "EnhanceMysticRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       20053
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        77
+      ],
+      [
+        7,
+        93
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        3,
+        24
+      ],
+      [
+        5,
+        40
+      ]
     ],
     "stats": {
       "maxHP1": 2223,
@@ -37523,9 +43671,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       20000
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        13,
+        40
+      ],
+      [
+        16,
+        49
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        11,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2125,
@@ -37726,10 +43907,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       13003,
       10124
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        42
+      ],
+      [
+        8,
+        51
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        5,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2219,
@@ -37923,9 +44137,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13007
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        55
+      ],
+      [
+        8,
+        66
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        5,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 2204,
@@ -38119,9 +44366,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10020
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        7,
+        55
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        4,
+        23
+      ]
     ],
     "stats": {
       "maxHP1": 2124,
@@ -38315,8 +44595,41 @@
       "adaptationType": "Street",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        53
+      ],
+      [
+        6,
+        64
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        26
+      ]
+    ],
     "stats": {
       "maxHP1": 2127,
       "maxHP100": 21280,
@@ -38521,9 +44834,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       23000
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        85
+      ],
+      [
+        7,
+        102
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        3,
+        25
+      ],
+      [
+        4,
+        42
+      ]
     ],
     "stats": {
       "maxHP1": 2459,
@@ -38717,9 +45063,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10058
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        50,
+        0
+      ],
+      [
+        75,
+        0
+      ],
+      [
+        100,
+        5
+      ],
+      [
+        124,
+        6
+      ],
+      [
+        31,
+        1
+      ],
+      [
+        46,
+        2
+      ],
+      [
+        76,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 2488,
@@ -39004,8 +45383,41 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        108
+      ],
+      [
+        7,
+        130
+      ],
+      [
+        2,
+        21
+      ],
+      [
+        3,
+        32
+      ],
+      [
+        4,
+        54
+      ]
+    ],
     "stats": {
       "maxHP1": 2588,
       "maxHP100": 43260,
@@ -39225,8 +45637,41 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        76
+      ],
+      [
+        5,
+        91
+      ],
+      [
+        1,
+        15
+      ],
+      [
+        2,
+        23
+      ],
+      [
+        3,
+        38
+      ]
+    ],
     "stats": {
       "maxHP1": 2191,
       "maxHP100": 30380,
@@ -39447,10 +45892,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10062,
       10067
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        9
+      ]
     ],
     "stats": {
       "maxHP1": 2288,
@@ -39701,8 +46179,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        9,
+        48
+      ],
+      [
+        11,
+        58
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        14
+      ],
+      [
+        7,
+        24
+      ]
+    ],
     "stats": {
       "maxHP1": 2233,
       "maxHP100": 19360,
@@ -39909,10 +46420,58 @@
         true
       ],
       "name": "A Meister's Goggles",
-      "desc": "Hibiki's exclusive goggles, with countless customization options. Besides their features, she likes the way they look."
+      "desc": "Hibiki's exclusive goggles, with countless customization options. Besides their features, she likes the way they look.",
+      "statType": [
+        "AttackPower_Base",
+        "AccuracyPoint_Base"
+      ],
+      "statValue": [
+        [
+          200,
+          200
+        ],
+        [
+          400,
+          400
+        ]
+      ]
     },
     "hasAlts": [
       16010
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        42
+      ],
+      [
+        6,
+        50
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        4,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2237,
@@ -40125,10 +46684,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10027,
       26014
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        43
+      ],
+      [
+        7,
+        52
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        5,
+        23
+      ]
     ],
     "stats": {
       "maxHP1": 2314,
@@ -40329,9 +46921,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20006
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        43
+      ],
+      [
+        5,
+        51
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2288,
@@ -40532,10 +47157,58 @@
         true
       ],
       "name": "Learning Idioms and Proverbs Through Stories",
-      "desc": "A set of books that explain the meanings of various idioms and proverbs through old tales.\nIt fits Mashiro's tastes perfectly."
+      "desc": "A set of books that explain the meanings of various idioms and proverbs through old tales.\nIt fits Mashiro's tastes perfectly.",
+      "statType": [
+        "AttackPower_Base",
+        "CriticalPoint_Base"
+      ],
+      "statValue": [
+        [
+          200,
+          200
+        ],
+        [
+          300,
+          300
+        ]
+      ]
     },
     "hasAlts": [
       20004
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        53
+      ],
+      [
+        7,
+        63
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        5,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2250,
@@ -40774,9 +47447,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20003
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        8,
+        45
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        5,
+        20
+      ]
     ],
     "stats": {
       "maxHP1": 1982,
@@ -40989,10 +47695,53 @@
         true
       ],
       "name": "Momo Friends Teapot: Tank Edition",
-      "desc": "Hifumi's special Peroro teapot. She swears its necessary equipment for the beach.\nThis limited-edition teapot was made to look like a tank...for some reason. Hifumi apparently saved up for this item for a long time."
+      "desc": "Hifumi's special Peroro teapot. She swears its necessary equipment for the beach.\nThis limited-edition teapot was made to look like a tank...for some reason. Hifumi apparently saved up for this item for a long time.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       10003
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        40
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        5,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2164,
@@ -41224,10 +47973,53 @@
         true
       ],
       "name": "Saya's Skateboard",
-      "desc": "Saya's decorated skateboard. It allows the free use of both hands, unlike bicycles or scooters, but also requires a certain level of skill."
+      "desc": "Saya's decorated skateboard. It allows the free use of both hands, unlike bicycles or scooters, but also requires a certain level of skill.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ]
+      ]
     },
     "hasAlts": [
       20002
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        40
+      ],
+      [
+        5,
+        48
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2135,
@@ -41452,8 +48244,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        38
+      ],
+      [
+        13,
+        45
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        9,
+        20
+      ]
+    ],
     "stats": {
       "maxHP1": 2035,
       "maxHP100": 15215,
@@ -41646,9 +48471,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10087
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        40
+      ],
+      [
+        4,
+        48
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        2,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2124,
@@ -41861,10 +48719,53 @@
         true
       ],
       "name": "Bath Assistant",
-      "desc": "A souvenir from Red Winter Academy, carefully handmade by gluing a mustache onto a mass-produced rubber duck.\nCherino claims that they're childish toys which she has no interest in, but rumor has it one has been seen in the bathtub after she's finished..."
+      "desc": "A souvenir from Red Winter Academy, carefully handmade by gluing a mustache onto a mass-produced rubber duck.\nCherino claims that they're childish toys which she has no interest in, but rumor has it one has been seen in the bathtub after she's finished...",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1000,
+          1000
+        ]
+      ]
     },
     "hasAlts": [
       10017
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        42
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2226,
@@ -42094,9 +48995,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       26006
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        8,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        16,
+        43
+      ],
+      [
+        20,
+        51
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        13,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2289,
@@ -42282,10 +49216,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13008,
       20036
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        63
+      ],
+      [
+        5,
+        75
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        3,
+        33
+      ]
     ],
     "stats": {
       "maxHP1": 2044,
@@ -42491,9 +49458,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10113
+    ],
+    "favorStatType": [
+      "HealPower",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        10,
+        4
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        8,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 2062,
@@ -42687,8 +49687,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        42
+      ],
+      [
+        7,
+        50
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        4,
+        22
+      ]
+    ],
     "stats": {
       "maxHP1": 2221,
       "maxHP100": 16595,
@@ -42895,10 +49928,53 @@
         false
       ],
       "name": "SRT Standard Manual",
-      "desc": "SRT Academy's standard distribution manual, which Saki always carries with her. It's worn out from all the time spent reading and studying, but she still treasures it."
+      "desc": "SRT Academy's standard distribution manual, which Saki always carries with her. It's worn out from all the time spent reading and studying, but she still treasures it.",
+      "statType": [
+        "OppressionPower_Base"
+      ],
+      "statValue": [
+        [
+          35,
+          35
+        ]
+      ]
     },
     "hasAlts": [
       10072
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        42
+      ],
+      [
+        7,
+        50
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        5,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2216,
@@ -43161,9 +50237,52 @@
         true
       ],
       "name": "Mushiqueen Card Protector",
-      "desc": "A card protector designed to prevent damage. This is the standard version of the Mushiqueen protector that Kaede bought. Many official tournaments often require the use of a protector for participation."
+      "desc": "A card protector designed to prevent damage. This is the standard version of the Mushiqueen protector that Kaede bought. Many official tournaments often require the use of a protector for participation.",
+      "statType": [
+        "HealPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        10,
+        40
+      ],
+      [
+        13,
+        48
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        8,
+        21
+      ]
+    ],
     "stats": {
       "maxHP1": 2133,
       "maxHP100": 15939,
@@ -43387,9 +50506,52 @@
         false
       ],
       "name": "普通の文庫本",
-      "desc": "いたって普通の文庫本。\n\n初版でも愛蔵版でもない、ごく一般的なもの。ある日からコーヒーのいい香りが漂うようになった。"
+      "desc": "いたって普通の文庫本。\n\n初版でも愛蔵版でもない、ごく一般的なもの。ある日からコーヒーのいい香りが漂うようになった。",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1150,
+          1150
+        ]
+      ]
     },
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        42
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        22
+      ]
+    ],
     "stats": {
       "maxHP1": 2259,
       "maxHP100": 16882,
@@ -43601,9 +50763,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10102
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        40
+      ],
+      [
+        5,
+        48
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2125,
@@ -43830,10 +51025,53 @@
         false
       ],
       "name": "クレイモアハンドグリップ",
-      "desc": "モエが愛用するクレイモアの起爆スイッチを改造して作ったハンドグリップ。雷管を外しているから起爆することはないが、太いスプリングの力は爆弾のように破滅的だとか。"
+      "desc": "モエが愛用するクレイモアの起爆スイッチを改造して作ったハンドグリップ。雷管を外しているから起爆することはないが、太いスプリングの力は爆弾のように破滅的だとか。",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          1100,
+          1100
+        ]
+      ]
     },
     "hasAlts": [
       10097
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        42
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2224,
@@ -44089,10 +51327,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13000,
       20057
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        5,
+        20
+      ]
     ],
     "stats": {
       "maxHP1": 1988,
@@ -44286,9 +51557,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20054
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        56
+      ],
+      [
+        6,
+        67
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        4,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 3271,
@@ -44501,10 +51805,53 @@
         true
       ],
       "name": "Hanae's Gift Sack",
-      "desc": "A pouch filled with gifts from Hanae. She's filled it with important items to help others."
+      "desc": "A pouch filled with gifts from Hanae. She's filled it with important items to help others.",
+      "statType": [
+        "HealPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       23002
+    ],
+    "favorStatType": [
+      "HealPower",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        8,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        16,
+        5
+      ],
+      [
+        20,
+        6
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        13,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2278,
@@ -44736,9 +52083,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       23001
+    ],
+    "favorStatType": [
+      "HealPower",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        8,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2294,
@@ -44932,9 +52312,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10096
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        40
+      ],
+      [
+        5,
+        48
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2120,
@@ -45154,9 +52567,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20048
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ]
     ],
     "stats": {
       "maxHP1": 1974,
@@ -45369,10 +52815,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16000,
       10141
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        38
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        20
+      ]
     ],
     "stats": {
       "maxHP1": 2040,
@@ -45573,8 +53052,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
+    ],
     "stats": {
       "maxHP1": 1978,
       "maxHP100": 14789,
@@ -45767,10 +53279,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10010,
       10024
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 1967,
@@ -45971,9 +53516,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10036
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        8,
+        45
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 1996,
@@ -46197,9 +53775,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10034
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        53
+      ],
+      [
+        13,
+        64
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        8,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2832,
@@ -46407,11 +54018,54 @@
         false
       ],
       "name": "Butterfly Wing Decoration",
-      "desc": "Haruna's wing decoration. She's known for switching out its decorations based on her mood and the situation."
+      "desc": "Haruna's wing decoration. She's known for switching out its decorations based on her mood and the situation.",
+      "statType": [
+        "HealRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       10002,
       10057
+    ],
+    "favorStatType": [
+      "HealPower",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        8,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        16,
+        6
+      ],
+      [
+        20,
+        7
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        12,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2871,
@@ -46660,9 +54314,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10055
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        8,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        16,
+        53
+      ],
+      [
+        20,
+        64
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        12,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2832,
@@ -46856,10 +54543,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10001,
       10136
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        53
+      ],
+      [
+        13,
+        64
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        8,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2842,
@@ -47060,8 +54780,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        35
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        5,
+        17
+      ]
+    ],
     "stats": {
       "maxHP1": 1883,
       "maxHP100": 14076,
@@ -47273,9 +55026,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13002
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        21,
+        0
+      ],
+      [
+        32,
+        0
+      ],
+      [
+        42,
+        6
+      ],
+      [
+        53,
+        7
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        19,
+        2
+      ],
+      [
+        32,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2828,
@@ -47469,9 +55255,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13009
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        53
+      ],
+      [
+        13,
+        64
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        8,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2835,
@@ -47677,10 +55496,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13008,
       20011
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        35
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        5,
+        17
+      ]
     ],
     "stats": {
       "maxHP1": 1888,
@@ -47874,9 +55726,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16008
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 1976,
@@ -48096,9 +55981,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16007
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        10,
+        54
+      ],
+      [
+        13,
+        64
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        8,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 2872,
@@ -48347,9 +56265,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10145
+    ],
+    "favorStatType": [
+      "HealPower",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        8,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2818,
@@ -48543,8 +56494,41 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
+    ],
     "stats": {
       "maxHP1": 1975,
       "maxHP100": 14755,
@@ -48744,9 +56728,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10133
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        61
+      ],
+      [
+        5,
+        73
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        30
+      ]
     ],
     "stats": {
       "maxHP1": 3271,
@@ -48952,9 +56969,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10007
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 1963,
@@ -49148,10 +57198,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10009,
       16006
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        52
+      ],
+      [
+        13,
+        63
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        8,
+        26
+      ]
     ],
     "stats": {
       "maxHP1": 2805,
@@ -49345,9 +57428,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10012
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        54
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        3,
+        16
+      ],
+      [
+        4,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 2892,
@@ -49548,9 +57664,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16004
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 1956,
@@ -49744,8 +57893,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        36
+      ],
+      [
+        8,
+        43
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        18
+      ]
+    ],
     "stats": {
       "maxHP1": 1925,
       "maxHP100": 14387,
@@ -49976,9 +58158,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10083
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        22,
+        0
+      ],
+      [
+        33,
+        0
+      ],
+      [
+        44,
+        6
+      ],
+      [
+        55,
+        7
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        20,
+        2
+      ],
+      [
+        34,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2946,
@@ -50164,9 +58379,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20024
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        55
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        4,
+        28
+      ]
     ],
     "stats": {
       "maxHP1": 2946,
@@ -50372,9 +58620,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10041
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        35
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        5,
+        17
+      ]
     ],
     "stats": {
       "maxHP1": 1885,
@@ -50582,8 +58863,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        55
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        27
+      ]
+    ],
     "stats": {
       "maxHP1": 2963,
       "maxHP100": 22161,
@@ -50793,9 +59107,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10068
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        8,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        15,
+        55
+      ],
+      [
+        19,
+        65
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        12,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 2920,
@@ -51003,8 +59350,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        54
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        4,
+        18
+      ]
+    ],
     "stats": {
       "maxHP1": 2910,
       "maxHP100": 21747,
@@ -51211,9 +59591,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       16009
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        8,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        15,
+        55
+      ],
+      [
+        19,
+        66
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        12,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 2936,
@@ -51412,9 +59825,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20020
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "HealPower"
+    ],
+    "favorStatValue": [
+      [
+        21,
+        0
+      ],
+      [
+        32,
+        0
+      ],
+      [
+        42,
+        13
+      ],
+      [
+        53,
+        16
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        19,
+        4
+      ],
+      [
+        32,
+        6
+      ]
     ],
     "stats": {
       "maxHP1": 2828,
@@ -51615,10 +60061,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10018,
       26009
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        56
+      ],
+      [
+        6,
+        67
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        4,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 2971,
@@ -51824,9 +60303,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10063
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        55
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        4,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 2923,
@@ -52032,10 +60544,43 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13000,
       20019
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        36
+      ],
+      [
+        8,
+        43
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 1939,
@@ -52236,8 +60781,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        10,
+        56
+      ],
+      [
+        13,
+        67
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        8,
+        28
+      ]
+    ],
     "stats": {
       "maxHP1": 2970,
       "maxHP100": 22207,
@@ -52437,10 +61015,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13006,
       10032
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        35
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        5,
+        17
+      ]
     ],
     "stats": {
       "maxHP1": 1864,
@@ -52646,9 +61257,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       16015
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        17,
+        0
+      ],
+      [
+        25,
+        0
+      ],
+      [
+        34,
+        5
+      ],
+      [
+        42,
+        5
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        27,
+        2
+      ]
     ],
     "stats": {
       "maxHP1": 2256,
@@ -52849,9 +61493,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       20022
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        14,
+        48
+      ],
+      [
+        18,
+        57
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        12,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2546,
@@ -53045,9 +61722,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       20021
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        14,
+        48
+      ],
+      [
+        18,
+        57
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        12,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2562,
@@ -53248,10 +61958,53 @@
         true
       ],
       "name": "Athena-3",
-      "desc": "A spherical drone that always follows Hare around. Named after the goddess of wisdom, it's equipped with artificial intelligence that can experience and learn on its own, but it often works against the intentions of Hare in unexpected ways."
+      "desc": "A spherical drone that always follows Hare around. Named after the goddess of wisdom, it's equipped with artificial intelligence that can experience and learn on its own, but it often works against the intentions of Hare in unexpected ways.",
+      "statType": [
+        "AttackPower_Base"
+      ],
+      "statValue": [
+        [
+          400,
+          400
+        ]
+      ]
     },
     "hasAlts": [
       10085
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        41
+      ],
+      [
+        5,
+        49
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2204,
@@ -53487,10 +62240,53 @@
         true
       ],
       "name": "A Meister's Toolbox",
-      "desc": "A set of tools in a custom toolbox, assembled and organized to Utaha's preferences.\nIt's very likely that this set, made and maintained with a meister's pride, has no equal in all of Kivotos."
+      "desc": "A set of tools in a custom toolbox, assembled and organized to Utaha's preferences.\nIt's very likely that this set, made and maintained with a meister's pride, has no equal in all of Kivotos.",
+      "statType": [
+        "AttackSpeed_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       10051
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        43
+      ],
+      [
+        6,
+        51
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        4,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2294,
@@ -53710,10 +62506,53 @@
         false
       ],
       "name": "花型ヘアピン",
-      "desc": "アヤネがいつもつけている花形のヘアピン。\n\n素朴な部分が、特に気に入っているようだ。"
+      "desc": "アヤネがいつもつけている花形のヘアピン。\n\n素朴な部分が、特に気に入っているようだ。",
+      "statType": [
+        "HealRate_Base"
+      ],
+      "statValue": [
+        [
+          2000,
+          2000
+        ]
+      ]
     },
     "hasAlts": [
       26007
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        14,
+        48
+      ],
+      [
+        18,
+        57
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        12,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2562,
@@ -53956,10 +62795,53 @@
         true
       ],
       "name": "Worn Teaware Set",
-      "desc": "Shizuko's first tea set. While it shows its age, it also carries Shizuko's memory of brewing her first cup of tea."
+      "desc": "Shizuko's first tea set. While it shows its age, it also carries Shizuko's memory of brewing her first cup of tea.",
+      "statType": [
+        "MaxHP_Base"
+      ],
+      "statValue": [
+        [
+          5000,
+          5000
+        ]
+      ]
     },
     "hasAlts": [
       26008
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        81
+      ],
+      [
+        4,
+        97
+      ],
+      [
+        1,
+        17
+      ],
+      [
+        2,
+        25
+      ],
+      [
+        3,
+        42
+      ]
     ],
     "stats": {
       "maxHP1": 2239,
@@ -54210,10 +63092,53 @@
         true
       ],
       "name": "Suspicious Classical Literature",
-      "desc": "Hanako's most prized possession. Despite having been confiscated over and over again, this book always ends up back in her hands."
+      "desc": "Hanako's most prized possession. Despite having been confiscated over and over again, this book always ends up back in her hands.",
+      "statType": [
+        "HealPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       10074
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        14,
+        47
+      ],
+      [
+        18,
+        57
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        12,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2531,
@@ -54445,11 +63370,54 @@
         true
       ],
       "name": "Neat White Corsage",
-      "desc": "A corsage she bought with the resolve to never forget her original intentions in joining the Sisterhood, like a white flower that doesn't wilt. That's the idea, at least..."
+      "desc": "A corsage she bought with the resolve to never forget her original intentions in joining the Sisterhood, like a white flower that doesn't wilt. That's the idea, at least...",
+      "statType": [
+        "HealPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       10054,
       10105
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        10,
+        40
+      ],
+      [
+        13,
+        48
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        8,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2130,
@@ -54681,10 +63649,53 @@
         false
       ],
       "name": "Chinatsu's Medical Bag",
-      "desc": "Chinatsu has been carrying this big bag with her since her time in the Medical Emergency Club. The bag is still bursting with medical supplies, indicating how much Chinatsu still cares."
+      "desc": "Chinatsu has been carrying this big bag with her since her time in the Medical Emergency Club. The bag is still bursting with medical supplies, indicating how much Chinatsu still cares.",
+      "statType": [
+        "HealPower_Base"
+      ],
+      "statValue": [
+        [
+          500,
+          500
+        ]
+      ]
     },
     "hasAlts": [
       10030
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        14,
+        47
+      ],
+      [
+        18,
+        57
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        12,
+        25
+      ]
     ],
     "stats": {
       "maxHP1": 2515,
@@ -54916,9 +63927,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10084
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        42
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        2,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2245,
@@ -55112,9 +64156,42 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10114
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        42
+      ],
+      [
+        4,
+        50
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2214,
@@ -55308,9 +64385,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10056
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        7,
+        0
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        15,
+        47
+      ],
+      [
+        18,
+        56
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        12,
+        24
+      ]
     ],
     "stats": {
       "maxHP1": 2482,
@@ -55515,8 +64625,41 @@
       "adaptationType": "Street",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        42
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        22
+      ]
+    ],
     "stats": {
       "maxHP1": 2211,
       "maxHP100": 16526,
@@ -55723,10 +64866,58 @@
         true
       ],
       "name": "Dessert Raider",
-      "desc": "A spork exclusively for Yoshimi. She carries it with her at all times for quick use in emergencies. Even after years of use, it's still considered a luxury item."
+      "desc": "A spork exclusively for Yoshimi. She carries it with her at all times for quick use in emergencies. Even after years of use, it's still considered a luxury item.",
+      "statType": [
+        "AttackPower_Base",
+        "OppressionPower_Base"
+      ],
+      "statValue": [
+        [
+          250,
+          250
+        ],
+        [
+          40,
+          40
+        ]
+      ]
     },
     "hasAlts": [
       10092
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        42
+      ],
+      [
+        7,
+        50
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        4,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2232,
@@ -55958,9 +65149,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20010
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        43
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        22
+      ]
     ],
     "stats": {
       "maxHP1": 2277,
@@ -56171,9 +65395,42 @@
       "adaptationType": "Street",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       23005
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        6,
+        40
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        5,
+        21
+      ]
     ],
     "stats": {
       "maxHP1": 2149,
@@ -56386,9 +65643,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       23006
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        5,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        11,
+        38
+      ],
+      [
+        13,
+        46
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        9,
+        20
+      ]
     ],
     "stats": {
       "maxHP1": 2048,
@@ -56582,10 +65872,43 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       10018,
       20055
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        7,
+        35
+      ],
+      [
+        8,
+        43
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        19
+      ]
     ],
     "stats": {
       "maxHP1": 2986,
@@ -56786,9 +66109,42 @@
       "adaptationType": "Street",
       "adaptationValue": 2
     },
-    "bondGear": {},
     "hasAlts": [
       10039
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        58
+      ],
+      [
+        6,
+        69
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        4,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 3093,
@@ -56982,8 +66338,41 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        58
+      ],
+      [
+        6,
+        69
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        4,
+        29
+      ]
+    ],
     "stats": {
       "maxHP1": 3078,
       "maxHP100": 23012,
@@ -57187,9 +66576,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       13012
+    ],
+    "favorStatType": [
+      "MaxHP",
+      "AttackPower"
+    ],
+    "favorStatValue": [
+      [
+        21,
+        0
+      ],
+      [
+        32,
+        0
+      ],
+      [
+        43,
+        6
+      ],
+      [
+        54,
+        7
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        20,
+        2
+      ],
+      [
+        33,
+        3
+      ]
     ],
     "stats": {
       "maxHP1": 2871,
@@ -57390,9 +66812,42 @@
       "adaptationType": "Outdoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10042
+    ],
+    "favorStatType": [
+      "HealPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        8,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        16,
+        54
+      ],
+      [
+        20,
+        64
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        12,
+        27
+      ]
     ],
     "stats": {
       "maxHP1": 2872,
@@ -57586,10 +67041,43 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       20001,
       10027
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        36
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        18
+      ]
     ],
     "stats": {
       "maxHP1": 1951,
@@ -57804,9 +67292,42 @@
       "adaptationType": "Indoor",
       "adaptationValue": 1
     },
-    "bondGear": {},
     "hasAlts": [
       10077
+    ],
+    "favorStatType": [
+      "AttackPower",
+      "MaxHP"
+    ],
+    "favorStatValue": [
+      [
+        2,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        57
+      ],
+      [
+        6,
+        68
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        4,
+        29
+      ]
     ],
     "stats": {
       "maxHP1": 3048,

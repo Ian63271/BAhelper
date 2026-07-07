@@ -1,14 +1,24 @@
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import FilterChip from '@/components/FilterChip';
 import LevelControl from '@/components/LevelControl';
 import SectionCard from '@/components/SectionCard';
 import StatBadge from '@/components/StatBadge';
+import { EQUIPMENT_MAX_TIER } from '@/constants/equipmentStats';
 import { colors, spacing } from '@/constants/theme';
 import { Students } from '@/types/students';
 import {
+    addBuff,
+    addEquipmentBuffs,
+    BOND_MAX_LEVEL,
+    calcBondStats,
+    calcPotentialStat,
     calcStat,
     calcWeaponStat,
+    combineStat,
+    POTENTIAL_MAX,
+    StatBuffs,
     STUDENT_MAX_LEVEL,
     WEAPON_MAX_STARS,
     weaponMaxLevel,
@@ -20,10 +30,21 @@ type Props = {
 
 const MAX_STARS = 5;
 
+// Short labels for the stats a bond rank can raise (FavorStatType names).
+const bondStatAbbr: Record<string, string> = {
+    MaxHP: 'HP',
+    AttackPower: 'ATK',
+    DefensePower: 'DEF',
+    HealPower: 'HEAL',
+};
+
 // SchaleDB-style stat breakdown: HP/ATK/DEF/Healing recompute from the chosen
 // level, star grade and unique-weapon (UE) grade; the rest are fixed points
 // from the data. Blue stars mirror the in-game UE display: picking one implies
-// a 5★ character and adds the weapon's flat ATK/HP/Healing bonuses.
+// a 5★ character and adds the weapon's flat ATK/HP/Healing bonuses. The
+// collapsible advanced area adds gear tiers, bond rank and talent (potential)
+// levels; everything funnels through the SchaleDB buff pipeline (combineStat)
+// so percent gear multiplies after the weapon/bond/talent flats.
 export default function StatsSection({ student }: Props) {
     const [level, setLevel] = useState(STUDENT_MAX_LEVEL);
     const [stars, setStars] = useState(() =>
@@ -31,6 +52,11 @@ export default function StatsSection({ student }: Props) {
     );
     const [ueStars, setUeStars] = useState(0);
     const [weaponLevel, setWeaponLevel] = useState(1);
+    const [showAdvanced, setShowAdvanced] = useState(false);
+    const [equipTiers, setEquipTiers] = useState<number[]>([0, 0, 0]);
+    const [bondLevel, setBondLevel] = useState(1);
+    const [potential, setPotential] = useState({ hp: 0, atk: 0, heal: 0 });
+    const [useBondGear, setUseBondGear] = useState(false);
 
     const stats = student.stats;
     if (!stats) return null;
@@ -40,8 +66,10 @@ export default function StatsSection({ student }: Props) {
     const effectiveStars = ueStars > 0 ? MAX_STARS : stars;
 
     const weapon = student.weapon;
-    const weaponBonus = (stat1?: number, stat100?: number) =>
-        ueStars > 0 ? calcWeaponStat(stat1, stat100, weaponLevel, weapon?.growthType) : 0;
+    const bondGearStats =
+        student.bondGear?.statType?.length && student.bondGear.statValue
+            ? { statType: student.bondGear.statType, statValue: student.bondGear.statValue }
+            : undefined;
 
     const selectCharStars = (grade: number) => {
         setStars(grade);
@@ -52,6 +80,39 @@ export default function StatsSection({ student }: Props) {
         setUeStars(grade);
         setWeaponLevel(weaponMaxLevel(grade));
     };
+    const setEquipTier = (slot: number, tier: number) =>
+        setEquipTiers(tiers => tiers.map((t, i) => (i === slot ? tier : t)));
+
+    // Accumulate every flat/percent buff the way SchaleDB's CharacterStats
+    // does, then combine per displayed stat.
+    const buffs: StatBuffs = {};
+    if (ueStars > 0 && weapon) {
+        addBuff(buffs, 'AttackPower_Base', calcWeaponStat(weapon.attack1, weapon.attack100, weaponLevel, weapon.growthType));
+        addBuff(buffs, 'MaxHP_Base', calcWeaponStat(weapon.maxHP1, weapon.maxHP100, weaponLevel, weapon.growthType));
+        addBuff(buffs, 'HealPower_Base', calcWeaponStat(weapon.heal1, weapon.heal100, weaponLevel, weapon.growthType));
+    }
+    (student.equipment ?? []).forEach((category, i) =>
+        addEquipmentBuffs(buffs, category, equipTiers[i] ?? 0),
+    );
+    if (student.favorStatType && student.favorStatValue) {
+        const bond = calcBondStats(student.favorStatValue, bondLevel);
+        addBuff(buffs, student.favorStatType[0], bond[0]);
+        addBuff(buffs, student.favorStatType[1], bond[1]);
+    }
+    addBuff(buffs, 'MaxHP_Base', calcPotentialStat(stats.maxHP1, stats.maxHP100, level, potential.hp));
+    addBuff(buffs, 'AttackPower_Base', calcPotentialStat(stats.attack1, stats.attack100, level, potential.atk));
+    addBuff(buffs, 'HealPower_Base', calcPotentialStat(stats.heal1, stats.heal100, level, potential.heal));
+    if (useBondGear && bondGearStats) {
+        bondGearStats.statType.forEach((statType, i) =>
+            addBuff(buffs, statType, bondGearStats.statValue[i][1]),
+        );
+    }
+
+    const bondLabel = student.favorStatType
+        ? `Bond (${student.favorStatType
+              .map(statType => bondStatAbbr[statType] ?? statType)
+              .join('/')})`
+        : 'Bond';
 
     return (
         <SectionCard title="Stats">
@@ -121,37 +182,120 @@ export default function StatsSection({ student }: Props) {
                     />
                 </View>
             )}
+            <Pressable
+                testID="stat-advanced-toggle"
+                style={styles.advancedToggle}
+                onPress={() => setShowAdvanced(!showAdvanced)}>
+                <Text style={styles.advancedLabel}>Gear · Bond · Talent</Text>
+                <Text style={styles.advancedChevron}>{showAdvanced ? '▾' : '▸'}</Text>
+            </Pressable>
+            {showAdvanced && (
+                <View style={styles.advanced}>
+                    {(student.equipment ?? []).map((category, i) => (
+                        <LevelControl
+                            key={`${category}-${i}`}
+                            label={category}
+                            value={equipTiers[i] ?? 0}
+                            min={0}
+                            max={EQUIPMENT_MAX_TIER}
+                            valuePrefix="T"
+                            onChange={tier => setEquipTier(i, tier)}
+                            testID={`equip-${i + 1}`}
+                        />
+                    ))}
+                    {student.favorStatType && student.favorStatValue && (
+                        <LevelControl
+                            label={bondLabel}
+                            value={bondLevel}
+                            max={BOND_MAX_LEVEL}
+                            onChange={setBondLevel}
+                            testID="bond-level"
+                        />
+                    )}
+                    <LevelControl
+                        label="Talent HP"
+                        value={potential.hp}
+                        min={0}
+                        max={POTENTIAL_MAX}
+                        valuePrefix=""
+                        onChange={hp => setPotential(p => ({ ...p, hp }))}
+                        testID="potential-hp"
+                    />
+                    <LevelControl
+                        label="Talent ATK"
+                        value={potential.atk}
+                        min={0}
+                        max={POTENTIAL_MAX}
+                        valuePrefix=""
+                        onChange={atk => setPotential(p => ({ ...p, atk }))}
+                        testID="potential-atk"
+                    />
+                    <LevelControl
+                        label="Talent Heal"
+                        value={potential.heal}
+                        min={0}
+                        max={POTENTIAL_MAX}
+                        valuePrefix=""
+                        onChange={heal => setPotential(p => ({ ...p, heal }))}
+                        testID="potential-heal"
+                    />
+                    {bondGearStats && (
+                        <View style={styles.bondGearRow}>
+                            <Text style={styles.starLabel}>Bond Gear</Text>
+                            <FilterChip
+                                label="T2"
+                                selected={useBondGear}
+                                onPress={() => setUseBondGear(!useBondGear)}
+                                testID="bond-gear-toggle"
+                            />
+                        </View>
+                    )}
+                </View>
+            )}
             <View style={styles.badgeGrid}>
                 <StatBadge
                     label="Max HP"
-                    value={
-                        calcStat(stats.maxHP1, stats.maxHP100, level, effectiveStars, 'hp') +
-                        weaponBonus(weapon?.maxHP1, weapon?.maxHP100)
-                    }
+                    value={combineStat(
+                        calcStat(stats.maxHP1, stats.maxHP100, level, effectiveStars, 'hp'),
+                        buffs,
+                        'MaxHP',
+                    )}
                 />
                 <StatBadge
                     label="Attack"
-                    value={
-                        calcStat(stats.attack1, stats.attack100, level, effectiveStars, 'attack') +
-                        weaponBonus(weapon?.attack1, weapon?.attack100)
-                    }
+                    value={combineStat(
+                        calcStat(stats.attack1, stats.attack100, level, effectiveStars, 'attack'),
+                        buffs,
+                        'AttackPower',
+                    )}
                 />
                 <StatBadge
                     label="Defense"
-                    value={calcStat(stats.defense1, stats.defense100, level, effectiveStars, 'defense')}
+                    value={combineStat(
+                        calcStat(stats.defense1, stats.defense100, level, effectiveStars, 'defense'),
+                        buffs,
+                        'DefensePower',
+                    )}
                 />
                 <StatBadge
                     label="Healing"
-                    value={
-                        calcStat(stats.heal1, stats.heal100, level, effectiveStars, 'heal') +
-                        weaponBonus(weapon?.heal1, weapon?.heal100)
-                    }
+                    value={combineStat(
+                        calcStat(stats.heal1, stats.heal100, level, effectiveStars, 'heal'),
+                        buffs,
+                        'HealPower',
+                    )}
                 />
-                <StatBadge label="Accuracy" value={stats.accuracy} />
-                <StatBadge label="Evasion" value={stats.dodge} />
-                <StatBadge label="Critical" value={stats.crit} />
-                <StatBadge label="Crit DMG" value={`${stats.critDamage / 100}%`} />
-                <StatBadge label="Stability" value={stats.stability} />
+                <StatBadge label="Accuracy" value={combineStat(stats.accuracy, buffs, 'AccuracyPoint')} />
+                <StatBadge label="Evasion" value={combineStat(stats.dodge, buffs, 'DodgePoint')} />
+                <StatBadge label="Critical" value={combineStat(stats.crit, buffs, 'CriticalPoint')} />
+                <StatBadge
+                    label="Crit DMG"
+                    value={`${combineStat(stats.critDamage, buffs, 'CriticalDamageRate') / 100}%`}
+                />
+                <StatBadge
+                    label="Stability"
+                    value={combineStat(stats.stability, buffs, 'StabilityPoint')}
+                />
                 <StatBadge label="Range" value={stats.range} />
                 <StatBadge
                     label="Ammo"
@@ -208,6 +352,35 @@ const styles = StyleSheet.create({
     },
     weaponRow: {
         marginTop: spacing.sm,
+    },
+    advancedToggle: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginTop: spacing.md,
+        paddingVertical: spacing.xs,
+        borderTopWidth: 1,
+        borderTopColor: colors.border,
+    },
+    advancedLabel: {
+        fontSize: 11,
+        fontWeight: '600',
+        textTransform: 'uppercase',
+        letterSpacing: 0.5,
+        color: colors.textMuted,
+    },
+    advancedChevron: {
+        fontSize: 14,
+        color: colors.textMuted,
+    },
+    advanced: {
+        gap: spacing.sm,
+        marginTop: spacing.xs,
+    },
+    bondGearRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
     },
     badgeGrid: {
         flexDirection: 'row',

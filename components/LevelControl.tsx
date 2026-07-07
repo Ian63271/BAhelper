@@ -7,6 +7,7 @@ type Props = {
     value: number;
     max: number;
     min?: number;
+    valuePrefix?: string; // e.g. 'T' for gear tiers; defaults to 'Lv. '
     onChange: (value: number) => void;
     testID?: string;
 };
@@ -14,7 +15,15 @@ type Props = {
 // Stepper row used for stat level and skill level controls. A stepper (rather
 // than a slider) keeps taps precise inside the profile's vertical ScrollView
 // on both native and web; MIN/MAX chips cover the common jumps.
-export default function LevelControl({ label, value, max, min = 1, onChange, testID }: Props) {
+export default function LevelControl({
+    label,
+    value,
+    max,
+    min = 1,
+    valuePrefix = 'Lv. ',
+    onChange,
+    testID,
+}: Props) {
     const setClamped = (next: number) => onChange(Math.min(max, Math.max(min, next)));
 
     return (
@@ -41,7 +50,7 @@ export default function LevelControl({ label, value, max, min = 1, onChange, tes
                     <Text style={styles.stepText}>−</Text>
                 </Pressable>
                 <Text style={styles.value}>
-                    Lv. {value}
+                    {valuePrefix}{value}
                     <Text style={styles.valueMax}>/{max}</Text>
                 </Text>
                 <Pressable

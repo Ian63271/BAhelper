@@ -89,11 +89,15 @@ export interface Students {
 
   // --- CAFE & AFFECTION (Optional for NPCs) ---
   l2d?: number;
-  bondGear?: {           // Nested object
+  bondGear?: {           // Nested object; absent when the student has no bond gear yet
     released: boolean[];
     name: string;
     desc: string;
+    statType?: string[];   // e.g. ["CriticalDamageRate_Base"] — applied flat when gear is active
+    statValue?: number[][]; // [i][1] is the applied value (T2 gear)
   };
+  favorStatType?: string[];   // Two stat names buffed by bond rank (flat), e.g. ["AttackPower", "MaxHP"]
+  favorStatValue?: number[][]; // 7-row tier table consumed by calcBondStats (utils/statCalc.ts)
   favoriteGifts?: string[]; // Kept in case you add them manually later
   likedGifts?: string[];    // Kept in case you add them manually later
 
