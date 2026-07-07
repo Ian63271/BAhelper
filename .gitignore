@@ -55,6 +55,8 @@ data/iconscrapper.js
 data/schooliconscrapper.js
 data/skilliconscrapper.js
 data/equipmentscrapper.js
+data/equipmenticonscrapper.js
+data/uiiconscrapper.js
 data/localizationscrapper.js
 data/imagemap.js
 data/imagescrapper.js

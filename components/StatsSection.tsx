@@ -2,11 +2,13 @@ import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import FilterChip from '@/components/FilterChip';
+import GearTierControl from '@/components/GearTierControl';
 import LevelControl from '@/components/LevelControl';
 import SectionCard from '@/components/SectionCard';
 import StatBadge from '@/components/StatBadge';
 import { EQUIPMENT_MAX_TIER } from '@/constants/equipmentStats';
 import { colors, spacing } from '@/constants/theme';
+import { studentIcons } from '@/types/imageMap';
 import { Students } from '@/types/students';
 import { studentById } from '@/utils/studentUtils';
 import {
@@ -218,13 +220,11 @@ export default function StatsSection({ student, ueStars, onUeStarsChange }: Prop
             {showAdvanced && (
                 <View style={styles.advanced}>
                     {(student.equipment ?? []).map((category, i) => (
-                        <LevelControl
+                        <GearTierControl
                             key={`${category}-${i}`}
-                            label={category}
+                            category={category}
                             value={equipTiers[i] ?? 0}
-                            min={0}
                             max={EQUIPMENT_MAX_TIER}
-                            valuePrefix="T"
                             onChange={tier => setEquipTier(i, tier)}
                             testID={`equip-${i + 1}`}
                         />
@@ -232,6 +232,7 @@ export default function StatsSection({ student, ueStars, onUeStarsChange }: Prop
                     {student.favorStatType && student.favorStatValue && (
                         <LevelControl
                             label={bondLabel}
+                            icon={studentIcons[student.id]}
                             value={bondLevel(student.id)}
                             max={BOND_MAX_LEVEL}
                             onChange={value => setBondLevel(student.id, value)}
@@ -244,6 +245,7 @@ export default function StatsSection({ student, ueStars, onUeStarsChange }: Prop
                             label={`${alt.name} (${alt.favorStatType!
                                 .map(statType => bondStatAbbr[statType] ?? statType)
                                 .join('/')})`}
+                            icon={studentIcons[alt.id]}
                             value={bondLevel(alt.id)}
                             max={BOND_MAX_LEVEL}
                             onChange={value => setBondLevel(alt.id, value)}

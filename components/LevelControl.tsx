@@ -1,9 +1,11 @@
+import { Image } from 'expo-image';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { colors, radius, spacing } from '@/constants/theme';
 
 type Props = {
     label: string;
+    icon?: any; // optional image shown before the label (e.g. a student icon)
     value: number;
     max: number;
     min?: number;
@@ -17,6 +19,7 @@ type Props = {
 // on both native and web; MIN/MAX chips cover the common jumps.
 export default function LevelControl({
     label,
+    icon,
     value,
     max,
     min = 1,
@@ -28,7 +31,12 @@ export default function LevelControl({
 
     return (
         <View style={styles.row}>
-            <Text style={styles.label}>{label}</Text>
+            <View style={styles.labelGroup}>
+                {icon !== undefined && (
+                    <Image source={icon} style={styles.labelIcon} contentFit="cover" />
+                )}
+                <Text style={styles.label}>{label}</Text>
+            </View>
             <View style={styles.controls}>
                 {max - min > 10 && (
                     <Pressable
@@ -81,6 +89,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         gap: spacing.sm,
+    },
+    labelGroup: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        flexShrink: 1,
+    },
+    labelIcon: {
+        width: 26,
+        height: 26,
+        borderRadius: radius.pill,
+        backgroundColor: colors.border,
     },
     label: {
         fontSize: 11,

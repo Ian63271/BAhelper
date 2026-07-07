@@ -21,14 +21,21 @@ import {
     spacing,
 } from '@/constants/theme';
 import { useUserData } from '@/context/UserDataContext';
-import { schoolIcons, studentIcons, studentPortraits } from '@/types/imageMap';
+import {
+    adaptationEmotes,
+    schoolIcons,
+    studentIcons,
+    studentPortraits,
+    terrainIcons,
+} from '@/types/imageMap';
 import { getAltFamily, studentById } from '@/utils/studentUtils';
 
-// type matches the weapon's adaptationType key ('Street' is displayed as Urban).
-const ADAPTATION_META: { label: string; type: string; icon: keyof typeof Ionicons.glyphMap }[] = [
-    { label: 'Urban', type: 'Street', icon: 'business-outline' },
-    { label: 'Outdoor', type: 'Outdoor', icon: 'partly-sunny-outline' },
-    { label: 'Indoor', type: 'Indoor', icon: 'home-outline' },
+// type matches the weapon's adaptationType key ('Street' is displayed as Urban)
+// and keys the terrainIcons image map.
+const ADAPTATION_META: { label: string; type: string }[] = [
+    { label: 'Urban', type: 'Street' },
+    { label: 'Outdoor', type: 'Outdoor' },
+    { label: 'Indoor', type: 'Indoor' },
 ];
 
 // limited[] holds a per-region status; only 1-3 are meaningful to show.
@@ -148,23 +155,45 @@ export default function StudentDetailScreen() {
                                         ueStars >= 3 && student.weapon?.adaptationType === meta.type
                                             ? base + (student.weapon.adaptationValue ?? 0)
                                             : base;
+                                    const baseGrade = adaptationGrades[base];
+                                    const boostedGrade = adaptationGrades[boosted];
                                     return (
                                         <View key={meta.label} style={styles.moodItem}>
-                                            <Ionicons name={meta.icon} size={18} color={colors.textSecondary} />
+                                            {/* Terrain glyphs are white game-UI art — tint for light bg */}
+                                            <Image
+                                                source={terrainIcons[meta.type]}
+                                                style={styles.moodTerrain}
+                                                contentFit="contain"
+                                                tintColor={colors.textSecondary}
+                                            />
                                             <Text style={styles.moodLabel}>{meta.label}</Text>
-                                            {boosted !== base ? (
+                                            <View style={styles.moodGradeRow}>
+                                                {baseGrade && adaptationEmotes[baseGrade] && (
+                                                    <Image
+                                                        source={adaptationEmotes[baseGrade]}
+                                                        style={styles.moodEmote}
+                                                        contentFit="contain"
+                                                    />
+                                                )}
                                                 <Text style={styles.moodGrade} testID={`mood-${meta.type}`}>
-                                                    {adaptationGrades[base] ?? '?'}
-                                                    <Text style={styles.moodGradeBoost}>
-                                                        {' → '}
-                                                        {adaptationGrades[boosted] ?? '?'}
-                                                    </Text>
+                                                    {baseGrade ?? '?'}
                                                 </Text>
-                                            ) : (
-                                                <Text style={styles.moodGrade} testID={`mood-${meta.type}`}>
-                                                    {adaptationGrades[base] ?? '?'}
-                                                </Text>
-                                            )}
+                                                {boosted !== base && (
+                                                    <>
+                                                        <Text style={styles.moodGradeArrow}>→</Text>
+                                                        {boostedGrade && adaptationEmotes[boostedGrade] && (
+                                                            <Image
+                                                                source={adaptationEmotes[boostedGrade]}
+                                                                style={styles.moodEmote}
+                                                                contentFit="contain"
+                                                            />
+                                                        )}
+                                                        <Text style={[styles.moodGrade, styles.moodGradeBoost]}>
+                                                            {boostedGrade ?? '?'}
+                                                        </Text>
+                                                    </>
+                                                )}
+                                            </View>
                                         </View>
                                     );
                                 })}
@@ -321,15 +350,33 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         gap: 2,
     },
+    moodTerrain: {
+        width: 26,
+        height: 26,
+    },
     moodLabel: {
         fontSize: 11,
         color: colors.textMuted,
         fontWeight: '600',
     },
+    moodGradeRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 3,
+    },
+    moodEmote: {
+        width: 22,
+        height: 22,
+    },
     moodGrade: {
         fontSize: 18,
         fontWeight: '800',
         color: colors.primary,
+    },
+    moodGradeArrow: {
+        fontSize: 14,
+        fontWeight: '800',
+        color: colors.success,
     },
     moodGradeBoost: {
         color: colors.success,
