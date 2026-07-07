@@ -114,7 +114,7 @@
       0
     ],
     "weapon": {
-      "name": "Multi Tactical",
+      "name": "Multi-Tactical",
       "desc": "Eimi's favorite shotgun with a crude design.\n\nMultifaceted like its name suggests, used on everything from forced breakthroughs to dealing with supernatural phenomena."
     },
     "bondGear": {
@@ -749,7 +749,8 @@
     },
     "bondGear": {},
     "hasAlts": [
-      10025
+      10025,
+      10143
     ]
   },
   {
@@ -994,11 +995,11 @@
     "bondGear": {
       "released": [
         true,
-        false,
+        true,
         false
       ],
-      "name": "アリスの花丸シール",
-      "desc": "幸運が上昇し、万事うまくいく！というわけではないが……\nアリスの真心が込められたシール。"
+      "name": "Aris' Praise Sticker",
+      "desc": "It's not a magical charm, and it won't increase your luck...but it IS imbued with Aris' heartfelt support."
     },
     "hasAlts": [
       10066,
@@ -1182,11 +1183,11 @@
     "bondGear": {
       "released": [
         true,
-        false,
+        true,
         false
       ],
-      "name": "色褪せたCD",
-      "desc": "ユズの名前が書かれたCD。\n『テイルズ・サガ・クロニクル・プロトタイプ』が入ったマスターディスク。かつて、ユズはこれを目にするだけで辛い気持ちが蘇ったという。"
+      "name": "Faded CD",
+      "desc": "An old CD with Yuzu's name written on its front. The final version of the Tales Saga Chronicle prototype is saved here. At one point, Yuzu could barely stand to look at it."
     },
     "hasAlts": [
       26009,
@@ -1468,7 +1469,7 @@
     ],
     "background": "BG_Swimsuit_Collection",
     "newQuote": "There had better not be any fools caught up in breaking the rules.",
-    "profile": "A cold-blooded specialist of Gehenna's Prefect Team participating in summer boot camp.\n\nClosely monitored Gehenna's troublemakers from getting out of line at the beach alongside other Prefect Team members. She's deeply disappointed that summer camp was ruined by the constant appearance of those fools, even if she tries to hide it.",
+    "profile": "The cold-blooded specialist of Gehenna's Prefect Team, participating in summer boot camp.\n\nShe closely monitors Gehenna's troublemakers from getting out of line at the beach alongside her other Prefect Team members. She's deeply disappointed that summer camp was ruined by the constant appearance of troublemakers, even if she tries to hide it.",
     "voice": "Ayane Sakura",
     "illustrator": "Mx2J",
     "designer": "Mx2J",
@@ -1615,7 +1616,8 @@
       "desc": "A pair of mother-of-pearl hairpins that Shun cherishes. Now that she's older, she rarely uses them because she doesn't wear pigtails very often. But they're a part of Shun's precious memories that never change."
     },
     "hasAlts": [
-      10011
+      10011,
+      10143
     ]
   },
   {
@@ -1728,7 +1730,15 @@
       "name": "Big Eye",
       "desc": "A massive sniper rifle used exclusively by Karin.\n\nIt's so accurate that one could shoot down a dashing rabbit with it."
     },
-    "bondGear": {},
+    "bondGear": {
+      "released": [
+        true,
+        false,
+        false
+      ],
+      "name": "黒い網タイツ",
+      "desc": "市販の網タイツ。\n\n思い出は意外な品に宿るものだ。"
+    },
     "hasAlts": [
       20001,
       26014
@@ -2026,7 +2036,8 @@
     },
     "bondGear": {},
     "hasAlts": [
-      13006
+      13006,
+      20059
     ]
   },
   {
@@ -3982,7 +3993,7 @@
     ],
     "background": "BG_Hyakkiyako_Collection",
     "newQuote": "Allow me to show you Hyakkiyako's impeccable charm, Sensei.",
-    "profile": "Vice President of the Hyakkiyako Academy and the Lead Strategist for the Tourism and Culture Public Relations Support Team.A member of the Yin-Yang Club, she is in charge of Hyakkiyako's public relations and marketing. So, naturally, she's an avid fan of all things Hyakkiyako and cares deeply about the students who work together to build the culture she loves. Some students even whisper that Kaho feels more like the president than their actual president. In a pool of eccentric Yin-Yang Club members, she's the only one with a healthy amount of common sense, and that alone makes her an invaluable part of the team.",
+    "profile": "Vice President of the Hyakkiyako Academy and the Lead Strategist for the Tourism and Culture Public Relations Support Team.\n\nA member of the Yin-Yang Club, she is in charge of Hyakkiyako's public relations and marketing. So, naturally, she's an avid fan of all things Hyakkiyako and cares deeply about the students who work together to build the culture she loves. Some students even whisper that Kaho feels more like the president than their actual president. In a pool of eccentric Yin-Yang Club members, she's the only one with a healthy amount of common sense, and that alone makes her an invaluable part of the team.",
     "voice": "Eriko Matsui",
     "illustrator": "7peach",
     "designer": "7peach",
@@ -5504,7 +5515,15 @@
       "name": "Mabinogion",
       "desc": "A machine gun that's making history with Kazusa.\n\nIt's also the closest witness to all of Kazusa's various guises."
     },
-    "bondGear": {},
+    "bondGear": {
+      "released": [
+        true,
+        false,
+        false
+      ],
+      "name": "シュガーラッシュカスタムLP盤",
+      "desc": "初めて完奏した時の演奏を録音したLP盤。初々しながらも彼女らしさが感じられる。曲だけではない意外なものまで収録されているようで……？"
+    },
     "hasAlts": [
       10049
     ]
@@ -5618,7 +5637,15 @@
       "name": "Chocolate & Strawberry",
       "desc": "The gun that Kirara always carries.\n\n Styled to her liking, it looks more like a fashion accessory than a firearm. The name comes from Kirara's favorite type of crepe."
     },
-    "bondGear": {},
+    "bondGear": {
+      "released": [
+        true,
+        false,
+        false
+      ],
+      "name": "思い出が詰まったノート",
+      "desc": "キララのリングノート。ページにはぎっしりと勉強の跡が残っている。ただ、それ以外の筆跡もあるようで……？"
+    },
     "hasAlts": []
   },
   {
@@ -7100,7 +7127,9 @@
       "desc": "An old rifle that exudes a sense of power.\n\nIt's the proof of the Authority of the Presidency, passed down by the Great Prophet Kuzunoha. Only the rightful successor of the Hyakkaryouran is able to wield the Hundred Lotus."
     },
     "bondGear": {},
-    "hasAlts": []
+    "hasAlts": [
+      10142
+    ]
   },
   {
     "id": 10120,
@@ -7621,10 +7650,10 @@
     "club": "TrinityVigilance",
     "year": "2nd Year",
     "age": "16 years old",
-    "birthday": "August 31th",
+    "birthday": "August 31st",
     "bdayNum": "8/31",
     "height": "162cm",
-    "hobbies": "巡回、散策",
+    "hobbies": "Going on patrols and walks",
     "baseStars": 3,
     "damageType": "Sonic",
     "armorType": "Unarmed",
@@ -7645,8 +7674,8 @@
       "Watch"
     ],
     "background": "BG_ThemeparkTheater_Collection",
-    "newQuote": "せ、先生……！\nこ、この格好は……その……違うんです！",
-    "profile": "トリニティ総合学園所属、自警団の潜入任務を遂行すべく、魔法少女のコスチュームを着ることになった少女。\n\n魔法少女モノに疎く、あまりコスチュームへの理解が深くない。人前に立つのも苦手ではあるが、持ち前の誠実さで逆境に立ち向かうと決めている。",
+    "newQuote": "S-Sensei...! Dressing like this isn't a hobby of mine!",
+    "profile": "The Vigilante Crew goes on an infiltration mission, and Suzumi ends up putting on a magical girl costume.\n\nAlthough she doesn't know much about magical girls, and can't stand attracting attention, she's persevering for the sake of justice.",
     "voice": "Haruka Shamoto",
     "illustrator": "koo3473",
     "designer": "koo3473",
@@ -7657,8 +7686,8 @@
       1
     ],
     "weapon": {
-      "name": "セーフティー",
-      "desc": "スズミが持っているアサルトライフル。\n\n潜入任務のために可愛く飾られている。スズミにとっての大切なパートナー。"
+      "name": "Safety",
+      "desc": "Suzumi's assault rifle.\n\nHer firearm is well-known to criminals trying to escape justice, so she decorated it for this infiltration mission."
     },
     "bondGear": {},
     "hasAlts": [
@@ -7681,7 +7710,7 @@
     "birthday": "March 9th",
     "bdayNum": "3/9",
     "height": "166cm",
-    "hobbies": "ハーモニカ演奏",
+    "hobbies": "Playing harmonica",
     "baseStars": 3,
     "damageType": "Mystic",
     "armorType": "Unarmed",
@@ -7702,8 +7731,8 @@
       "Watch"
     ],
     "background": "BG_Arius_Collection",
-    "newQuote": "アリウスへようこそ。",
-    "profile": "アリウス分校所属、アリウスに残っている生徒たちを導いている少女。\n\n優しく、誰にでも親切で人当たりが良い。後輩からの信頼も厚い。後輩のためであれば、いつでも容赦なく引き金を引く覚悟ができている。",
+    "newQuote": "Welcome to Arius.",
+    "profile": "Leader of the remaining students at Arius Satellite School.\n\nPeople trust both her leadership and character wholeheartedly. Her \"kids\" regard her as kind and nurturing, a caring authority figure in their lives. However, in the event that she feels their safety is threatened, she's quick to flip her switch.",
     "voice": "Yurina Amami",
     "illustrator": "nemoga",
     "designer": "nemoga",
@@ -7715,7 +7744,7 @@
     ],
     "weapon": {
       "name": "Anomoios",
-      "desc": "スバルが使用するアサルトライフル。\n\n機能面を考慮し、スバル自身でカスタムした銃。一見して、大きな差は無いように見えるが、細かいこだわりが随所に見受けられる。"
+      "desc": "Subaru's assault rifle.\n\nSubaru made meticulous modifications to it for both its functionality and symbolism. While it may seem bland from another's perspective, for her, it's the representation of her resolve."
     },
     "bondGear": {},
     "hasAlts": []
@@ -7736,7 +7765,7 @@
     "birthday": "June 18th",
     "bdayNum": "6/18",
     "height": "148cm",
-    "hobbies": "読書、写真撮影、アイスホッケー観戦",
+    "hobbies": "Reading, photography, watching ice hockey",
     "baseStars": 3,
     "damageType": "Mystic",
     "armorType": "LightArmor",
@@ -7757,8 +7786,8 @@
       "Necklace"
     ],
     "background": "BG_Redwinter_Collection",
-    "newQuote": "ごきげんよう。\nオススメの作品があるのですが、読んでみませんか？",
-    "profile": "レッドウィンター連邦学園所属、出版部の部員。\n\n上品で優雅、礼節を重んじるお嬢様。評論家としての腕前はたしかだが、主観が強すぎてトラブルに発展することもしばしば。「知識解放戦線」とはライバル関係にある模様。",
+    "newQuote": "I hope you've been well. I have a work I'd like to recommend to you, what do you say?",
+    "profile": "A member of the Publishing Department, the Red Winter Academy's publishing club.\n\nOn the surface, she values etiquette and speaks in a refined manner. She's also a skilled critic, although her subjective opinions sometimes lead her into unintended conflicts. She's in an odd rivalry with the Knowledge Liberation Front.",
     "voice": "Momo Harumi",
     "illustrator": "CHILD",
     "designer": "CHILD",
@@ -7769,8 +7798,8 @@
       0
     ],
     "weapon": {
-      "name": "シュヴィーブジク",
-      "desc": "タカネがデコレーションした拳銃。\n\n戦闘に用いるだけでなく、タカネ自身の怒りの表現にも使われることがあるのだとか……。"
+      "name": "Shvibzik",
+      "desc": "A pistol that Takane customized according to her taste.\n\nWhile it functions well as a pistol, it also provides an excellent outlet for her rage."
     },
     "bondGear": {},
     "hasAlts": []
@@ -7779,7 +7808,7 @@
     "id": 10132,
     "defaultOrder": 244,
     "name": "Tsukuyo (Dress)",
-    "fullName": "Oono Tsukuyo",
+    "fullName": "Ono Tsukuyo",
     "playable": true,
     "imagePath": "@/assets/images/students/10132_Portrait.webp",
     "halo": "@/assets/images/halos/10132_Halo.webp",
@@ -7791,7 +7820,7 @@
     "birthday": "April 5th",
     "bdayNum": "4/5",
     "height": "180cm",
-    "hobbies": "身代わりの術、息を潜めること",
+    "hobbies": "Disguising as a tree, hiding",
     "baseStars": 3,
     "damageType": "Pierce",
     "armorType": "LightArmor",
@@ -7817,8 +7846,8 @@
       "Necklace"
     ],
     "background": "BG_FashionshowRunway2_Collection",
-    "newQuote": "わ、私が本当にモデルを……？",
-    "profile": "百鬼夜行連合学院所属、忍術研究部の部員。\n\nファッションショーの警備員として雇われたものの、モデルとしてデビューすることに。コンプレックスだった身長がモデル業界では大きな強みとなった。本人としてはモデルと部活の両立に悩んでいる模様。",
+    "newQuote": "I-I really have a talent for modeling...?",
+    "profile": "A member of Allied Hyakkiyako Academy's Ninjutsu Research Club.\n\nWhile she started out as a security contractor for a fashion show, she somehow ended up making her debut as a model. Tsukuyo has always been insecure about her height, but found it to be an advantage in the modeling industry. She feels torn between her modeling gig and club activities.",
     "voice": "Ayasa Goto",
     "illustrator": "Jehyun",
     "designer": "Jehyun",
@@ -7829,8 +7858,8 @@
       0
     ],
     "weapon": {
-      "name": "ツクヨ流サブマシンガン",
-      "desc": "ツクヨが大事にしているサブマシンガン。\n\n舞台上に持っていく時も特別飾ったりはしていない。以前、ミチルとイズナに飾りつけてもらった姿が、ツクヨにとって最高の状態だからなのだろう。"
+      "name": "Tsukuyo-Style Submachine Gun",
+      "desc": "Tsukuyo's precious SMG. She didn't specially decorate it for the stage.\n\nTo her, nothing could be more beautiful than the Michiru and Izuna's decorations."
     },
     "bondGear": {},
     "hasAlts": [
@@ -7853,7 +7882,7 @@
     "birthday": "June 6th",
     "bdayNum": "6/6",
     "height": "171cm",
-    "hobbies": "デザイン",
+    "hobbies": "Designing",
     "baseStars": 3,
     "damageType": "Explosion",
     "armorType": "Unarmed",
@@ -7874,8 +7903,8 @@
       "Watch"
     ],
     "background": "BG_IronContinent_Collection",
-    "newQuote": "電子戦なら任せてちょうだい。\n最も合理的な解を見せてあげる。",
-    "profile": "ミレニアムサイエンススクール所属、生徒会「セミナー」の会長。\n\n未曾有の危機に対応すべく特殊スーツを身に纏った。後方支援から現場対応まで可能な合理を追求したスーツとなっている。",
+    "newQuote": "Leave the electronic warfare to me.\nI'll demonstrate the most logical response.",
+    "profile": "The president of Seminar, Millennium's student council.\n\nAn extraordinary situation calls for an extraordinary outfit. Rio's versatile suit is designed to adapt to any situation: on-site utility, machine work, real-time analysis, and even electronic warfare.",
     "voice": "Lynn",
     "illustrator": "koo3473",
     "designer": "Paruru",
@@ -7886,8 +7915,8 @@
       1
     ],
     "weapon": {
-      "name": "立案者",
-      "desc": "リオの護身用拳銃。\n\n特殊スーツのサポート性能によって、より正確な射撃が可能となった模様。"
+      "name": "Policy Maker",
+      "desc": "Rio's self-defense pistol.\n\nThanks to her suit's support, she can fire with even greater precision than before."
     },
     "bondGear": {},
     "hasAlts": [
@@ -7906,11 +7935,11 @@
     "school": "Millennium",
     "club": "GameDev",
     "year": "1st Year",
-    "age": "?? years old",
+    "age": "Unknown",
     "birthday": "March 25th",
     "bdayNum": "3/25",
     "height": "152cm",
-    "hobbies": "ゲーム（特にRPG）",
+    "hobbies": "Video games (RPGs)",
     "baseStars": 3,
     "damageType": "Mystic",
     "armorType": "CompositeArmor",
@@ -7931,8 +7960,8 @@
       "Watch"
     ],
     "background": "BG_IronContinent_Collection",
-    "newQuote": "アリス、もっと世界を見てみたいです！",
-    "profile": "ミレニアムサイエンススクール所属、ゲーム開発部の部員。\n\nゲームが大好きで、少し変わったところのある少女。今は世界の運命を背負っている。",
+    "newQuote": "I wish to experience the whole wide world!",
+    "profile": "A member of the Game Development Department at Millennium Science School.\n\nAris is, at heart, an ordinary girl who learned how to speak from video games and loves them from the bottom of her heart... However, in this next obstacle she faces, she carries the fate of the world on her shoulders.",
     "voice": "Minami Tanaka",
     "illustrator": "kokosando",
     "designer": "kokosando",
@@ -7943,8 +7972,8 @@
       3
     ],
     "weapon": {
-      "name": "光の剣：スーパーノヴァ for アビ・エシュフ",
-      "desc": "レールガンを軽量化し、連続射撃が可能なようにカスタマイズされたアサルトライフル。\n\n伝説の剣を手にすることで、少女は勇者となった。そう、アリスの冒険もここから始まったのだ。"
+      "name": "Supernova: Abi-Eshuh's Sword of Light",
+      "desc": "An energy rifle, custom made with a special frame. This new edition is lighter, with a much higher firing rate.\n\nA hero's adventure begins after finding the legendary sword. That's where Aris' adventure began as well."
     },
     "bondGear": {},
     "hasAlts": [
@@ -7964,11 +7993,11 @@
     "school": "Millennium",
     "club": "SPTF",
     "year": "1st Year",
-    "age": "?? years old",
+    "age": "Unknown",
     "birthday": "March 25th",
     "bdayNum": "3/25",
     "height": "152cm",
-    "hobbies": "アリスのお世話、おしゃれ、ゲーム（本人は否定）",
+    "hobbies": "Caring for Aris, decorating, video games (in denial)",
     "baseStars": 3,
     "damageType": "Mystic",
     "armorType": "CompositeArmor",
@@ -7989,8 +8018,8 @@
       "Watch"
     ],
     "background": "BG_Millennium_Collection",
-    "newQuote": "な、なんですか……？\n何かあるなら言ってくださいよ！",
-    "profile": "新たな身体となったケイ。\n\n普段よりもややテンションが高くなっているが、本人は自覚していない模様。",
+    "newQuote": "Wh-What's wrong...? Never seen a \"person\" before?!",
+    "profile": "Kei has finally managed to get herself a new body.\n\nIt'd be best for everyone if she didn't realize just how much her excitement is showing.",
     "voice": "Minami Tanaka",
     "illustrator": "GULIM",
     "designer": "GULIM",
@@ -8001,8 +8030,8 @@
       3
     ],
     "weapon": {
-      "name": "ルミナス・ノヴァ",
-      "desc": "ケイ専用のレールガン。\n\n新たな一歩を踏み出した彼女に相応しい逸品となっている。"
+      "name": "Luminous Nova",
+      "desc": "Kei's exclusive railgun.\n\nIt's the perfect weapon for her as she finds her way in the world."
     },
     "bondGear": {},
     "hasAlts": []
@@ -8023,7 +8052,7 @@
     "birthday": "May 1st",
     "bdayNum": "5/1",
     "height": "167cm",
-    "hobbies": "ボーっとすること、音楽鑑賞",
+    "hobbies": "Spacing out, listening to music",
     "baseStars": 3,
     "damageType": "Explosion",
     "armorType": "LightArmor",
@@ -8044,8 +8073,8 @@
       "Watch"
     ],
     "background": "BG_IronContinent_Collection",
-    "newQuote": "和泉元エイミ、現場から報告。",
-    "profile": "ミレニアムサイエンススクール所属、特異現象捜査部のスペシャリスト。\n\nマークスマンとして後方支援をすべく着替えている。できるだけ肌の露出を抑えた方が支援に適していると思ったものの……暑さに耐えられなかったのか、ケープを脱いで腰に巻いている。\n\nトキと同様メインの武器をエネルギーライフルに変更した。狙撃サポート用のバイザーを装着しているため、バックパックもトキのものより遥かに大型のものとなっているのだとか。",
+    "newQuote": "Izumimoto Eimi. Reporting from the target site.",
+    "profile": "A tactical specialist for the Super Phenomenon Task Force, armed and ready to support the mission in a new role: designated field sniper.\n\nWhile her suit was designed with her role as rear support in mind, Eimi couldn't stand the heat from her camouflage cape, and it's now tied around her waist.\n\nJust like Toki, she's taken up an energy weapon as her main firepower. However, her sniper's visor requires a lot of energy to power, so her pack ended up being much larger and heavier than Toki's.",
     "voice": "Akane Matsunaga",
     "illustrator": "ramuri",
     "designer": "GULIM",
@@ -8056,13 +8085,521 @@
       0
     ],
     "weapon": {
-      "name": "マルチサポート",
-      "desc": "新しく作られたエイミのエネルギーライフル。\n\n後方支援のために用意された、スペシャリスト用の武器だ。"
+      "name": "Multi-Tactical Finisher",
+      "desc": "Eimi's newly-made energy weapon.\n\nIt's a specialist weapon equipped to carry out extraordinary missions."
     },
     "bondGear": {},
     "hasAlts": [
       10001,
       20032
+    ]
+  },
+  {
+    "id": 10137,
+    "defaultOrder": 254,
+    "name": "Konoka",
+    "fullName": "Shima Konoka",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10137_Portrait.webp",
+    "halo": "@/assets/images/halos/10137_Halo.webp",
+    "icon": "@/assets/images/icons/10137_Icon.png",
+    "school": "Valkyrie",
+    "club": "PublicPeaceBureau",
+    "year": "2nd Year",
+    "age": "16 years old",
+    "birthday": "August 19th",
+    "bdayNum": "8/19",
+    "height": "165cm",
+    "hobbies": "マッサージチェアを使うこと、新聞のクロスワードパズルを解くこと",
+    "baseStars": 3,
+    "damageType": "Mystic",
+    "armorType": "LightArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "Tanker",
+    "position": "Front",
+    "weaponType": "SG",
+    "weaponImg": "weapon_icon_ch0264",
+    "mood": [
+      4,
+      2,
+      0
+    ],
+    "equipment": [
+      "Shoes",
+      "Bag",
+      "Charm"
+    ],
+    "background": "BG_Valkyrie_Collection",
+    "newQuote": "ちわーっす、おなしゃーす！",
+    "profile": "ヴァルキューレ警察学校所属、公安局の副局長。\n\n風貌から容疑者と勘違いされることもあるが、有能な警官。犯罪者の心理や行動を公安局の誰よりも上手くトレースできるが、意識してやっているようには見えない。\n\n公安局で最も昇進したことが多く、最も降格されたことの多い生徒でもあるのだとか。",
+    "voice": "Sayaka Senbongi",
+    "illustrator": "dydldidl",
+    "designer": "dydldidl",
+    "l2d": 6,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "道具",
+      "desc": "コノカ愛用の銃。\n\n業務だけでなく、昼寝の枕として使うなど、使い道は様々だ。"
+    },
+    "bondGear": {},
+    "hasAlts": []
+  },
+  {
+    "id": 10138,
+    "defaultOrder": 255,
+    "name": "Rena",
+    "fullName": "Kinui Rena",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10138_Portrait.webp",
+    "halo": "@/assets/images/halos/10138_Halo.webp",
+    "icon": "@/assets/images/icons/10138_Icon.png",
+    "school": "WildHunt",
+    "club": "OccultClub",
+    "year": "1st Year",
+    "age": "15 years old",
+    "birthday": "September 21st",
+    "bdayNum": "9/21",
+    "height": "152cm",
+    "hobbies": "衣装・アクセサリー製作",
+    "baseStars": 3,
+    "damageType": "Explosion",
+    "armorType": "LightArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "Supporter",
+    "position": "Middle",
+    "weaponType": "HG",
+    "weaponImg": "weapon_icon_ch0305",
+    "mood": [
+      2,
+      0,
+      4
+    ],
+    "equipment": [
+      "Shoes",
+      "Hairpin",
+      "Necklace"
+    ],
+    "background": "BG_WildhuntCampusPlaza_Night_Collection",
+    "newQuote": "キヴォトス最高のファッションデザイナーになってやるんだから！",
+    "profile": "ワイルドハント芸術学院所属、芸術に宿るオカルトを研究するオカルト研究会のメンバー。\n\n偶然にも第4棟404号室に割り当てられたことから、オカルト研究会の活動をする羽目になった。オカルトはインチキだと主張しているが、知らず知らずのうちに本人もオカルトに染まっている模様。",
+    "voice": "Megu Umezawa",
+    "illustrator": "GULIM",
+    "designer": "GULIM",
+    "l2d": 6,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "護身用ミシンガン",
+      "desc": "レナの手にぴったり収まる小さなピストル。\n\n自身でカスタムした可愛いデザインだが、当たると痛いのは他の銃と同じだ。"
+    },
+    "bondGear": {},
+    "hasAlts": []
+  },
+  {
+    "id": 10139,
+    "defaultOrder": 257,
+    "name": "Niko",
+    "fullName": "Yoshino Niko",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10139_Portrait.webp",
+    "halo": "@/assets/images/halos/10139_Halo.webp",
+    "icon": "@/assets/images/icons/10139_Icon.png",
+    "school": "SRT",
+    "club": "FoxSquad",
+    "year": "3rd Year",
+    "age": "17 years old",
+    "birthday": "February 11th",
+    "bdayNum": "2/11",
+    "height": "160cm",
+    "hobbies": "料理（特にいなり寿司）",
+    "baseStars": 3,
+    "damageType": "Explosion",
+    "armorType": "ElasticArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "Supporter",
+    "position": "Front",
+    "weaponType": "SG",
+    "weaponImg": "weapon_icon_ch0172",
+    "mood": [
+      4,
+      0,
+      2
+    ],
+    "equipment": [
+      "Shoes",
+      "Hairpin",
+      "Watch"
+    ],
+    "background": "BG_FoxHQRoom_Collection",
+    "newQuote": "FOX2、補給の準備が整いました。",
+    "profile": "SRT特殊学園所属、FOX小隊の副小隊長。コールサイン「FOX2」。\n\n優しく穏やかな性格で、誰とでもすぐに打ち解けられる。そのため、SRT学園では小隊を越えて彼女を頼る後輩が多い。潜入や偽装工作が得意で、小隊の管理運営を兼任している。\n\n特技はいなり寿司を作ること。小隊員の弁当としてよく作っているが、非常に味が良いのでSRT学園内でも好評を得ている。",
+    "voice": "Kazuki Asami",
+    "illustrator": "CHILD",
+    "designer": "CHILD",
+    "l2d": 8,
+    "limited": [
+      1,
+      1,
+      1
+    ],
+    "weapon": {
+      "name": "FOX-870式ショットガン",
+      "desc": "SRT特殊学園から支給された制式ショットガン。\n\nポンプアクション式で、ブリーチングでも優れた性能を発揮する。"
+    },
+    "bondGear": {},
+    "hasAlts": []
+  },
+  {
+    "id": 10140,
+    "defaultOrder": 258,
+    "name": "Kurumi",
+    "fullName": "Takakura Kurumi",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10140_Portrait.webp",
+    "halo": "@/assets/images/halos/10140_Halo.webp",
+    "icon": "@/assets/images/icons/10140_Icon.png",
+    "school": "SRT",
+    "club": "FoxSquad",
+    "year": "3rd Year",
+    "age": "17 years old",
+    "birthday": "September 30th",
+    "bdayNum": "9/30",
+    "height": "151cm",
+    "hobbies": "シール集め、掃除",
+    "baseStars": 3,
+    "damageType": "Explosion",
+    "armorType": "LightArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "Tanker",
+    "position": "Front",
+    "weaponType": "SMG",
+    "weaponImg": "weapon_icon_ch0173",
+    "mood": [
+      4,
+      2,
+      0
+    ],
+    "equipment": [
+      "Shoes",
+      "Bag",
+      "Necklace"
+    ],
+    "background": "BG_FoxHQRoom_Collection",
+    "newQuote": "眩しくなるから、私の盾は見ないほうがいいわよ！",
+    "profile": "SRT特殊学園所属、FOX小隊のポイントマン。コールサイン「FOX3」。\n\n優れた身体能力を持ち、現場対応力が高い。戦闘に特化したポイントマン。感情の起伏が激しく、真っ直ぐな性格だが、それが功を奏して作戦を乗り越えられたことは数しれず。\n\nあまり口にしていないが、自身の体型にコンプレックスを抱えている。",
+    "voice": "Ichika Tachibana",
+    "illustrator": "CHILD",
+    "designer": "CHILD",
+    "l2d": 5,
+    "limited": [
+      1,
+      1,
+      1
+    ],
+    "weapon": {
+      "name": "FOX-45式サブマシンガン",
+      "desc": "SRT特殊学園から支給された制式短機関銃。\n\n軽量で高い安定性を持ち、盾との併用が可能。\n他のサブマシンガンと比べて消音性が高いため、裏で敵を処理するのにも適している。"
+    },
+    "bondGear": {},
+    "hasAlts": []
+  },
+  {
+    "id": 10141,
+    "defaultOrder": 261,
+    "name": "Haruka (Dress)",
+    "fullName": "Igusa Haruka",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10141_Portrait.webp",
+    "halo": "@/assets/images/halos/10141_Halo.webp",
+    "icon": "@/assets/images/icons/10141_Icon.png",
+    "school": "Gehenna",
+    "club": "Kohshinjo68",
+    "year": "1st Year",
+    "age": "15 years old",
+    "birthday": "May 13th",
+    "bdayNum": "5/13",
+    "height": "157cm",
+    "hobbies": "雑草を育てること",
+    "baseStars": 3,
+    "damageType": "Explosion",
+    "armorType": "LightArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "DamageDealer",
+    "position": "Front",
+    "weaponType": "SG",
+    "weaponImg": "weapon_icon_16000",
+    "mood": [
+      4,
+      2,
+      0
+    ],
+    "equipment": [
+      "Gloves",
+      "Hairpin",
+      "Watch"
+    ],
+    "background": "BG_OperaHouse_Collection",
+    "newQuote": "に、似合ってる……？ほ、本当ですか……？",
+    "profile": "ゲヘナ学園所属、便利屋68の平社員。\n\nドレスコードに則りドレスに着替えたが、自分には似合わないと思い少し萎縮している。当の本人以外は、とても似合うと思っている。",
+    "voice": "Erika Ishitobi",
+    "illustrator": "DoReMi",
+    "designer": "DoReMi",
+    "l2d": 6,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "ブローアウェイ",
+      "desc": "ハルカが害虫と敵の駆除などに使うショットガン。\n\n両者の違いはあまりない。"
+    },
+    "bondGear": {},
+    "hasAlts": [
+      16000,
+      20025
+    ]
+  },
+  {
+    "id": 10142,
+    "defaultOrder": 263,
+    "name": "Nagusa (Swimsuit)",
+    "fullName": "Goryou Nagusa",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10142_Portrait.webp",
+    "halo": "@/assets/images/halos/10142_Halo.webp",
+    "icon": "@/assets/images/icons/10142_Icon.png",
+    "school": "Hyakkiyako",
+    "club": "Hyakkayouran",
+    "year": "3rd Year",
+    "age": "17 years old",
+    "birthday": "December 7th",
+    "bdayNum": "12/7",
+    "height": "161cm",
+    "hobbies": "瞑想、読書",
+    "baseStars": 3,
+    "damageType": "Explosion",
+    "armorType": "HeavyArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "Supporter",
+    "position": "Back",
+    "weaponType": "SR",
+    "weaponImg": "weapon_icon_ch0222",
+    "mood": [
+      0,
+      4,
+      2
+    ],
+    "equipment": [
+      "Gloves",
+      "Hairpin",
+      "Watch"
+    ],
+    "background": "BG_ToriiBeach_Collection",
+    "newQuote": "右手の封印、解けちゃった……なんて。",
+    "profile": "夏を迎え水着に着替えた百鬼夜行連合学院所属、百花繚乱紛争調停委員会の委員長。\n\nみんなと団結を図るため、百夜水上祭に参加する。可憐に咲く花のような彼女のリーダーシップは、百花繚乱の復活を象徴している。",
+    "voice": "Kaoru Sakura",
+    "illustrator": "Jehyun",
+    "designer": "Jehyun",
+    "l2d": 6,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "百蓮",
+      "desc": "どこか神秘的な雰囲気を放つ、古びたライフル。\n\n大預言者クズノハから受け継がれた百花繚乱の部長の証は、青い海でも静かに輝いている。"
+    },
+    "bondGear": {},
+    "hasAlts": [
+      10119
+    ]
+  },
+  {
+    "id": 10143,
+    "defaultOrder": 264,
+    "name": "Shun (Swimsuit)",
+    "fullName": "Sunohara Shun",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10143_Portrait.webp",
+    "halo": "@/assets/images/halos/10143_Halo.webp",
+    "icon": "@/assets/images/icons/10143_Icon.png",
+    "school": "Shanhaijing",
+    "club": "Meihuayuan",
+    "year": "3rd Year",
+    "age": "Top Secret",
+    "birthday": "February 5th",
+    "bdayNum": "2/5",
+    "height": "174cm",
+    "hobbies": "子供たちと遊ぶこと",
+    "baseStars": 3,
+    "damageType": "Sonic",
+    "armorType": "LightArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "DamageDealer",
+    "position": "Back",
+    "weaponType": "SR",
+    "weaponImg": "weapon_icon_10011",
+    "mood": [
+      2,
+      4,
+      0
+    ],
+    "equipment": [
+      "Hat",
+      "Hairpin",
+      "Watch"
+    ],
+    "background": "BG_Vally1_Collection",
+    "newQuote": "何かありましたら、私を呼んでくださいね？",
+    "profile": "夏を迎え水着に着替えた山海経高級中学校所属、訓育支援部「梅花園」の教官。\n\nなぜか先生と一緒に引率する側になっている。普段よりも余裕があり、大人びた雰囲気が漂う。その裏には、いつもと違った一面が隠れているのかもしれない。",
+    "voice": "Shizuka Itou",
+    "illustrator": "Yadoru",
+    "designer": "Yadoru",
+    "l2d": 3,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "愛のムチ",
+      "desc": "シュンが使用するスナイパーライフル。\n\n訓育とは、時に痛みを伴うものである。"
+    },
+    "bondGear": {},
+    "hasAlts": [
+      10011,
+      10025
+    ]
+  },
+  {
+    "id": 10144,
+    "defaultOrder": 265,
+    "name": "Shun (Swimsuit)",
+    "fullName": "Shunling",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10144_Portrait.webp",
+    "halo": "@/assets/images/halos/10144_Halo.webp",
+    "icon": "@/assets/images/icons/10144_Icon.png",
+    "school": "Shanhaijing",
+    "club": "Meihuayuan",
+    "year": "Top Secret",
+    "age": "Top Secret",
+    "birthday": "February 5th",
+    "bdayNum": "2/5",
+    "height": "Unmeasured",
+    "hobbies": "甘い物を食べること",
+    "baseStars": 3,
+    "damageType": "Sonic",
+    "armorType": "LightArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "DamageDealer",
+    "position": "Back",
+    "weaponType": "SR",
+    "weaponImg": "weapon_icon_10011",
+    "mood": [
+      2,
+      4,
+      0
+    ],
+    "equipment": [
+      "Hat",
+      "Hairpin",
+      "Watch"
+    ],
+    "background": "BG_Vally1_Collection",
+    "newQuote": "",
+    "profile": "謎に包まれた梅花園の園児（？）\n\nあまり詮索してはいけない。",
+    "voice": "Shizuka Itou",
+    "illustrator": "Yadoru",
+    "designer": "Yadoru",
+    "l2d": 3,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "愛のムチ",
+      "desc": "シュンが使用するスナイパーライフル。\n\n訓育とは、時に痛みを伴うものである。"
+    },
+    "bondGear": {},
+    "hasAlts": [
+      10011,
+      10025
+    ]
+  },
+  {
+    "id": 10145,
+    "defaultOrder": 266,
+    "name": "Kisaki (Swimsuit)",
+    "fullName": "Ryuuge Kisaki",
+    "playable": true,
+    "imagePath": "@/assets/images/students/10145_Portrait.webp",
+    "halo": "@/assets/images/halos/10145_Halo.webp",
+    "icon": "@/assets/images/icons/10145_Icon.png",
+    "school": "Shanhaijing",
+    "club": "Genryumon",
+    "year": "3rd Year",
+    "age": "17 years old",
+    "birthday": "February 19th",
+    "bdayNum": "2/19",
+    "height": "142cm",
+    "hobbies": "茶道、密行",
+    "baseStars": 3,
+    "damageType": "Sonic",
+    "armorType": "ElasticArmor",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "Supporter",
+    "position": "Front",
+    "weaponType": "SMG",
+    "weaponImg": "weapon_icon_ch0139",
+    "mood": [
+      4,
+      0,
+      2
+    ],
+    "equipment": [
+      "Gloves",
+      "Hairpin",
+      "Necklace"
+    ],
+    "background": "BG_Vally1_Collection",
+    "newQuote": "この暑さは、どうにも苦手じゃ。",
+    "profile": "夏を迎え水着に着替えた山海経高級中学校所属、生徒会「玄龍門」の門主。\n\n周囲に助けられ、夏のバカンスへ行くことに。体調も普段より良く、より一層解放感を得ている様子。このような自由時間は珍しいため、色々と「楽しむつもり」。",
+    "voice": "Yūka Aisaka",
+    "illustrator": "GINGGU",
+    "designer": "GINGGU",
+    "l2d": 5,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "知彼知己",
+      "desc": "キサキが愛用するサブマシンガン。\n\n夏の休暇を満喫していても手放すことはない。"
+    },
+    "bondGear": {},
+    "hasAlts": [
+      20039
     ]
   },
   {
@@ -8119,7 +8656,8 @@
     },
     "bondGear": {},
     "hasAlts": [
-      20019
+      20019,
+      20057
     ]
   },
   {
@@ -8487,7 +9025,8 @@
     },
     "bondGear": {},
     "hasAlts": [
-      10032
+      10032,
+      20059
     ]
   },
   {
@@ -9040,7 +9579,8 @@
     },
     "bondGear": {},
     "hasAlts": [
-      20025
+      20025,
+      10141
     ]
   },
   {
@@ -9095,7 +9635,15 @@
       "name": "Surprise Party",
       "desc": "An assault rifle used by Asuna.\n\nThe name suggests lively gatherings, but as usual, she can't remember where it came from."
     },
-    "bondGear": {},
+    "bondGear": {
+      "released": [
+        true,
+        false,
+        false
+      ],
+      "name": "アスナスタイルのリボン",
+      "desc": "掃除するときも、「お掃除」するときも、常にアスナがつけている青いリボン。"
+    },
     "hasAlts": [
       10028,
       10112
@@ -9157,7 +9705,7 @@
       "released": [
         true,
         true,
-        false
+        true
       ],
       "name": "Teardrop Glasses",
       "desc": "A pair of special glasses that Kotori always wears.\nIt's easy to look at them and say they're \"weird-looking,\" but they're actually an expression of Kotori's compassion for those who sit through her long lectures."
@@ -9541,7 +10089,7 @@
     "birthday": "February 22nd",
     "bdayNum": "2/22",
     "height": "153cm",
-    "hobbies": "Inventing new ninjutsus, making videos",
+    "hobbies": "Inventing new ninjutsu, making videos",
     "baseStars": 1,
     "damageType": "Mystic",
     "armorType": "LightArmor",
@@ -9580,11 +10128,11 @@
     "bondGear": {
       "released": [
         true,
-        false,
+        true,
         false
       ],
-      "name": "大事なビデオテープ",
-      "desc": "年季の入ったビデオテープ。\nミチルを忍者の道に導いた映像が残されているとのことだが……。"
+      "name": "Old Ninja Video Tape",
+      "desc": "An old, worn-out, and ordinary video tape. Nevertheless, something on it led Michiru to join the path of the ninja... "
     },
     "hasAlts": [
       20053
@@ -10054,12 +10602,12 @@
     "icon": "@/assets/images/icons/16018_Icon.png",
     "school": "Trinity",
     "club": "EmptyClub",
-    "year": "Dropout",
+    "year": "Drop out",
     "age": "16 years old",
     "birthday": "May 6th",
     "bdayNum": "5/6",
     "height": "161cm",
-    "hobbies": "ヘルメット拭き、自販機の下を漁ること",
+    "hobbies": "Cleaning helmets, scavenging vending machines",
     "baseStars": 1,
     "damageType": "Sonic",
     "armorType": "Unarmed",
@@ -10094,7 +10642,7 @@
     ],
     "background": "BG_Trinity_Collection",
     "newQuote": "",
-    "profile": "ジャブジャブヘルメット団の隊長。\n\n部下からの信頼も厚く、姉御肌。ただ、運だけはあまり良くない模様。",
+    "profile": "Captain of the Splash Helmet Gang.\n\nShe's a leader her subordinates fully and completely trust. In reciprocation, she tries all sorts of things to improve their lives, but she seems to be Lady Unluck.",
     "voice": "Hina Suzuki",
     "illustrator": "CHILD",
     "designer": "CHILD",
@@ -10105,8 +10653,8 @@
       2
     ],
     "weapon": {
-      "name": "ピンチヒッター",
-      "desc": "ラブのショットガン。\n\nバットのように使われることが多いものの、丁寧に手入れされている。"
+      "name": "Pinch Hitter",
+      "desc": "Rabu's shotgun.\n\nIt's worn out from time, and being swung around like a baseball bat, but it's neatly maintained."
     },
     "bondGear": {},
     "hasAlts": []
@@ -10127,7 +10675,7 @@
     "birthday": "August 16th",
     "bdayNum": "8/16",
     "height": "165cm",
-    "hobbies": "配信視聴（仮）、ゲーム（仮）、漫画（仮）",
+    "hobbies": "Watching internet streams, playing games, reading manga (all tentatively)",
     "baseStars": 1,
     "damageType": "Pierce",
     "armorType": "LightArmor",
@@ -10149,7 +10697,7 @@
     ],
     "background": "BG_IronContinent_Collection",
     "newQuote": "",
-    "profile": "ミレニアムサイエンススクール所属、C&Cのエージェント兼、特異現象捜査部の現場担当。\n\n偵察任務のために着替えた姿。本人曰く、「機動力に優れた新生・飛鳥馬トキ」とのこと。また、仮ではあるが趣味を見つけることができた模様。",
+    "profile": "A C&C agent and Super Phenomenon Task Force's on-site operative, sporting a new battlesuit designed for reconnaissance.\n\nAccording to her, this outfit is \"Asuma Toki, Mobile Edition.\" She's shed her heavy battle armor in favor of something lighter. She's faster, stronger, and, most importantly, she seems to have found herself...some new hobbies? However fleeting they may be, that fact alone is cause for celebration.",
     "voice": "Yui Ishikawa",
     "illustrator": "GULIM",
     "designer": "GULIM",
@@ -10160,14 +10708,69 @@
       2
     ],
     "weapon": {
-      "name": "サーチ＆リコン",
-      "desc": "トキ専用のエネルギーピストル。\n\n本人曰く、コンセプトと雰囲気を一新したとのこと。これも新生・飛鳥馬トキの必須アイテムなのだろう。"
+      "name": "Search & Recon",
+      "desc": "Toki's twin custom energy pistols.\n\nAs she puts it, her chosen weapons are \"optimal\" for her \"recent conceptual and aesthetic overhaul.\""
     },
     "bondGear": {},
     "hasAlts": [
       10062,
       10067
     ]
+  },
+  {
+    "id": 16020,
+    "defaultOrder": 259,
+    "name": "Otogi",
+    "fullName": "Tenjinyama Otogi",
+    "playable": true,
+    "imagePath": "@/assets/images/students/16020_Portrait.webp",
+    "halo": "@/assets/images/halos/16020_Halo.webp",
+    "icon": "@/assets/images/icons/16020_Icon.png",
+    "school": "SRT",
+    "club": "FoxSquad",
+    "year": "3rd Year",
+    "age": "17 years old",
+    "birthday": "May 20th",
+    "bdayNum": "5/20",
+    "height": "150cm",
+    "hobbies": "パズル、空想",
+    "baseStars": 1,
+    "damageType": "Explosion",
+    "armorType": "Unarmed",
+    "combatClass": "Main",
+    "summons": [],
+    "role": "DamageDealer",
+    "position": "Back",
+    "weaponType": "SR",
+    "weaponImg": "weapon_icon_ch0174",
+    "mood": [
+      2,
+      2,
+      2
+    ],
+    "equipment": [
+      "Gloves",
+      "Hairpin",
+      "Watch"
+    ],
+    "background": "BG_FoxHQRoom_Collection",
+    "newQuote": "",
+    "profile": "SRT特殊学園所属、FOX小隊のスナイパー。コールサイン「FOX4」。\n\n一匹狼が多いスナイパーの中で、初対面ともすぐに打ち解けられる稀有な存在。小隊ではムードメーカー的なポジション。\n戦場では敵士気を下げる役割も果たしている。\n\n電子機器の扱いが得意で、一般的な設備程度であれば修理もできるのだとか。",
+    "voice": "Hitomi Sasaki",
+    "illustrator": "MISOM150",
+    "designer": "MISOM150",
+    "l2d": 8,
+    "limited": [
+      2,
+      2,
+      2
+    ],
+    "weapon": {
+      "name": "FOX-82式スナイパーライフル",
+      "desc": "SRT特殊学園から支給された制式スナイパーライフル。\n\n高い貫通力で遮蔽物に隠れた相手を狙撃できる。また、弾速の速さを活かした超長距離の狙撃も可能。しかし非常に重いという欠点があり、オトギは肩凝りに悩まされているとか。"
+    },
+    "bondGear": {},
+    "hasAlts": []
   },
   {
     "id": 20000,
@@ -10405,7 +11008,7 @@
       "released": [
         true,
         true,
-        false
+        true
       ],
       "name": "Learning Idioms and Proverbs Through Stories",
       "desc": "A set of books that explain the meanings of various idioms and proverbs through old tales.\nIt fits Mashiro's tastes perfectly."
@@ -11210,7 +11813,15 @@
       "name": "Pandemonium Society Standard Gun",
       "desc": "A pistol Iroha carries around.\nSince Iroha is the tank commander of the Pandemonium Society, she always complains that it's cumbersome to carry around something she never uses. But she still maintains it perfectly, which is typical Iroha-behavior."
     },
-    "bondGear": {},
+    "bondGear": {
+      "released": [
+        true,
+        false,
+        false
+      ],
+      "name": "普通の文庫本",
+      "desc": "いたって普通の文庫本。\n\n初版でも愛蔵版でもない、ごく一般的なもの。ある日からコーヒーのいい香りが漂うようになった。"
+    },
     "hasAlts": []
   },
   {
@@ -11322,7 +11933,15 @@
       "name": "RABBIT Type 224 Pistol",
       "desc": "The standard pistol Moe was given at SRT Academy. Despite being a pistol, it has a rapid rate of fire and can empty a magazine in an instant."
     },
-    "bondGear": {},
+    "bondGear": {
+      "released": [
+        true,
+        false,
+        false
+      ],
+      "name": "クレイモアハンドグリップ",
+      "desc": "モエが愛用するクレイモアの起爆スイッチを改造して作ったハンドグリップ。雷管を外しているから起爆することはないが、太いスプリングの力は爆弾のように破滅的だとか。"
+    },
     "hasAlts": [
       10097
     ]
@@ -11381,7 +12000,8 @@
     },
     "bondGear": {},
     "hasAlts": [
-      13000
+      13000,
+      20057
     ]
   },
   {
@@ -11731,7 +12351,8 @@
     },
     "bondGear": {},
     "hasAlts": [
-      16000
+      16000,
+      10141
     ]
   },
   {
@@ -12144,7 +12765,7 @@
       0
     ],
     "weapon": {
-      "name": "Multi Tactical",
+      "name": "Multi-Tactical",
       "desc": "Eimi's favorite shotgun with a crude design.\n\nMultifaceted like its name suggests, it can be used for various purposes even in extreme environments."
     },
     "bondGear": {},
@@ -12552,7 +13173,9 @@
       "desc": "Kisaki's favorite SMG.\n\nShe believes all things stem from knowing both yourself and your enemies."
     },
     "bondGear": {},
-    "hasAlts": []
+    "hasAlts": [
+      10145
+    ]
   },
   {
     "id": 20040,
@@ -13194,10 +13817,10 @@
     "club": "TrinityVigilance",
     "year": "1st Year",
     "age": "15 years old",
-    "birthday": "May 31th",
+    "birthday": "May 31st",
     "bdayNum": "5/31",
     "height": "153cm",
-    "hobbies": "決闘申込み、自己紹介",
+    "hobbies": "Challenging people to duels, self-introductions",
     "baseStars": 3,
     "damageType": "Sonic",
     "armorType": "Unarmed",
@@ -13223,8 +13846,8 @@
       "Necklace"
     ],
     "background": "BG_ThemeparkTheater_Collection",
-    "newQuote": "マジカル自警団、参上です！",
-    "profile": "トリニティ総合学園所属、自警団の潜入任務を遂行すべく、魔法少女のコスチュームを着ることになった少女。\n\n幼い頃から、魔法少女モノが大好きだったからか、とても浮かれている模様。",
+    "newQuote": "Magical Vigilante Crew! Cue flashy entrance!",
+    "profile": "Reisa changed into a magical girl costume for a Vigilante Crew infiltration mission.\n\nConsidering that she's been a fan of magical girls since she was a young girl, this is a dream come true for her.",
     "voice": "Miyari Nemoto",
     "illustrator": "kokosando",
     "designer": "kokosando",
@@ -13235,8 +13858,8 @@
       1
     ],
     "weapon": {
-      "name": "シューティング☆スター",
-      "desc": "レイサの大切なショットガン。\n\n音と光、そして火力があるから魔法の杖である、と彼女はそう主張している。"
+      "name": "Shooting☆Star",
+      "desc": "Reisa's precious shotgun.\n\nShe claims that it's a magic wand because it comes with light, sound, and firepower."
     },
     "bondGear": {},
     "hasAlts": [
@@ -13259,7 +13882,7 @@
     "birthday": "May 18th",
     "bdayNum": "5/18",
     "height": "144cm",
-    "hobbies": "事業企画書の作成、鉄道路線の分析",
+    "hobbies": "Writing business proposals, analyzing railroad lines",
     "baseStars": 3,
     "damageType": "Explosion",
     "armorType": "LightArmor",
@@ -13280,8 +13903,8 @@
       "Necklace"
     ],
     "background": "BG_Redwinter_Collection",
-    "newQuote": "本にご興味は……ありませんかぁ？\nまぁまぁそう言わず、まずはお話だけでも。",
-    "profile": "レッドウィンター連邦学園所属、出版部の部長。\n\n「レッドベア」の編集長も兼任している。一度決めると曲げない頑固な一面があり、出版部の利益のためなら手段を選ばず、無敵の行動力を発揮する。しかしそんな彼女にも、ひたむきな一面があるようで……？",
+    "newQuote": "By any chance, are you interested in books?\nEh, let's just have a talk.",
+    "profile": "The president of the Publishing Department, the Red Winter Academy's publishing club.\n\nShe also serves as Chief Editor for the \"Red Bear\" magazine. She's unstoppable once she sets her mind on something, and this invincible president will do anything for the Publishing Department's profit. But she also seems to be hiding a pure heart lying beneath her cunning exterior...",
     "voice": "Riko Aono",
     "illustrator": "kokosando",
     "designer": "kokosando",
@@ -13292,8 +13915,8 @@
       0
     ],
     "weapon": {
-      "name": "プラウダ",
-      "desc": "ヤクモが常備している拳銃。\n\nヤクモは「銃には様々な使い道がある」と口癖のように言っている。その使い道の中には、怠けた作家に「締切を守らせる」こともあるのだとか。"
+      "name": "Pravda",
+      "desc": "A pistol that Yakumo keeps on hand\n\nShe often says that there are many uses for a gun. One of them is encouraging \"diligence\" in writers who are at risk of missing their deadlines."
     },
     "bondGear": {},
     "hasAlts": []
@@ -13314,7 +13937,7 @@
     "birthday": "February 22nd",
     "bdayNum": "2/22",
     "height": "153cm",
-    "hobbies": "新しい忍術の考案、動画作り",
+    "hobbies": "Inventing new ninjutsu, making videos",
     "baseStars": 3,
     "damageType": "Explosion",
     "armorType": "LightArmor",
@@ -13335,8 +13958,8 @@
       "Necklace"
     ],
     "background": "BG_FashionshowRunway2_Collection",
-    "newQuote": "潜入任務も忍者の花形、ってね！\nドレス姿でいざ参らん！",
-    "profile": "百鬼夜行連合学院所属、忍術研究部の部長。\n\nファッションショーの潜入警備員として雇われ、ドレスに袖を通すことに。色々と初めての経験が多い中、忍者らしくどうあるかを考えている模様。",
+    "newQuote": "This too, is a ninja's outfit...!\nPlease look forward to it!",
+    "profile": "The president of the Ninjutsu Research Club from Allied Hyakkiyako Academy.\n\nShe's wearing a dress for her job as security for a fashion show. Despite the unfamiliar environment, Michiru handles things as she always does. Like a ninja.",
     "voice": "Kaori Mizuhashi",
     "illustrator": "Blanchat",
     "designer": "Blanchat",
@@ -13347,8 +13970,8 @@
       0
     ],
     "weapon": {
-      "name": "ミチル流オーバーフローショットガン",
-      "desc": "ミチルが愛用しているショットガン。\n\nなんだか今回は、持ち主と同じく少しお淑やかになっている模様。"
+      "name": "Michiru-Style Overflow Shotgun",
+      "desc": "Michiru's favorite shotgun.\n\nWhile it's usually raring to go, it seems to be following its owner's lead and taking a calmer approach this time."
     },
     "bondGear": {},
     "hasAlts": [
@@ -13371,7 +13994,7 @@
     "birthday": "December 10th",
     "bdayNum": "12/10",
     "height": "162cm",
-    "hobbies": "今日の運勢の確認、オカルト全般",
+    "hobbies": "Astrology, the occult",
     "baseStars": 3,
     "damageType": "Pierce",
     "armorType": "ElasticArmor",
@@ -13397,8 +14020,8 @@
       "Necklace"
     ],
     "background": "BG_IronContinent_Collection",
-    "newQuote": "超天才清楚系病弱美少女のやることは変わりません。\n優雅に冷静に、一つずつ対処しましょうか。",
-    "profile": "ミレニアムサイエンススクール所属、ハッカー集団「ヴェリタス」の元部長で、現特異現象捜査部の部長。\n\n未曾有の危機に対応すべく、特殊スーツを身に纏った。また、新たな「車椅子」のおかげで、縦横無尽に駆けることが可能となった模様。\n\n本人は車椅子であると主張しているが、どう見てもバイクだ。",
+    "newQuote": "Circumstances may have escalated, but our job remains the same. Shall we handle it with elegance?",
+    "profile": "The former president of Veritas, and current president of the Super Phenomenon Task Force.\n\nHimari has donned a special suit to aid her in the fight on the Steel Continent. While her suit is fitting, she also arms herself with what she insists is a...\"tactical wheelchair.\" It's designed for the frontlines, and equipped with impressive firepower and mobility.\n\nBut no matter how you look at it, it's a motorcycle.",
     "voice": "Yukana",
     "illustrator": "kokosando",
     "designer": "kokosando",
@@ -13409,8 +14032,8 @@
       1
     ],
     "weapon": {
-      "name": "高嶺の花",
-      "desc": "ヒマリが所持している拳銃。\n\n車椅子、もといバイクに乗るようになったため、普段以上に彼女が銃を使う姿が見られるかもしれない。"
+      "name": "Clifftop Bloom",
+      "desc": "Himari's simple and beautiful pistol.\n\nThanks to the mods on her motorcycle...NO, wheelchair, you might see her use it more often."
     },
     "bondGear": {},
     "hasAlts": [
@@ -13433,7 +14056,7 @@
     "birthday": "August 12th",
     "bdayNum": "8/12",
     "height": "150cm",
-    "hobbies": "ゲーム制作",
+    "hobbies": "Making video games",
     "baseStars": 3,
     "damageType": "Mystic",
     "armorType": "Unarmed",
@@ -13454,8 +14077,8 @@
       "Watch"
     ],
     "background": "BG_IronContinent_Collection",
-    "newQuote": "逃げちゃ……ダメだから……！",
-    "profile": "ミレニアムサイエンススクール所属、ゲーム開発部の部長。\n\n未曾有の事態に備えて、特殊スーツに身を包んでいる。スーツの仕様はリオの強い要望によって決まったのだとか。当の本人は穴があったら入りたいほど恥ずかしがっている模様。",
+    "newQuote": "I shouldn't...run away...!",
+    "profile": "Yuzu, despite the terror of being thrust into a confusing situation, has put on a special suit to prepare for battle.\n\nWhile the intent behind Rio's design was careful and intentional, Yuzu is severely embarrassed to be seen in the suit. She just wants to go hide in her locker back home...",
     "voice": "Momoka Terasawa",
     "illustrator": "Jehyun",
     "designer": "kokosando",
@@ -13466,8 +14089,8 @@
       0
     ],
     "weapon": {
-      "name": "にゃん's ダッシュ",
-      "desc": "ユズが普段から携帯しているグレネードランチャー。\n\n色々なことが変わったけれど、これだけはずっと変わらない。"
+      "name": "Nyan's Dash",
+      "desc": "Yuzu's usual grenade launcher.\n\nWhile many things have changed, this has fortunately remained the same."
     },
     "bondGear": {},
     "hasAlts": [
@@ -13530,6 +14153,177 @@
     "bondGear": {},
     "hasAlts": [
       10063
+    ]
+  },
+  {
+    "id": 20057,
+    "defaultOrder": 256,
+    "name": "Akane (School)",
+    "fullName": "Murokasa Akane",
+    "playable": true,
+    "imagePath": "@/assets/images/students/20057_Portrait.webp",
+    "halo": "@/assets/images/halos/20057_Halo.webp",
+    "icon": "@/assets/images/icons/20057_Icon.png",
+    "school": "Millennium",
+    "club": "CleanNClearing",
+    "year": "2nd Year",
+    "age": "16 years old",
+    "birthday": "April 1st",
+    "bdayNum": "4/1",
+    "height": "164cm",
+    "hobbies": "お掃除",
+    "baseStars": 3,
+    "damageType": "Explosion",
+    "armorType": "LightArmor",
+    "combatClass": "Support",
+    "summons": [],
+    "role": "DamageDealer",
+    "position": "Back",
+    "weaponType": "HG",
+    "weaponImg": "weapon_icon_13000",
+    "mood": [
+      4,
+      2,
+      0
+    ],
+    "equipment": [
+      "Hat",
+      "Bag",
+      "Watch"
+    ],
+    "background": "BG_MilleniumExpo_Collection",
+    "newQuote": "よろしければ、一緒にミレニアムを散策しませんか？",
+    "profile": "ミレニアムサイエンススクール所属、ミレニアムEXPOのガイドを務めることになった「C&C」のエージェント。\n\n潜入作戦のために制服に着替えているのだとか。メイドやエージェントでなく、普通の生徒として行動できるようになったことで、より一層穏やかな空気を纏っている。\n\nだが、「お掃除」のやり方を忘れたわけではない模様。",
+    "voice": "Yumi Hara",
+    "illustrator": "Jehyun",
+    "designer": "Mx2J",
+    "l2d": 5,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "サイレントソリューション",
+      "desc": "アカネが常に所有しているピストル。\n彼女に「静か」にしてもらいたいなら、無駄な行動は控えたほうが良いだろう。"
+    },
+    "bondGear": {},
+    "hasAlts": [
+      13000,
+      20019
+    ]
+  },
+  {
+    "id": 20058,
+    "defaultOrder": 260,
+    "name": "Erika",
+    "fullName": "Hatami Erika",
+    "playable": true,
+    "imagePath": "@/assets/images/students/20058_Portrait.webp",
+    "halo": "@/assets/images/halos/20058_Halo.webp",
+    "icon": "@/assets/images/icons/20058_Icon.png",
+    "school": "Gehenna",
+    "club": "ShinySparkleSociety",
+    "year": "2nd Year",
+    "age": "16 years old",
+    "birthday": "February 1st",
+    "bdayNum": "2/1",
+    "height": "166cm",
+    "hobbies": "ウィンドウショッピング、ショッピングカタログを集めること",
+    "baseStars": 3,
+    "damageType": "Sonic",
+    "armorType": "LightArmor",
+    "combatClass": "Support",
+    "summons": [],
+    "role": "Supporter",
+    "position": "Back",
+    "weaponType": "SG",
+    "weaponImg": "weapon_icon_erika",
+    "mood": [
+      4,
+      2,
+      0
+    ],
+    "equipment": [
+      "Shoes",
+      "Bag",
+      "Necklace"
+    ],
+    "background": "BG_Gehenna_Collection",
+    "newQuote": "ごめんごめん、待たせちゃった？",
+    "profile": "ゲヘナ学園所属、優しい性格の女子高生。\n\n知的でクールな印象とは裏腹に、誰とでも仲良くなれる社交的で優しい性格。かけがえのない親友のキララと一緒に、日々楽しいことを探し回っている。",
+    "voice": "Saima Nakano",
+    "illustrator": "DoReMi",
+    "designer": "sabet",
+    "l2d": 8,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "ユング・レオパルト",
+      "desc": "エリカが携帯しているショットガン。\n\n丁寧に手入れされている。華やかなヒョウ柄のカスタムは、どこにいても見つけやすい。"
+    },
+    "bondGear": {},
+    "hasAlts": []
+  },
+  {
+    "id": 20059,
+    "defaultOrder": 262,
+    "name": "Mutsuki (Dress)",
+    "fullName": "Asagi Mutsuki",
+    "playable": true,
+    "imagePath": "@/assets/images/students/20059_Portrait.webp",
+    "halo": "@/assets/images/halos/20059_Halo.webp",
+    "icon": "@/assets/images/icons/20059_Icon.png",
+    "school": "Gehenna",
+    "club": "Kohshinjo68",
+    "year": "2nd Year",
+    "age": "16 years old",
+    "birthday": "July 29th",
+    "bdayNum": "7/29",
+    "height": "144cm",
+    "hobbies": "爆弾収集",
+    "baseStars": 3,
+    "damageType": "Mystic",
+    "armorType": "HeavyArmor",
+    "combatClass": "Support",
+    "summons": [],
+    "role": "DamageDealer",
+    "position": "Back",
+    "weaponType": "MG",
+    "weaponImg": "weapon_icon_13006",
+    "mood": [
+      2,
+      4,
+      0
+    ],
+    "equipment": [
+      "Hat",
+      "Hairpin",
+      "Watch"
+    ],
+    "background": "BG_OperaHouse_Collection",
+    "newQuote": "もっと派手に遊んじゃおっ！",
+    "profile": "ゲヘナ学園所属、便利屋68の行動隊長兼突撃隊長。\n\n潜入任務のためにドレスに着替えたが、持ち前のいたずらっぽさは隠しきれない。そもそも、隠すつもりもないのかもしれない。",
+    "voice": "Rumi Ōkubo",
+    "illustrator": "DoReMi",
+    "designer": "DoReMi",
+    "l2d": 5,
+    "limited": [
+      0,
+      0,
+      0
+    ],
+    "weapon": {
+      "name": "トリックオアトリック",
+      "desc": "ムツキがいつも持ち歩いているマシンガン。\n\nいつ何時でもいたずらのためなら、ドレス姿だろうと持ち運ぶ。"
+    },
+    "bondGear": {},
+    "hasAlts": [
+      13006,
+      10032
     ]
   },
   {
@@ -13894,7 +14688,15 @@
       "name": "Common Sense",
       "desc": "A cute pistol.\n\nYou will hardly ever see this pistol as long as you speak and act with common sense in front of Ayane."
     },
-    "bondGear": {},
+    "bondGear": {
+      "released": [
+        true,
+        false,
+        false
+      ],
+      "name": "花型ヘアピン",
+      "desc": "アヤネがいつもつけている花形のヘアピン。\n\n素朴な部分が、特に気に入っているようだ。"
+    },
     "hasAlts": [
       26007
     ]
@@ -13948,7 +14750,7 @@
     ],
     "background": "BG_Hyakkiyako_Collection",
     "newQuote": "",
-    "profile": "President of the Festival Operations Department at Hyakkiyako Academy.\n\nThe mascot of Momoyodou, the Hyakkiyako's traditional tea house. Acts clumsy, but only because it sells her image as an idol. In truth, she's an expert flirt willing to do anything for the success of the festivals and Momoyodou. Wears her heart on her sleeve, making her an easy read for her friends as well as Sensei.",
+    "profile": "President of the Festival Operations Department at Hyakkiyako Academy.\n\nThe mascot of Momoyodou, the Hyakkiyako's traditional tea house. Acts clumsy, but only because it helps sell her image as an idol. In truth, she's an expert flirt who's willing to do anything for the success of the festivals and Momoyodou. Wears her heart on her sleeve, making her an easy read for her friends as well as Sensei.",
     "voice": "Chitose Morinaga",
     "illustrator": "whoisshe",
     "designer": "whoisshe",
