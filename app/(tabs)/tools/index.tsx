@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router } from 'expo-router';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import ScreenContainer from '@/components/ScreenContainer';
 import { colors, radius, spacing } from '@/constants/theme';
@@ -10,6 +10,7 @@ const TOOLS: {
     title: string;
     description: string;
     route: string;
+    external?: boolean;
 }[] = [
     {
         icon: 'dice-outline',
@@ -29,6 +30,19 @@ const TOOLS: {
         description: 'Current Global banners plus upcoming ones predicted from the JP schedule.',
         route: '/tools/banners',
     },
+    {
+        icon: 'grid-outline',
+        title: 'Inventory Helper',
+        description: 'Best tiles to flip in the inventory-management minigame, from what you\'ve revealed.',
+        route: '/tools/inventory',
+    },
+    {
+        icon: 'trending-up-outline',
+        title: 'Yuzu Trends',
+        description: 'Total Assault team usage rates by boss — opens yuzutrends.app in the browser.',
+        route: 'https://yuzutrends.app',
+        external: true,
+    },
 ];
 
 export default function ToolsScreen() {
@@ -37,7 +51,7 @@ export default function ToolsScreen() {
             {TOOLS.map((tool) => (
                 <Pressable
                     key={tool.route}
-                    onPress={() => router.push(tool.route as any)}
+                    onPress={() => (tool.external ? Linking.openURL(tool.route) : router.push(tool.route as any))}
                     style={({ pressed }) => [styles.card, pressed && { opacity: 0.8 }]}
                 >
                     <View style={styles.iconWrap}>
@@ -47,7 +61,11 @@ export default function ToolsScreen() {
                         <Text style={styles.cardTitle}>{tool.title}</Text>
                         <Text style={styles.cardDescription}>{tool.description}</Text>
                     </View>
-                    <Ionicons name="chevron-forward" size={20} color={colors.textMuted} />
+                    <Ionicons
+                        name={tool.external ? 'open-outline' : 'chevron-forward'}
+                        size={20}
+                        color={colors.textMuted}
+                    />
                 </Pressable>
             ))}
             <Text style={styles.moreSoon}>More tools coming soon…</Text>

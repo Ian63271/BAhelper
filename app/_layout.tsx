@@ -14,6 +14,7 @@ export default function RootLayout() {
         <Stack.Screen name="tools/roster" options={{ title: "Roster Generator" }} />
         <Stack.Screen name="tools/bond" options={{ title: "Bond XP Calculator" }} />
         <Stack.Screen name="tools/banners" options={{ title: "Banners" }} />
+        <Stack.Screen name="tools/inventory" options={{ title: "Inventory Helper" }} />
       </Stack>
     </UserDataProvider>
   );
