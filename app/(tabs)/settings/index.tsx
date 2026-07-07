@@ -25,7 +25,10 @@ export default function SettingsScreen() {
 
     return (
         <ScreenContainer>
-            <ScrollView contentContainerStyle={{ paddingVertical: spacing.lg }}>
+            <ScrollView
+                contentInsetAdjustmentBehavior="automatic"
+                contentContainerStyle={{ paddingVertical: spacing.lg }}
+            >
                 <SectionCard title="Student of the Day">
                     <View style={styles.settingRow}>
                         <View style={styles.settingText}>

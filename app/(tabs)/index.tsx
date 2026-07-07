@@ -53,7 +53,7 @@ export default function HomeScreen() {
 
   return (
     <ScreenContainer>
-      <ScrollView contentContainerStyle={{ paddingBottom: spacing.xl }}>
+      <ScrollView contentContainerStyle={{ paddingBottom: insets.bottom + spacing.xl }}>
         <LinearGradient
           colors={[colors.heroBg, colors.primaryDark]}
           start={{ x: 0, y: 0 }}

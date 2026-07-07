@@ -101,6 +101,16 @@ export const schoolLabels: Record<string, string> = {
   WildHunt: 'Wild Hunt',
 };
 
+// Skill description tag colors (see utils/skillText.ts): buffs green,
+// debuffs red, crowd control purple, special effects orange — mirroring
+// SchaleDB's semantics, tuned to this palette.
+export const buffTagColors: Record<'buff' | 'debuff' | 'cc' | 'special', string> = {
+  buff: '#2BB673',
+  debuff: '#E4405F',
+  cc: '#9431A5',
+  special: '#B26D1F',
+};
+
 // Adaptation values (mood array) map to in-game letter grades.
 export const adaptationGrades = ['D', 'C', 'B', 'A', 'S', 'SS'] as const;
 

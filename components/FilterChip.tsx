@@ -7,12 +7,14 @@ type Props = {
     selected: boolean;
     onPress: () => void;
     color?: string; // optional accent (e.g. damage type color) when selected
+    testID?: string;
 };
 
-export default function FilterChip({ label, selected, onPress, color }: Props) {
+export default function FilterChip({ label, selected, onPress, color, testID }: Props) {
     const activeColor = color ?? colors.primary;
     return (
         <Pressable
+            testID={testID}
             onPress={onPress}
             style={[
                 styles.chip,

@@ -7,7 +7,9 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import ScreenContainer from '@/components/ScreenContainer';
 import { clubLabels } from '@/constants/clubLabels';
 import SectionCard from '@/components/SectionCard';
+import SkillsSection from '@/components/SkillsSection';
 import StatBadge from '@/components/StatBadge';
+import StatsSection from '@/components/StatsSection';
 import TypePill from '@/components/TypePill';
 import {
     adaptationGrades,
@@ -144,6 +146,9 @@ export default function StudentDetailScreen() {
                         )}
                     </SectionCard>
                 )}
+
+                <StatsSection student={student} />
+                <SkillsSection student={student} />
 
                 {student.profile && (
                     <SectionCard title="Profile">

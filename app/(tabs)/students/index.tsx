@@ -217,6 +217,7 @@ export default function StudentsScreen() {
                 data={students}
                 keyExtractor={(s: Students) => String(s.id)}
                 numColumns={4}
+                contentInsetAdjustmentBehavior="automatic"
                 contentContainerStyle={{ paddingHorizontal: spacing.sm, paddingBottom: spacing.xl }}
                 renderItem={({ item }) => (
                     <StudentIconTile
