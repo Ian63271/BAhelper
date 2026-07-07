@@ -13,6 +13,13 @@ import { colors, radius, schoolLabels, spacing } from '@/constants/theme';
 import { useUserData } from '@/context/UserDataContext';
 import { schoolIcons, studentIcons, studentPortraits } from '@/types/imageMap';
 import {
+  bannerCountdownLabel,
+  bannerTypeLabels,
+  formatBannerRange,
+  getBannerGroups,
+  isSpecialBannerType,
+} from '@/utils/bannerUtils';
+import {
   allStudents,
   collapseAlts,
   getBADayNumber,
@@ -48,6 +55,7 @@ export default function HomeScreen() {
   }, [baDay, settings.dailyIncludeAlts]);
 
   const birthdays = useMemo(() => getUpcomingBirthdays(now, 8), [baDay]); // eslint-disable-line react-hooks/exhaustive-deps
+  const bannerGroups = useMemo(() => getBannerGroups().slice(0, 6), [baDay]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const msToReset = getNextResetDate(now).getTime() - now.getTime();
 
@@ -135,6 +143,62 @@ export default function HomeScreen() {
             );
           })}
         </ScrollView>
+
+        {bannerGroups.length > 0 && (
+          <>
+            <Text style={styles.sectionHeading}>Banners</Text>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={{ paddingHorizontal: spacing.lg }}
+              testID="home-banner-strip"
+            >
+              {bannerGroups.map((g) => (
+                <Pressable
+                  key={g.key}
+                  onPress={() => router.push('/tools/banners')}
+                  style={({ pressed }) => [
+                    styles.bannerCard,
+                    g.status === 'predicted' && styles.bannerCardPredicted,
+                    pressed && { opacity: 0.8 },
+                  ]}
+                  testID="home-banner-card"
+                >
+                  <View style={styles.bannerIconRow}>
+                    {g.students.slice(0, 3).map((s) => (
+                      <Image
+                        key={s.name}
+                        source={s.id !== null ? studentIcons[s.id] : undefined}
+                        style={styles.bannerIcon}
+                        contentFit="cover"
+                      />
+                    ))}
+                    {g.students.length > 3 && (
+                      <View style={[styles.bannerIcon, styles.bannerIconMore]}>
+                        <Text style={styles.bannerIconMoreText}>+{g.students.length - 3}</Text>
+                      </View>
+                    )}
+                  </View>
+                  <View style={styles.bannerMetaRow}>
+                    {isSpecialBannerType(g.type) && (
+                      <Text style={styles.bannerType}>{bannerTypeLabels[g.type] ?? g.type}</Text>
+                    )}
+                    <Text
+                      style={[styles.bannerCountdown, g.status === 'predicted' && styles.bannerCountdownMuted]}
+                      numberOfLines={1}
+                    >
+                      {bannerCountdownLabel(g)}
+                    </Text>
+                  </View>
+                  <Text style={styles.bannerDates} numberOfLines={1}>
+                    {g.status === 'predicted' ? '~' : ''}
+                    {formatBannerRange(g.start, g.end)}
+                  </Text>
+                </Pressable>
+              ))}
+            </ScrollView>
+          </>
+        )}
 
         <Text style={styles.sectionHeading}>Quick Actions</Text>
         <SectionCard>
@@ -320,6 +384,70 @@ const styles = StyleSheet.create({
   },
   bdayToday: {
     color: colors.danger,
+  },
+  bannerCard: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: spacing.md,
+    marginRight: spacing.sm,
+  },
+  bannerCardPredicted: {
+    borderStyle: 'dashed',
+    borderColor: colors.textMuted,
+    backgroundColor: colors.surfaceAlt,
+  },
+  bannerIconRow: {
+    flexDirection: 'row',
+    gap: 4,
+    marginBottom: 6,
+  },
+  bannerIcon: {
+    width: 40,
+    height: 40,
+    borderRadius: radius.md,
+    backgroundColor: colors.surfaceAlt,
+  },
+  bannerIconMore: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
+  bannerIconMoreText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: colors.textSecondary,
+  },
+  bannerMetaRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  bannerType: {
+    fontSize: 11,
+    fontWeight: '800',
+    color: colors.primaryDark,
+    backgroundColor: colors.primarySoft,
+    borderRadius: radius.pill,
+    paddingHorizontal: 6,
+    paddingVertical: 1,
+    overflow: 'hidden',
+  },
+  bannerCountdown: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: colors.primary,
+  },
+  bannerCountdownMuted: {
+    color: colors.textSecondary,
+  },
+  bannerDates: {
+    fontSize: 11,
+    color: colors.textMuted,
+    marginTop: 3,
+    fontVariant: ['tabular-nums'],
   },
   quickLink: {
     flexDirection: 'row',

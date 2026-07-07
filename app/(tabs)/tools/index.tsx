@@ -23,6 +23,12 @@ const TOOLS: {
         description: 'How many headpats and gifts to reach a target relationship rank.',
         route: '/tools/bond',
     },
+    {
+        icon: 'sparkles-outline',
+        title: 'Banners',
+        description: 'Current Global banners plus upcoming ones predicted from the JP schedule.',
+        route: '/tools/banners',
+    },
 ];
 
 export default function ToolsScreen() {

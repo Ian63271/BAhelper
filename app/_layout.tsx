@@ -13,6 +13,7 @@ export default function RootLayout() {
         <Stack.Screen name="student/[id]" options={{ title: "Student" }} />
         <Stack.Screen name="tools/roster" options={{ title: "Roster Generator" }} />
         <Stack.Screen name="tools/bond" options={{ title: "Bond XP Calculator" }} />
+        <Stack.Screen name="tools/banners" options={{ title: "Banners" }} />
       </Stack>
     </UserDataProvider>
   );
