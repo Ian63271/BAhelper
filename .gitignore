@@ -53,6 +53,7 @@ data/students.json.old
 data/ai sloppa help/first help.png
 data/iconscrapper.js
 data/schooliconscrapper.js
+data/localizationscrapper.js
 data/imagemap.js
 data/imagescrapper.js
 data/scrapper.js

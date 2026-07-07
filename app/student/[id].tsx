@@ -5,6 +5,7 @@ import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import ScreenContainer from '@/components/ScreenContainer';
+import { clubLabels } from '@/constants/clubLabels';
 import SectionCard from '@/components/SectionCard';
 import StatBadge from '@/components/StatBadge';
 import TypePill from '@/components/TypePill';
@@ -113,7 +114,7 @@ export default function StudentDetailScreen() {
                 <SectionCard title="School Life">
                     <View style={styles.badgeGrid}>
                         <StatBadge label="School" value={schoolLabels[student.school] ?? student.school} />
-                        <StatBadge label="Club" value={student.club} />
+                        <StatBadge label="Club" value={student.club ? clubLabels[student.club] ?? student.club : undefined} />
                         <StatBadge label="Year" value={student.year} />
                         <StatBadge label="Age" value={student.age} />
                         <StatBadge label="Birthday" value={student.birthday} />
