@@ -16,6 +16,7 @@ import {
     schoolLabels,
     spacing,
 } from '@/constants/theme';
+import { useDataSync } from '@/context/DataSyncContext';
 import { useUserData } from '@/context/UserDataContext';
 import { Students } from '@/types/students';
 import {
@@ -31,12 +32,6 @@ import {
     sortStudents,
 } from '@/utils/studentUtils';
 
-const SCHOOLS = distinctValues((s) => s.school);
-const DAMAGE_TYPES = distinctValues((s) => s.damageType);
-const ARMOR_TYPES = distinctValues((s) => s.armorType);
-const ROLES = distinctValues((s) => s.role);
-const POSITIONS = distinctValues((s) => s.position);
-const WEAPONS = distinctValues((s) => s.weaponType);
 const STARS = [1, 2, 3];
 const SORT_MODES: SortMode[] = ['default', 'name', 'school', 'stars', 'birthday'];
 
@@ -46,6 +41,7 @@ function toggleValue<T>(list: T[], value: T): T[] {
 
 export default function StudentsScreen() {
     const { owned, favorites, toggleOwned } = useUserData();
+    const { activeVersion } = useDataSync();
     const [filters, setFilters] = useState<RosterFilters>(emptyFilters);
     const [sortMode, setSortMode] = useState<SortMode>('default');
     const [groupAlts, setGroupAlts] = useState(false);
@@ -53,10 +49,25 @@ export default function StudentsScreen() {
 
     const patchFilters = (patch: Partial<RosterFilters>) => setFilters((f) => ({ ...f, ...patch }));
 
+    // Chip values derive from the student data, which can be swapped in place
+    // by a remote data update — hence the activeVersion dependency.
+    const { SCHOOLS, DAMAGE_TYPES, ARMOR_TYPES, ROLES, POSITIONS, WEAPONS } = useMemo(
+        () => ({
+            SCHOOLS: distinctValues((s) => s.school),
+            DAMAGE_TYPES: distinctValues((s) => s.damageType),
+            ARMOR_TYPES: distinctValues((s) => s.armorType),
+            ROLES: distinctValues((s) => s.role),
+            POSITIONS: distinctValues((s) => s.position),
+            WEAPONS: distinctValues((s) => s.weaponType),
+        }),
+        [activeVersion] // eslint-disable-line react-hooks/exhaustive-deps
+    );
+
     const students = useMemo(() => {
         const base = groupAlts ? collapseAlts(allStudents) : allStudents;
         return sortStudents(filterStudents(base, filters, owned, favorites), sortMode);
-    }, [filters, sortMode, groupAlts, owned, favorites]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [filters, sortMode, groupAlts, owned, favorites, activeVersion]);
 
     const activeCount = countActiveFilters(filters);
 

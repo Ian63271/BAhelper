@@ -5,6 +5,7 @@ import { Alert, Platform, Pressable, ScrollView, StyleSheet, Switch, Text, View 
 import ScreenContainer from '@/components/ScreenContainer';
 import SectionCard from '@/components/SectionCard';
 import { colors, spacing } from '@/constants/theme';
+import { useDataSync } from '@/context/DataSyncContext';
 import { useUserData } from '@/context/UserDataContext';
 import { allStudents } from '@/utils/studentUtils';
 
@@ -20,8 +21,17 @@ function confirmAction(title: string, message: string, onConfirm: () => void) {
     ]);
 }
 
+const syncStatusLabels: Record<string, string> = {
+    checking: 'Checking…',
+    updated: 'Updated to the latest data.',
+    current: 'Already up to date.',
+    unreachable: "Couldn't reach the update server.",
+    invalid: 'Update server returned unexpected data.',
+};
+
 export default function SettingsScreen() {
     const { owned, favorites, settings, updateSettings, clearOwned, clearFavorites } = useUserData();
+    const { activeVersion, source, syncedAt, status, refresh, clearDownloaded } = useDataSync();
 
     return (
         <ScreenContainer>
@@ -44,6 +54,57 @@ export default function SettingsScreen() {
                             thumbColor="#fff"
                         />
                     </View>
+                    <View style={[styles.settingRow, styles.settingRowBorder]}>
+                        <View style={styles.settingText}>
+                            <Text style={styles.settingLabel}>Daily fan art</Text>
+                            <Text style={styles.settingHint}>
+                                Show a daily illustration of the student on the home screen, from Safebooru.
+                            </Text>
+                        </View>
+                        <Switch
+                            value={settings.showDailyImage}
+                            onValueChange={(v) => updateSettings({ showDailyImage: v })}
+                            trackColor={{ true: colors.primary, false: colors.border }}
+                            thumbColor="#fff"
+                        />
+                    </View>
+                </SectionCard>
+
+                <SectionCard title="Game Data">
+                    <View style={styles.settingText}>
+                        <Text style={styles.settingLabel}>
+                            Data from {new Date(activeVersion).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}
+                        </Text>
+                        <Text style={styles.settingHint}>
+                            {source === 'downloaded'
+                                ? `Downloaded update, fetched ${syncedAt ? new Date(syncedAt).toLocaleDateString() : ''}.`
+                                : 'Bundled with the app. Updates are fetched automatically at launch.'}
+                        </Text>
+                    </View>
+                    <Pressable style={styles.actionRow} onPress={refresh} disabled={status === 'checking'} testID="check-updates">
+                        <Ionicons name="cloud-download-outline" size={18} color={colors.primary} />
+                        <Text style={styles.actionText}>Check for updates</Text>
+                        {status !== 'idle' && (
+                            <Text style={styles.actionStatus} testID="sync-status">
+                                {syncStatusLabels[status] ?? ''}
+                            </Text>
+                        )}
+                    </Pressable>
+                    {source === 'downloaded' && (
+                        <Pressable
+                            style={styles.dangerRow}
+                            onPress={() =>
+                                confirmAction(
+                                    'Delete downloaded data?',
+                                    'The app will go back to the game data it shipped with.',
+                                    clearDownloaded
+                                )
+                            }
+                        >
+                            <Ionicons name="trash-outline" size={18} color={colors.danger} />
+                            <Text style={styles.dangerText}>Delete downloaded data</Text>
+                        </Pressable>
+                    )}
                 </SectionCard>
 
                 <SectionCard title="Collection">
@@ -108,6 +169,32 @@ const styles = StyleSheet.create({
     },
     settingText: {
         flex: 1,
+    },
+    settingRowBorder: {
+        borderTopWidth: 1,
+        borderTopColor: colors.border,
+        marginTop: spacing.md,
+        paddingTop: spacing.md,
+    },
+    actionRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: spacing.sm,
+        paddingVertical: spacing.sm,
+        marginTop: spacing.md,
+        borderTopWidth: 1,
+        borderTopColor: colors.border,
+    },
+    actionText: {
+        color: colors.primary,
+        fontSize: 14,
+        fontWeight: '600',
+    },
+    actionStatus: {
+        flex: 1,
+        textAlign: 'right',
+        fontSize: 12,
+        color: colors.textSecondary,
     },
     settingLabel: {
         fontSize: 15,

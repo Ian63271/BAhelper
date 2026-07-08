@@ -5,7 +5,8 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import ScreenContainer from '@/components/ScreenContainer';
 import { colors, radius, spacing } from '@/constants/theme';
-import { studentIcons } from '@/types/imageMap';
+import { useDataSync } from '@/context/DataSyncContext';
+import { studentIconSource } from '@/utils/studentImages';
 import {
   BannerGroup,
   bannerCountdownLabel,
@@ -25,7 +26,8 @@ const typeBadgeColors: Record<string, { bg: string; fg: string }> = {
 };
 
 export default function BannersScreen() {
-  const groups = useMemo(() => getBannerGroups(), []);
+  const { activeVersion } = useDataSync();
+  const groups = useMemo(() => getBannerGroups(), [activeVersion]); // eslint-disable-line react-hooks/exhaustive-deps
   const current = groups.filter((g) => g.status === 'current');
   const upcoming = groups.filter((g) => g.status === 'upcoming');
   const predicted = groups.filter((g) => g.status === 'predicted');
@@ -104,12 +106,12 @@ function BannerCard({ group }: { group: BannerGroup }) {
         {group.students.map((s) => (
           <Pressable
             key={s.name}
-            disabled={s.id === null || !studentIcons[s.id]}
+            disabled={s.id === null}
             onPress={() => s.id !== null && router.push(`/student/${s.id}`)}
             style={({ pressed }) => [styles.iconWrap, pressed && { opacity: 0.7 }]}
           >
-            {s.id !== null && studentIcons[s.id] ? (
-              <Image source={studentIcons[s.id]} style={styles.icon} contentFit="cover" />
+            {s.id !== null ? (
+              <Image source={studentIconSource(s.id)} style={styles.icon} contentFit="cover" />
             ) : (
               <View style={[styles.icon, styles.iconFallback]}>
                 <Text style={styles.iconFallbackText}>{s.name.slice(0, 2)}</Text>

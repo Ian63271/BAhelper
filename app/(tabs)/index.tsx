@@ -6,12 +6,15 @@ import { useEffect, useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import DailyImageCard from '@/components/DailyImageCard';
 import SectionCard from '@/components/SectionCard';
 import ScreenContainer from '@/components/ScreenContainer';
 import TypePill from '@/components/TypePill';
 import { colors, radius, schoolLabels, spacing } from '@/constants/theme';
+import { useDataSync } from '@/context/DataSyncContext';
 import { useUserData } from '@/context/UserDataContext';
-import { schoolIcons, studentIcons, studentPortraits } from '@/types/imageMap';
+import { schoolIcons } from '@/types/imageMap';
+import { studentIconSource, studentPortraitSource } from '@/utils/studentImages';
 import {
   bannerCountdownLabel,
   bannerTypeLabels,
@@ -39,6 +42,7 @@ function formatCountdown(ms: number): string {
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
   const { favorites, settings } = useUserData();
+  const { activeVersion } = useDataSync();
   const [now, setNow] = useState(() => new Date());
 
   useEffect(() => {
@@ -52,10 +56,10 @@ export default function HomeScreen() {
     const pool = settings.dailyIncludeAlts ? allStudents : collapseAlts(allStudents);
     return getDailyStudent(pool, now);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [baDay, settings.dailyIncludeAlts]);
+  }, [baDay, settings.dailyIncludeAlts, activeVersion]);
 
-  const birthdays = useMemo(() => getUpcomingBirthdays(now, 8), [baDay]); // eslint-disable-line react-hooks/exhaustive-deps
-  const bannerGroups = useMemo(() => getBannerGroups().slice(0, 6), [baDay]); // eslint-disable-line react-hooks/exhaustive-deps
+  const birthdays = useMemo(() => getUpcomingBirthdays(now, 8), [baDay, activeVersion]); // eslint-disable-line react-hooks/exhaustive-deps
+  const bannerGroups = useMemo(() => getBannerGroups().slice(0, 6), [baDay, activeVersion]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const msToReset = getNextResetDate(now).getTime() - now.getTime();
 
@@ -85,7 +89,7 @@ export default function HomeScreen() {
             style={({ pressed }) => [styles.sotdCard, pressed && { opacity: 0.85 }]}
           >
             <Image
-              source={studentPortraits[dailyStudent.id]}
+              source={studentPortraitSource(dailyStudent.id)}
               style={styles.sotdPortrait}
               contentFit="cover"
               contentPosition="top center"
@@ -110,6 +114,7 @@ export default function HomeScreen() {
             </View>
           </Pressable>
         )}
+        {settings.showDailyImage && dailyStudent && <DailyImageCard student={dailyStudent} day={baDay} />}
 
         <Text style={styles.sectionHeading}>Upcoming Birthdays</Text>
         <ScrollView
@@ -131,7 +136,7 @@ export default function HomeScreen() {
                     <Ionicons name="heart" size={11} color="#fff" />
                   </View>
                 )}
-                <Image source={studentIcons[rep.id]} style={styles.bdayIcon} contentFit="cover" />
+                <Image source={studentIconSource(rep.id)} style={styles.bdayIcon} contentFit="cover" />
                 <Text style={styles.bdayName} numberOfLines={1}>
                   {rep.name.split(' (')[0]}
                 </Text>
@@ -168,7 +173,7 @@ export default function HomeScreen() {
                     {g.students.slice(0, 3).map((s) => (
                       <Image
                         key={s.name}
-                        source={s.id !== null ? studentIcons[s.id] : undefined}
+                        source={s.id !== null ? studentIconSource(s.id) : undefined}
                         style={styles.bannerIcon}
                         contentFit="cover"
                       />

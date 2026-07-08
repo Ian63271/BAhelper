@@ -29,7 +29,7 @@ export function getNextResetDate(from: Date = new Date()): Date {
 
 // Small deterministic PRNG so consecutive days don't pick neighboring
 // indices (a plain modulo would walk the list in order).
-function mulberry32(seed: number): () => number {
+export function mulberry32(seed: number): () => number {
   let a = seed >>> 0;
   return () => {
     a |= 0;

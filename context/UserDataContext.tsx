@@ -5,10 +5,13 @@ import { loadJson, saveJson, STORAGE_KEYS } from '@/utils/storage';
 export interface AppSettings {
   // Whether alt versions (e.g. "Aru (New Year)") can be picked as student of the day.
   dailyIncludeAlts: boolean;
+  // Whether the home dashboard shows the daily fan-art card (Safebooru).
+  showDailyImage: boolean;
 }
 
 const defaultSettings: AppSettings = {
   dailyIncludeAlts: true,
+  showDailyImage: true,
 };
 
 interface UserDataValue {

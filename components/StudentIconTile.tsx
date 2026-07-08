@@ -4,8 +4,8 @@ import { memo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { colors, damageTypeColors, radius } from '@/constants/theme';
-import { studentIcons } from '@/types/imageMap';
 import { Students } from '@/types/students';
+import { studentIconSource } from '@/utils/studentImages';
 
 type Props = {
     student: Students;
@@ -24,7 +24,7 @@ function StudentIconTile({ student, owned, favorite, onPress, onLongPress }: Pro
             onLongPress={onLongPress}
             style={({ pressed }) => [styles.tile, pressed && styles.pressed]}>
             <View style={[styles.iconWrap, { borderColor: rimColor }, owned && styles.iconWrapOwned]}>
-                <Image source={studentIcons[student.id]} style={styles.icon} contentFit="cover" />
+                <Image source={studentIconSource(student.id)} style={styles.icon} contentFit="cover" />
                 {favorite && (
                     <View style={styles.favBadge}>
                         <Ionicons name="heart" size={12} color="#fff" />

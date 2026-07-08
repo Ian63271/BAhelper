@@ -24,10 +24,9 @@ import { useUserData } from '@/context/UserDataContext';
 import {
     adaptationEmotes,
     schoolIcons,
-    studentIcons,
-    studentPortraits,
     terrainIcons,
 } from '@/types/imageMap';
+import { studentIconSource, studentPortraitSource } from '@/utils/studentImages';
 import { getAltFamily, studentById } from '@/utils/studentUtils';
 
 // type matches the weapon's adaptationType key ('Street' is displayed as Urban)
@@ -99,7 +98,7 @@ export default function StudentDetailScreen() {
                         <Image source={schoolIcons[student.school]} style={styles.schoolWatermark} contentFit="contain" />
                     )}
                     <Image
-                        source={studentPortraits[student.id]}
+                        source={studentPortraitSource(student.id)}
                         style={styles.portrait}
                         contentFit="contain"
                         contentPosition="bottom center"
@@ -236,7 +235,7 @@ export default function StudentDetailScreen() {
                                     onPress={() => router.replace(`/student/${alt.id}`)}
                                     style={[styles.altItem, alt.id === student.id && styles.altItemCurrent]}
                                 >
-                                    <Image source={studentIcons[alt.id]} style={styles.altIcon} contentFit="cover" />
+                                    <Image source={studentIconSource(alt.id)} style={styles.altIcon} contentFit="cover" />
                                     <Text style={styles.altName} numberOfLines={2}>
                                         {alt.name}
                                     </Text>

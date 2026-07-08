@@ -4,6 +4,10 @@ export const STORAGE_KEYS = {
   owned: 'bahelper:owned',
   favorites: 'bahelper:favorites',
   settings: 'bahelper:settings',
+  dataMeta: 'bahelper:data:meta',
+  dataStudents: 'bahelper:data:students',
+  dataBanners: 'bahelper:data:banners',
+  dailyImage: 'bahelper:dailyImage',
 } as const;
 
 export async function loadJson<T>(key: string, fallback: T): Promise<T> {

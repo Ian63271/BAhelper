@@ -9,8 +9,8 @@ import FilterChip from '@/components/FilterChip';
 import ScreenContainer from '@/components/ScreenContainer';
 import { colors, radius, spacing } from '@/constants/theme';
 import { useUserData } from '@/context/UserDataContext';
-import { studentIcons } from '@/types/imageMap';
 import { Students } from '@/types/students';
+import { studentIconSource } from '@/utils/studentImages';
 import { allStudents, getBaseName } from '@/utils/studentUtils';
 
 const ROSTER_SIZE = 10;
@@ -125,7 +125,7 @@ export default function RosterGeneratorScreen() {
                             )}
                             {student ? (
                                 <Pressable onPress={() => router.push(`/student/${student.id}`)} style={styles.slotBody}>
-                                    <Image source={studentIcons[student.id]} style={styles.slotIcon} contentFit="cover" />
+                                    <Image source={studentIconSource(student.id)} style={styles.slotIcon} contentFit="cover" />
                                     <Text style={styles.slotName} numberOfLines={2}>
                                         {student.name}
                                     </Text>
