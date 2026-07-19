@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router } from 'expo-router';
-import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import ScreenContainer from '@/components/ScreenContainer';
 import { colors, radius, spacing } from '@/constants/theme';
@@ -37,6 +37,18 @@ const TOOLS: {
         route: '/tools/inventory',
     },
     {
+        icon: 'timer-outline',
+        title: 'Raid Score Calculator',
+        description: 'Convert Total Assault clear times to scores and back, per boss and difficulty.',
+        route: '/tools/raidscore',
+    },
+    {
+        icon: 'school-outline',
+        title: 'EXP Calculator',
+        description: 'Reports and credits to level a student, or days to reach an account level.',
+        route: '/tools/exp',
+    },
+    {
         icon: 'trending-up-outline',
         title: 'Yuzu Trends',
         description: 'Total Assault team usage rates by boss — opens yuzutrends.app in the browser.',
@@ -47,7 +59,11 @@ const TOOLS: {
 
 export default function ToolsScreen() {
     return (
-        <ScreenContainer style={styles.container}>
+        <ScreenContainer>
+            <ScrollView
+                contentInsetAdjustmentBehavior="automatic"
+                contentContainerStyle={styles.scrollContent}
+            >
             {TOOLS.map((tool) => (
                 <Pressable
                     key={tool.route}
@@ -69,13 +85,15 @@ export default function ToolsScreen() {
                 </Pressable>
             ))}
             <Text style={styles.moreSoon}>More tools coming soon…</Text>
+            </ScrollView>
         </ScreenContainer>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
+    scrollContent: {
         paddingTop: spacing.lg,
+        paddingBottom: spacing.xxl,
     },
     card: {
         flexDirection: 'row',
