@@ -8,6 +8,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import ScreenContainer from '@/components/ScreenContainer';
 import { clubLabels } from '@/constants/clubLabels';
 import SectionCard from '@/components/SectionCard';
+import SegmentedTabs from '@/components/SegmentedTabs';
 import SkillsSection from '@/components/SkillsSection';
 import StatBadge from '@/components/StatBadge';
 import StatsSection from '@/components/StatsSection';
@@ -44,12 +45,20 @@ const LIMITED_LABELS: Record<number, string> = {
     3: 'Fes Limited',
 };
 
+const PROFILE_TABS = [
+    { key: 'overview', label: 'Overview' },
+    { key: 'stats', label: 'Stats' },
+    { key: 'skills', label: 'Skills' },
+    { key: 'lore', label: 'Lore' },
+];
+
 export default function StudentDetailScreen() {
     const { id } = useLocalSearchParams<{ id: string }>();
     const { owned, favorites, toggleOwned, toggleFavorite } = useUserData();
     // Owned here (not in StatsSection) so the Combat card's terrain row can
     // show the UE 3★+ adaptation boost.
     const [ueStars, setUeStars] = useState(0);
+    const [tab, setTab] = useState('overview');
 
     const student = studentById.get(Number(id));
 
@@ -124,6 +133,18 @@ export default function StudentDetailScreen() {
                     </View>
                 </View>
 
+                <View style={styles.tabBar}>
+                    <SegmentedTabs
+                        tabs={PROFILE_TABS}
+                        active={tab}
+                        onChange={setTab}
+                        testIDPrefix="profile-tab"
+                    />
+                </View>
+
+                {/* Inactive tabs stay mounted (display:none) so StatsSection's
+                    internal level/gear/bond/talent state survives switching. */}
+                <View style={tab === 'overview' ? undefined : styles.tabHidden}>
                 <SectionCard title="School Life">
                     <View style={styles.badgeGrid}>
                         <StatBadge label="School" value={schoolLabels[student.school] ?? student.school} />
@@ -201,9 +222,36 @@ export default function StudentDetailScreen() {
                     </SectionCard>
                 )}
 
-                <StatsSection student={student} ueStars={ueStars} onUeStarsChange={setUeStars} />
-                <SkillsSection student={student} />
+                {altFamily.length > 1 && (
+                    <SectionCard title="Other Versions">
+                        <View style={styles.altRow}>
+                            {altFamily.map((alt) => (
+                                <Pressable
+                                    key={alt.id}
+                                    disabled={alt.id === student.id}
+                                    onPress={() => router.replace(`/student/${alt.id}`)}
+                                    style={[styles.altItem, alt.id === student.id && styles.altItemCurrent]}
+                                >
+                                    <Image source={studentIconSource(alt.id)} style={styles.altIcon} contentFit="cover" />
+                                    <Text style={styles.altName} numberOfLines={2}>
+                                        {alt.name}
+                                    </Text>
+                                </Pressable>
+                            ))}
+                        </View>
+                    </SectionCard>
+                )}
+                </View>
 
+                <View style={tab === 'stats' ? undefined : styles.tabHidden}>
+                <StatsSection student={student} ueStars={ueStars} onUeStarsChange={setUeStars} />
+                </View>
+
+                <View style={tab === 'skills' ? undefined : styles.tabHidden}>
+                <SkillsSection student={student} />
+                </View>
+
+                <View style={tab === 'lore' ? undefined : styles.tabHidden}>
                 {student.profile && (
                     <SectionCard title="Profile">
                         <Text style={styles.profileText}>{student.profile}</Text>
@@ -225,26 +273,6 @@ export default function StudentDetailScreen() {
                     </SectionCard>
                 )}
 
-                {altFamily.length > 1 && (
-                    <SectionCard title="Other Versions">
-                        <View style={styles.altRow}>
-                            {altFamily.map((alt) => (
-                                <Pressable
-                                    key={alt.id}
-                                    disabled={alt.id === student.id}
-                                    onPress={() => router.replace(`/student/${alt.id}`)}
-                                    style={[styles.altItem, alt.id === student.id && styles.altItemCurrent]}
-                                >
-                                    <Image source={studentIconSource(alt.id)} style={styles.altIcon} contentFit="cover" />
-                                    <Text style={styles.altName} numberOfLines={2}>
-                                        {alt.name}
-                                    </Text>
-                                </Pressable>
-                            ))}
-                        </View>
-                    </SectionCard>
-                )}
-
                 <SectionCard title="Credits">
                     <View style={styles.badgeGrid}>
                         <StatBadge label="Illustrator" value={student.illustrator} />
@@ -252,6 +280,7 @@ export default function StudentDetailScreen() {
                         <StatBadge label="Voice" value={student.voice} />
                     </View>
                 </SectionCard>
+                </View>
             </ScrollView>
         </ScreenContainer>
     );
@@ -292,6 +321,13 @@ const styles = StyleSheet.create({
     nameBlock: {
         paddingHorizontal: spacing.lg,
         paddingVertical: spacing.lg,
+    },
+    tabBar: {
+        paddingHorizontal: spacing.lg,
+        marginBottom: spacing.md,
+    },
+    tabHidden: {
+        display: 'none',
     },
     name: {
         fontSize: 26,

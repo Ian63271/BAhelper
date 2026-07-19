@@ -13,13 +13,15 @@ type Props = {
     favorite?: boolean;
     onPress?: () => void;
     onLongPress?: () => void;
+    testID?: string;
 };
 
-function StudentIconTile({ student, owned, favorite, onPress, onLongPress }: Props) {
+function StudentIconTile({ student, owned, favorite, onPress, onLongPress, testID }: Props) {
     const rimColor = (student.damageType && damageTypeColors[student.damageType]) || colors.border;
 
     return (
         <Pressable
+            testID={testID}
             onPress={onPress}
             onLongPress={onLongPress}
             style={({ pressed }) => [styles.tile, pressed && styles.pressed]}>

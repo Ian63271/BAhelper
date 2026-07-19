@@ -1,7 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router } from 'expo-router';
-import { useMemo, useState } from 'react';
-import { FlatList, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { useCallback, useMemo, useState } from 'react';
+import { Alert, FlatList, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 
 import FilterChip from '@/components/FilterChip';
 import ScreenContainer from '@/components/ScreenContainer';
@@ -40,12 +40,13 @@ function toggleValue<T>(list: T[], value: T): T[] {
 }
 
 export default function StudentsScreen() {
-    const { owned, favorites, toggleOwned } = useUserData();
+    const { owned, favorites, toggleOwned, setOwnedMany } = useUserData();
     const { activeVersion } = useDataSync();
     const [filters, setFilters] = useState<RosterFilters>(emptyFilters);
     const [sortMode, setSortMode] = useState<SortMode>('default');
     const [groupAlts, setGroupAlts] = useState(false);
     const [filtersOpen, setFiltersOpen] = useState(false);
+    const [bulkMode, setBulkMode] = useState(false);
 
     const patchFilters = (patch: Partial<RosterFilters>) => setFilters((f) => ({ ...f, ...patch }));
 
@@ -70,6 +71,38 @@ export default function StudentsScreen() {
     }, [filters, sortMode, groupAlts, owned, favorites, activeVersion]);
 
     const activeCount = countActiveFilters(filters);
+
+    const clearShown = () => {
+        const apply = () => setOwnedMany(students.map((s) => s.id), false);
+        const shownOwned = students.filter((s) => owned.has(s.id)).length;
+        if (shownOwned === 0) return;
+        const message = `Remove ${shownOwned} student${shownOwned === 1 ? '' : 's'} from your collection?`;
+        // RN-web's Alert is a no-op, so fall back to window.confirm there.
+        if (Platform.OS === 'web') {
+            if (window.confirm(message)) apply();
+        } else {
+            Alert.alert('Clear shown students', message, [
+                { text: 'Cancel', style: 'cancel' },
+                { text: 'Remove', style: 'destructive', onPress: apply },
+            ]);
+        }
+    };
+
+    const renderTile = useCallback(
+        ({ item }: { item: Students }) => (
+            <StudentIconTile
+                student={item}
+                owned={owned.has(item.id)}
+                favorite={favorites.has(item.id)}
+                testID={`student-tile-${item.id}`}
+                onPress={() =>
+                    bulkMode ? toggleOwned(item.id) : router.push(`/student/${item.id}`)
+                }
+                onLongPress={() => toggleOwned(item.id)}
+            />
+        ),
+        [owned, favorites, bulkMode, toggleOwned]
+    );
 
     return (
         <ScreenContainer>
@@ -105,7 +138,42 @@ export default function StudentsScreen() {
                         </View>
                     )}
                 </Pressable>
+                <Pressable
+                    testID="bulk-toggle"
+                    onPress={() => setBulkMode((v) => !v)}
+                    style={[styles.filterButton, bulkMode && styles.bulkButtonActive]}
+                >
+                    <Ionicons
+                        name="checkmark-done-outline"
+                        size={20}
+                        color={bulkMode ? '#fff' : colors.textSecondary}
+                    />
+                </Pressable>
             </View>
+
+            {bulkMode && (
+                <View style={styles.bulkBar}>
+                    <Text style={styles.bulkHint}>Tap tiles to toggle owned</Text>
+                    <View style={styles.bulkActions}>
+                        <Pressable
+                            testID="bulk-own-all"
+                            style={styles.bulkAction}
+                            onPress={() => setOwnedMany(students.map((s) => s.id), true)}
+                        >
+                            <Text style={styles.bulkActionText}>Own shown</Text>
+                        </Pressable>
+                        <Pressable
+                            testID="bulk-clear-shown"
+                            style={[styles.bulkAction, styles.bulkActionDanger]}
+                            onPress={clearShown}
+                        >
+                            <Text style={[styles.bulkActionText, styles.bulkActionTextDanger]}>
+                                Clear shown
+                            </Text>
+                        </Pressable>
+                    </View>
+                </View>
+            )}
 
             {filtersOpen && (
                 <ScrollView style={styles.filterPanel} contentContainerStyle={{ paddingBottom: spacing.md }}>
@@ -219,7 +287,8 @@ export default function StudentsScreen() {
                     {students.length} student{students.length === 1 ? '' : 's'}
                 </Text>
                 <Text style={styles.countHint}>
-                    <Ionicons name="checkmark-circle-outline" size={12} color={colors.textMuted} /> long-press to mark owned ·{' '}
+                    <Ionicons name="checkmark-circle-outline" size={12} color={colors.textMuted} />{' '}
+                    {bulkMode ? 'editing collection' : 'long-press to mark owned'} ·{' '}
                     {owned.size}/{allStudents.length} owned
                 </Text>
             </View>
@@ -230,15 +299,7 @@ export default function StudentsScreen() {
                 numColumns={4}
                 contentInsetAdjustmentBehavior="automatic"
                 contentContainerStyle={{ paddingHorizontal: spacing.sm, paddingBottom: spacing.xl }}
-                renderItem={({ item }) => (
-                    <StudentIconTile
-                        student={item}
-                        owned={owned.has(item.id)}
-                        favorite={favorites.has(item.id)}
-                        onPress={() => router.push(`/student/${item.id}`)}
-                        onLongPress={() => toggleOwned(item.id)}
-                    />
-                )}
+                renderItem={renderTile}
                 ListEmptyComponent={
                     <View style={styles.empty}>
                         <Ionicons name="sad-outline" size={40} color={colors.textMuted} />
@@ -300,6 +361,49 @@ const styles = StyleSheet.create({
     filterButtonActive: {
         backgroundColor: colors.primary,
         borderColor: colors.primary,
+    },
+    bulkButtonActive: {
+        backgroundColor: colors.success,
+        borderColor: colors.success,
+    },
+    bulkBar: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingHorizontal: spacing.lg,
+        paddingVertical: spacing.sm,
+        backgroundColor: colors.primarySoft,
+        borderBottomWidth: 1,
+        borderBottomColor: colors.border,
+    },
+    bulkHint: {
+        fontSize: 12,
+        fontWeight: '600',
+        color: colors.primaryDark,
+        flexShrink: 1,
+    },
+    bulkActions: {
+        flexDirection: 'row',
+        gap: spacing.sm,
+    },
+    bulkAction: {
+        borderRadius: radius.pill,
+        borderWidth: 1,
+        borderColor: colors.success,
+        backgroundColor: colors.surface,
+        paddingHorizontal: spacing.md,
+        paddingVertical: 5,
+    },
+    bulkActionDanger: {
+        borderColor: colors.danger,
+    },
+    bulkActionText: {
+        fontSize: 12,
+        fontWeight: '700',
+        color: colors.success,
+    },
+    bulkActionTextDanger: {
+        color: colors.danger,
     },
     filterCount: {
         position: 'absolute',

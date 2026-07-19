@@ -1,5 +1,6 @@
 import { Image } from 'expo-image';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { colors, radius, spacing } from '@/constants/theme';
 
@@ -27,7 +28,19 @@ export default function LevelControl({
     onChange,
     testID,
 }: Props) {
+    // Draft holds the in-progress text while the value input is focused so the
+    // user can clear/retype freely; the clamped commit happens on blur/submit.
+    const [draft, setDraft] = useState<string | null>(null);
+
     const setClamped = (next: number) => onChange(Math.min(max, Math.max(min, next)));
+
+    const commitDraft = () => {
+        if (draft !== null) {
+            const parsed = parseInt(draft, 10);
+            if (!Number.isNaN(parsed)) setClamped(parsed);
+        }
+        setDraft(null);
+    };
 
     return (
         <View style={styles.row}>
@@ -57,10 +70,21 @@ export default function LevelControl({
                     hitSlop={4}>
                     <Text style={styles.stepText}>−</Text>
                 </Pressable>
-                <Text style={styles.value}>
-                    {valuePrefix}{value}
+                <View style={styles.value}>
+                    {valuePrefix !== '' && <Text style={styles.valueText}>{valuePrefix}</Text>}
+                    <TextInput
+                        testID={testID ? `${testID}-input` : undefined}
+                        style={styles.valueInput}
+                        keyboardType="number-pad"
+                        value={draft ?? String(value)}
+                        onFocus={() => setDraft(String(value))}
+                        onChangeText={(t) => setDraft(t.replace(/[^0-9]/g, ''))}
+                        onBlur={commitDraft}
+                        onSubmitEditing={commitDraft}
+                        selectTextOnFocus
+                    />
                     <Text style={styles.valueMax}>/{max}</Text>
-                </Text>
+                </View>
                 <Pressable
                     testID={testID ? `${testID}-plus` : undefined}
                     style={[styles.step, value >= max && styles.stepDisabled]}
@@ -135,14 +159,33 @@ const styles = StyleSheet.create({
         lineHeight: 18,
     },
     value: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minWidth: 64,
+    },
+    valueText: {
         fontSize: 14,
         fontWeight: '700',
         color: colors.text,
-        minWidth: 64,
-        textAlign: 'center',
         fontVariant: ['tabular-nums'],
     },
+    valueInput: {
+        width: 40, // fixed: on web, number inputs otherwise take a huge intrinsic width
+        paddingVertical: 2,
+        paddingHorizontal: 0,
+        fontSize: 14,
+        fontWeight: '700',
+        color: colors.text,
+        textAlign: 'center',
+        fontVariant: ['tabular-nums'],
+        backgroundColor: colors.surfaceAlt,
+        borderRadius: radius.sm,
+        borderWidth: 1,
+        borderColor: colors.border,
+    },
     valueMax: {
+        fontSize: 14,
         color: colors.textMuted,
         fontWeight: '600',
     },
