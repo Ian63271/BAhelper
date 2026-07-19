@@ -1,3 +1,4 @@
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
@@ -7,7 +8,7 @@ import LevelControl from '@/components/LevelControl';
 import SectionCard from '@/components/SectionCard';
 import StatBadge from '@/components/StatBadge';
 import { EQUIPMENT_MAX_TIER } from '@/constants/equipmentStats';
-import { colors, spacing } from '@/constants/theme';
+import { colors, radius, spacing } from '@/constants/theme';
 import { Students } from '@/types/students';
 import { studentIconSource } from '@/utils/studentImages';
 import { studentById } from '@/utils/studentUtils';
@@ -215,7 +216,11 @@ export default function StatsSection({ student, ueStars, onUeStarsChange }: Prop
                 style={styles.advancedToggle}
                 onPress={() => setShowAdvanced(!showAdvanced)}>
                 <Text style={styles.advancedLabel}>Gear · Bond · Talent</Text>
-                <Text style={styles.advancedChevron}>{showAdvanced ? '▾' : '▸'}</Text>
+                <Ionicons
+                    name={showAdvanced ? 'chevron-up' : 'chevron-down'}
+                    size={16}
+                    color={colors.textSecondary}
+                />
             </Pressable>
             {showAdvanced && (
                 <View style={styles.advanced}>
@@ -398,20 +403,19 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         marginTop: spacing.md,
-        paddingVertical: spacing.xs,
-        borderTopWidth: 1,
-        borderTopColor: colors.border,
+        paddingVertical: spacing.sm,
+        paddingHorizontal: spacing.md,
+        borderRadius: radius.md,
+        borderWidth: 1,
+        borderColor: colors.border,
+        backgroundColor: colors.surfaceAlt,
     },
     advancedLabel: {
         fontSize: 11,
-        fontWeight: '600',
+        fontWeight: '700',
         textTransform: 'uppercase',
         letterSpacing: 0.5,
-        color: colors.textMuted,
-    },
-    advancedChevron: {
-        fontSize: 14,
-        color: colors.textMuted,
+        color: colors.textSecondary,
     },
     advanced: {
         gap: spacing.sm,
