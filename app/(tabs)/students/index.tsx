@@ -1,6 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { router } from 'expo-router';
-import { useCallback, useMemo, useState } from 'react';
+import { useHeaderHeight } from '@react-navigation/elements';
+import { router, Stack } from 'expo-router';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import { Alert, FlatList, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 
 import FilterChip from '@/components/FilterChip';
@@ -34,6 +35,7 @@ import {
 
 const STARS = [1, 2, 3];
 const SORT_MODES: SortMode[] = ['default', 'name', 'school', 'stars', 'birthday'];
+const isIOS = Platform.OS === 'ios';
 
 function toggleValue<T>(list: T[], value: T): T[] {
     return list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
@@ -72,6 +74,21 @@ export default function StudentsScreen() {
 
     const activeCount = countActiveFilters(filters);
 
+    const listRef = useRef<FlatList<Students>>(null);
+    const headerHeight = useHeaderHeight();
+    // On iOS the panels live in the list header, so opening one from the
+    // native-header buttons must bring the list top back on screen;
+    // -headerHeight is the resting scroll offset under the floating header.
+    const revealTop = () => listRef.current?.scrollToOffset({ offset: -headerHeight, animated: false });
+    const toggleFilters = () => {
+        if (isIOS && !filtersOpen) revealTop();
+        setFiltersOpen(!filtersOpen);
+    };
+    const toggleBulk = () => {
+        if (isIOS && !bulkMode) revealTop();
+        setBulkMode(!bulkMode);
+    };
+
     const clearShown = () => {
         const apply = () => setOwnedMany(students.map((s) => s.id), false);
         const shownOwned = students.filter((s) => owned.has(s.id)).length;
@@ -104,53 +121,122 @@ export default function StudentsScreen() {
         [owned, favorites, bulkMode, toggleOwned]
     );
 
-    return (
-        <ScreenContainer>
-            <View style={styles.toolbar}>
-                <View style={styles.searchBox}>
-                    <Ionicons name="search" size={18} color={colors.textMuted} />
-                    <TextInput
-                        style={styles.searchInput}
-                        placeholder="Search students…"
-                        placeholderTextColor={colors.textMuted}
-                        value={filters.search}
-                        onChangeText={(search) => patchFilters({ search })}
+    // Chip rows shared between the pinned web/Android panel (inner ScrollView,
+    // capped height) and the iOS list-header panel (plain View, scrolls with
+    // the grid).
+    const filterRows = (
+        <>
+            <ChipRow label="Collection">
+                <FilterChip
+                    label={`Owned (${owned.size})`}
+                    selected={filters.ownedOnly}
+                    onPress={() => patchFilters({ ownedOnly: !filters.ownedOnly })}
+                    color={colors.success}
+                />
+                <FilterChip
+                    label={`Favorites (${favorites.size})`}
+                    selected={filters.favoritesOnly}
+                    onPress={() => patchFilters({ favoritesOnly: !filters.favoritesOnly })}
+                    color={colors.danger}
+                />
+                <FilterChip label="Group alts" selected={groupAlts} onPress={() => setGroupAlts((v) => !v)} />
+            </ChipRow>
+            <ChipRow label="School">
+                {SCHOOLS.map((s) => (
+                    <FilterChip
+                        key={s}
+                        label={schoolLabels[s] ?? s}
+                        selected={filters.schools.includes(s)}
+                        onPress={() => patchFilters({ schools: toggleValue(filters.schools, s) })}
                     />
-                    {filters.search.length > 0 && (
-                        <Pressable onPress={() => patchFilters({ search: '' })}>
-                            <Ionicons name="close-circle" size={18} color={colors.textMuted} />
-                        </Pressable>
-                    )}
-                </View>
-                <Pressable
-                    testID="filter-toggle"
-                    onPress={() => setFiltersOpen((v) => !v)}
-                    style={[styles.filterButton, (filtersOpen || activeCount > 0) && styles.filterButtonActive]}
-                >
-                    <Ionicons
-                        name="options-outline"
-                        size={20}
-                        color={filtersOpen || activeCount > 0 ? '#fff' : colors.textSecondary}
+                ))}
+            </ChipRow>
+            <ChipRow label="Damage">
+                {DAMAGE_TYPES.map((t) => (
+                    <FilterChip
+                        key={t}
+                        label={damageTypeLabels[t] ?? t}
+                        selected={filters.damageTypes.includes(t)}
+                        onPress={() => patchFilters({ damageTypes: toggleValue(filters.damageTypes, t) })}
+                        color={damageTypeColors[t]}
                     />
-                    {activeCount > 0 && (
-                        <View style={styles.filterCount}>
-                            <Text style={styles.filterCountText}>{activeCount}</Text>
-                        </View>
-                    )}
+                ))}
+            </ChipRow>
+            <ChipRow label="Armor">
+                {ARMOR_TYPES.map((t) => (
+                    <FilterChip
+                        key={t}
+                        label={armorTypeLabels[t] ?? t}
+                        selected={filters.armorTypes.includes(t)}
+                        onPress={() => patchFilters({ armorTypes: toggleValue(filters.armorTypes, t) })}
+                    />
+                ))}
+            </ChipRow>
+            <ChipRow label="Role">
+                {ROLES.map((r) => (
+                    <FilterChip
+                        key={r}
+                        label={roleLabels[r] ?? r}
+                        selected={filters.roles.includes(r)}
+                        onPress={() => patchFilters({ roles: toggleValue(filters.roles, r) })}
+                    />
+                ))}
+            </ChipRow>
+            <ChipRow label="Position">
+                {POSITIONS.map((p) => (
+                    <FilterChip
+                        key={p}
+                        label={p}
+                        selected={filters.positions.includes(p)}
+                        onPress={() => patchFilters({ positions: toggleValue(filters.positions, p) })}
+                    />
+                ))}
+            </ChipRow>
+            <ChipRow label="Weapon">
+                {WEAPONS.map((w) => (
+                    <FilterChip
+                        key={w}
+                        label={w}
+                        selected={filters.weaponTypes.includes(w)}
+                        onPress={() => patchFilters({ weaponTypes: toggleValue(filters.weaponTypes, w) })}
+                    />
+                ))}
+            </ChipRow>
+            <ChipRow label="Stars">
+                {STARS.map((n) => (
+                    <FilterChip
+                        key={n}
+                        label={'★'.repeat(n)}
+                        selected={filters.stars.includes(n)}
+                        onPress={() => patchFilters({ stars: toggleValue(filters.stars, n) })}
+                        color={colors.accent}
+                    />
+                ))}
+            </ChipRow>
+            <ChipRow label="Sort by">
+                {SORT_MODES.map((m) => (
+                    <FilterChip
+                        key={m}
+                        label={sortModeLabels[m]}
+                        selected={sortMode === m}
+                        onPress={() => setSortMode(m)}
+                    />
+                ))}
+            </ChipRow>
+            {activeCount > 0 && (
+                <Pressable onPress={() => setFilters({ ...emptyFilters, search: filters.search })} style={styles.clearButton}>
+                    <Text style={styles.clearButtonText}>Clear all filters</Text>
                 </Pressable>
-                <Pressable
-                    testID="bulk-toggle"
-                    onPress={() => setBulkMode((v) => !v)}
-                    style={[styles.filterButton, bulkMode && styles.bulkButtonActive]}
-                >
-                    <Ionicons
-                        name="checkmark-done-outline"
-                        size={20}
-                        color={bulkMode ? '#fff' : colors.textSecondary}
-                    />
-                </Pressable>
-            </View>
+            )}
+        </>
+    );
 
+    // On iOS the native header (search bar + glass) floats over the screen and
+    // only scroll views get the system content inset, so anything pinned above
+    // the FlatList would underlap it. There this chrome renders inside the
+    // list header instead; web/Android keep it pinned above the list.
+    const listChrome = (
+        <>
             {bulkMode && (
                 <View style={styles.bulkBar}>
                     <Text style={styles.bulkHint}>Tap tiles to toggle owned</Text>
@@ -174,114 +260,14 @@ export default function StudentsScreen() {
                     </View>
                 </View>
             )}
-
-            {filtersOpen && (
-                <ScrollView style={styles.filterPanel} contentContainerStyle={{ paddingBottom: spacing.md }}>
-                    <ChipRow label="Collection">
-                        <FilterChip
-                            label={`Owned (${owned.size})`}
-                            selected={filters.ownedOnly}
-                            onPress={() => patchFilters({ ownedOnly: !filters.ownedOnly })}
-                            color={colors.success}
-                        />
-                        <FilterChip
-                            label={`Favorites (${favorites.size})`}
-                            selected={filters.favoritesOnly}
-                            onPress={() => patchFilters({ favoritesOnly: !filters.favoritesOnly })}
-                            color={colors.danger}
-                        />
-                        <FilterChip label="Group alts" selected={groupAlts} onPress={() => setGroupAlts((v) => !v)} />
-                    </ChipRow>
-                    <ChipRow label="School">
-                        {SCHOOLS.map((s) => (
-                            <FilterChip
-                                key={s}
-                                label={schoolLabels[s] ?? s}
-                                selected={filters.schools.includes(s)}
-                                onPress={() => patchFilters({ schools: toggleValue(filters.schools, s) })}
-                            />
-                        ))}
-                    </ChipRow>
-                    <ChipRow label="Damage">
-                        {DAMAGE_TYPES.map((t) => (
-                            <FilterChip
-                                key={t}
-                                label={damageTypeLabels[t] ?? t}
-                                selected={filters.damageTypes.includes(t)}
-                                onPress={() => patchFilters({ damageTypes: toggleValue(filters.damageTypes, t) })}
-                                color={damageTypeColors[t]}
-                            />
-                        ))}
-                    </ChipRow>
-                    <ChipRow label="Armor">
-                        {ARMOR_TYPES.map((t) => (
-                            <FilterChip
-                                key={t}
-                                label={armorTypeLabels[t] ?? t}
-                                selected={filters.armorTypes.includes(t)}
-                                onPress={() => patchFilters({ armorTypes: toggleValue(filters.armorTypes, t) })}
-                            />
-                        ))}
-                    </ChipRow>
-                    <ChipRow label="Role">
-                        {ROLES.map((r) => (
-                            <FilterChip
-                                key={r}
-                                label={roleLabels[r] ?? r}
-                                selected={filters.roles.includes(r)}
-                                onPress={() => patchFilters({ roles: toggleValue(filters.roles, r) })}
-                            />
-                        ))}
-                    </ChipRow>
-                    <ChipRow label="Position">
-                        {POSITIONS.map((p) => (
-                            <FilterChip
-                                key={p}
-                                label={p}
-                                selected={filters.positions.includes(p)}
-                                onPress={() => patchFilters({ positions: toggleValue(filters.positions, p) })}
-                            />
-                        ))}
-                    </ChipRow>
-                    <ChipRow label="Weapon">
-                        {WEAPONS.map((w) => (
-                            <FilterChip
-                                key={w}
-                                label={w}
-                                selected={filters.weaponTypes.includes(w)}
-                                onPress={() => patchFilters({ weaponTypes: toggleValue(filters.weaponTypes, w) })}
-                            />
-                        ))}
-                    </ChipRow>
-                    <ChipRow label="Stars">
-                        {STARS.map((n) => (
-                            <FilterChip
-                                key={n}
-                                label={'★'.repeat(n)}
-                                selected={filters.stars.includes(n)}
-                                onPress={() => patchFilters({ stars: toggleValue(filters.stars, n) })}
-                                color={colors.accent}
-                            />
-                        ))}
-                    </ChipRow>
-                    <ChipRow label="Sort by">
-                        {SORT_MODES.map((m) => (
-                            <FilterChip
-                                key={m}
-                                label={sortModeLabels[m]}
-                                selected={sortMode === m}
-                                onPress={() => setSortMode(m)}
-                            />
-                        ))}
-                    </ChipRow>
-                    {activeCount > 0 && (
-                        <Pressable onPress={() => setFilters({ ...emptyFilters, search: filters.search })} style={styles.clearButton}>
-                            <Text style={styles.clearButtonText}>Clear all filters</Text>
-                        </Pressable>
-                    )}
-                </ScrollView>
-            )}
-
+            {filtersOpen &&
+                (isIOS ? (
+                    <View style={styles.filterPanelInline}>{filterRows}</View>
+                ) : (
+                    <ScrollView style={styles.filterPanel} contentContainerStyle={{ paddingBottom: spacing.md }}>
+                        {filterRows}
+                    </ScrollView>
+                ))}
             <View style={styles.countRow}>
                 <Text style={styles.countText}>
                     {students.length} student{students.length === 1 ? '' : 's'}
@@ -292,14 +278,109 @@ export default function StudentsScreen() {
                     {owned.size}/{allStudents.length} owned
                 </Text>
             </View>
+        </>
+    );
+
+    return (
+        <ScreenContainer>
+            {isIOS && (
+                <Stack.Screen
+                    options={{
+                        // Native UISearchController in the nav bar — the system
+                        // renders it as the Liquid Glass capsule on iOS 26. The
+                        // JS toolbar below stays the web/Android fallback.
+                        headerSearchBarOptions: {
+                            placeholder: 'Search students…',
+                            autoCapitalize: 'none',
+                            hideWhenScrolling: false,
+                            onChangeText: (e) => patchFilters({ search: e.nativeEvent.text }),
+                            onCancelButtonPress: () => patchFilters({ search: '' }),
+                        },
+                        headerRight: () => (
+                            <View style={styles.headerActions}>
+                                <Pressable testID="filter-toggle" onPress={toggleFilters} hitSlop={8}>
+                                    <Ionicons
+                                        name="options-outline"
+                                        size={22}
+                                        color={filtersOpen || activeCount > 0 ? colors.primary : colors.textSecondary}
+                                    />
+                                    {activeCount > 0 && (
+                                        <View style={styles.filterCount}>
+                                            <Text style={styles.filterCountText}>{activeCount}</Text>
+                                        </View>
+                                    )}
+                                </Pressable>
+                                <Pressable testID="bulk-toggle" onPress={toggleBulk} hitSlop={8}>
+                                    <Ionicons
+                                        name="checkmark-done-outline"
+                                        size={22}
+                                        color={bulkMode ? colors.success : colors.textSecondary}
+                                    />
+                                </Pressable>
+                            </View>
+                        ),
+                    }}
+                />
+            )}
+            {!isIOS && (
+                <View style={styles.toolbar}>
+                    <View style={styles.searchBox}>
+                        <Ionicons name="search" size={18} color={colors.textMuted} />
+                        <TextInput
+                            style={styles.searchInput}
+                            placeholder="Search students…"
+                            placeholderTextColor={colors.textMuted}
+                            value={filters.search}
+                            onChangeText={(search) => patchFilters({ search })}
+                        />
+                        {filters.search.length > 0 && (
+                            <Pressable onPress={() => patchFilters({ search: '' })}>
+                                <Ionicons name="close-circle" size={18} color={colors.textMuted} />
+                            </Pressable>
+                        )}
+                    </View>
+                    <Pressable
+                        testID="filter-toggle"
+                        onPress={toggleFilters}
+                        style={[styles.filterButton, (filtersOpen || activeCount > 0) && styles.filterButtonActive]}
+                    >
+                        <Ionicons
+                            name="options-outline"
+                            size={20}
+                            color={filtersOpen || activeCount > 0 ? '#fff' : colors.textSecondary}
+                        />
+                        {activeCount > 0 && (
+                            <View style={styles.filterCount}>
+                                <Text style={styles.filterCountText}>{activeCount}</Text>
+                            </View>
+                        )}
+                    </Pressable>
+                    <Pressable
+                        testID="bulk-toggle"
+                        onPress={toggleBulk}
+                        style={[styles.filterButton, bulkMode && styles.bulkButtonActive]}
+                    >
+                        <Ionicons
+                            name="checkmark-done-outline"
+                            size={20}
+                            color={bulkMode ? '#fff' : colors.textSecondary}
+                        />
+                    </Pressable>
+                </View>
+            )}
+
+            {!isIOS && listChrome}
 
             <FlatList
+                ref={listRef}
                 data={students}
                 keyExtractor={(s: Students) => String(s.id)}
                 numColumns={4}
                 contentInsetAdjustmentBehavior="automatic"
-                contentContainerStyle={{ paddingHorizontal: spacing.sm, paddingBottom: spacing.xl }}
+                contentContainerStyle={{ paddingBottom: spacing.xl }}
+                columnWrapperStyle={{ paddingHorizontal: spacing.sm }}
                 renderItem={renderTile}
+                ListHeaderComponent={isIOS ? listChrome : undefined}
                 ListEmptyComponent={
                     <View style={styles.empty}>
                         <Ionicons name="sad-outline" size={40} color={colors.textMuted} />
@@ -405,6 +486,11 @@ const styles = StyleSheet.create({
     bulkActionTextDanger: {
         color: colors.danger,
     },
+    headerActions: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: spacing.lg,
+    },
     filterCount: {
         position: 'absolute',
         top: -6,
@@ -424,6 +510,13 @@ const styles = StyleSheet.create({
     },
     filterPanel: {
         maxHeight: 320,
+        borderBottomWidth: 1,
+        borderBottomColor: colors.border,
+    },
+    // iOS variant: lives in the FlatList header, so no height cap or inner
+    // scroll — the grid's own scrolling moves it.
+    filterPanelInline: {
+        paddingBottom: spacing.md,
         borderBottomWidth: 1,
         borderBottomColor: colors.border,
     },

@@ -11,7 +11,9 @@ export default function TabLayout() {
     // so NativeTabs not rendering headers is fine.
     if (Platform.OS === 'ios') {
         return (
-            <NativeTabs tintColor={colors.primary}>
+            // minimizeBehavior: iOS 26 shrinks the tab bar out of the way while
+            // scrolling down and restores it on scroll-up; no-op on iOS 18-.
+            <NativeTabs tintColor={colors.primary} minimizeBehavior="onScrollDown">
                 <NativeTabs.Trigger name="index">
                     <Label>Home</Label>
                     <Icon sf={{ default: 'house', selected: 'house.fill' }} />
