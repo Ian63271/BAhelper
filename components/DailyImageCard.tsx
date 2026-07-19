@@ -1,7 +1,8 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Image } from 'expo-image';
-import { useEffect, useState } from 'react';
-import { ActivityIndicator, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useFocusEffect } from 'expo-router';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { ActivityIndicator, AppState, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { colors, radius, spacing } from '@/constants/theme';
 import { Students } from '@/types/students';
@@ -21,7 +22,10 @@ function clampAspect(width: number, height: number): number {
 
 export default function DailyImageCard({ student, day }: Props) {
     const [post, setPost] = useState<DailyImagePost | null>(null);
-    const [state, setState] = useState<'loading' | 'ready' | 'empty'>('loading');
+    // 'empty' = the day's lookup found no art (cached, final); 'error' = the
+    // fetch itself failed, worth retrying — both render as a hidden card.
+    const [state, setState] = useState<'loading' | 'ready' | 'empty' | 'error'>('loading');
+    const [attempt, setAttempt] = useState(0);
 
     useEffect(() => {
         let cancelled = false;
@@ -33,16 +37,39 @@ export default function DailyImageCard({ student, day }: Props) {
                 setPost(p);
                 setState(p ? 'ready' : 'empty');
             })
-            .catch(() => {
-                // Network failure (or CORS on web): hide the card quietly.
-                if (!cancelled) setState('empty');
+            .catch((e: unknown) => {
+                // Network failure (or CORS on web): hide the card quietly,
+                // but leave a trace in the dev log — "HTTP 403" = blocked,
+                // "Aborted" = 12s timeout, "Network request failed" = no route.
+                console.warn(`[daily-image] fetch failed: ${e instanceof Error ? e.message : String(e)}`);
+                if (!cancelled) setState('error');
             });
         return () => {
             cancelled = true;
         };
-    }, [student, day]);
+    }, [student, day, attempt]);
 
-    if (state === 'empty') return null;
+    // A transient failure would otherwise blank the card for the whole
+    // session (the tab navigator keeps this screen mounted, so the effect
+    // never re-runs). Retry after a failure whenever the screen regains
+    // focus or the app returns to the foreground — via a ref so the focus
+    // callback stays stable and an in-focus failure can't retry-loop.
+    const stateRef = useRef(state);
+    stateRef.current = state;
+    const retryIfFailed = useCallback(() => {
+        if (stateRef.current === 'error') setAttempt((a) => a + 1);
+    }, []);
+
+    useFocusEffect(retryIfFailed);
+
+    useEffect(() => {
+        const sub = AppState.addEventListener('change', (s) => {
+            if (s === 'active') retryIfFailed();
+        });
+        return () => sub.remove();
+    }, [retryIfFailed]);
+
+    if (state === 'empty' || state === 'error') return null;
 
     if (state === 'loading' || !post) {
         return (

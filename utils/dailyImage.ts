@@ -55,6 +55,13 @@ export function studentBooruTag(student: Students): string {
 
 const IMAGE_EXT = /\.(jpe?g|png|webp)$/i;
 
+// Cosplay photos carry the character tag via the booru's `X_(cosplay)` →
+// `X` implication even though the character isn't drawn in them. The
+// specific `X_(cosplay)` tag is applied too inconsistently to exclude by
+// itself, so drop the whole cosplay/photo umbrella (drawn art of the
+// character cosplaying someone else is a rare, acceptable loss).
+const EXCLUDED_TAGS = ' -cosplay -photo_(medium)';
+
 function usablePosts(data: unknown): BooruPost[] {
   if (!Array.isArray(data)) return [];
   return (data as BooruPost[]).filter(
@@ -73,12 +80,17 @@ async function fetchPosts(tag: string): Promise<BooruPost[]> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 12000);
   try {
-    const res = await fetch(`${API_BASE}&limit=100&tags=${encodeURIComponent(tag)}`, {
+    const res = await fetch(`${API_BASE}&limit=100&tags=${encodeURIComponent(tag + EXCLUDED_TAGS)}`, {
       signal: controller.signal,
       headers: { Accept: 'application/json' },
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return usablePosts(await res.json());
+    // Zero-result queries return an empty body (HTTP 200, 0 bytes) rather
+    // than `[]`, so don't parse blindly — that would throw and mask the
+    // "no posts" outcome as a network error.
+    const body = await res.text();
+    if (!body.trim()) return [];
+    return usablePosts(JSON.parse(body));
   } finally {
     clearTimeout(timer);
   }
